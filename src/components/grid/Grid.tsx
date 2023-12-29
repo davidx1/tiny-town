@@ -9,7 +9,7 @@ interface GridProps {
 
 export default function Grid({ data }: GridProps) {
   return (
-    <div className="bg-slate-100 border-4 border-black">
+    <div className="bg-slate-100 border-4 border-black absolute">
       {data.map((row, index) => (
         <div key={index} className="flex">
           {row.map((cell, j) => {
@@ -24,7 +24,7 @@ export default function Grid({ data }: GridProps) {
             return (
               <div
                 key={j}
-                className={`w-24 h-24 border-2 border-black ${colorClass}`}
+                className={`size-24 border-2 border-black ${colorClass}`}
               />
             );
           })}

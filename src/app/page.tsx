@@ -1,121 +1,14 @@
 import Grid, { Cell } from "@/components/grid/Grid";
-import Image from "next/image";
+import Player from "@/components/player/Player";
+import { mapData } from "./map";
 
 export default function Home() {
-  const data: Cell[][] = [
-    [
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-    ],
-    [
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-    ],
-    [
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-    ],
-    [
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-    ],
-    [
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-    ],
-    [
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-    ],
-    [
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-    ],
-    [
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.RED,
-    ],
-    [
-      Cell.RED,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-      Cell.GREEN,
-      Cell.GREEN,
-      Cell.RED,
-    ],
-  ];
-
   return (
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      <Grid data={data}></Grid>
+      <div className="relative">
+        <Grid data={mapData}></Grid>
+        <Player />
+      </div>
     </div>
   );
 }
