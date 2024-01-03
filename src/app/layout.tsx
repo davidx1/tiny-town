@@ -18,26 +18,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <Link href="/" className="font-semibold text-xl tracking-tight">
-            Tiny Town
-          </Link>
-          <div className="flex items-center">
-            <Link
-              href="/about"
-              className="px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Home
+        <main className="flex min-h-screen flex-col items-center">
+          <nav className="absolute container mx-auto px-6 py-3 flex justify-between items-center">
+            <Link href="/" className="font-semibold text-xl tracking-tight">
+              Tiny Town
             </Link>
-            <Link
-              href="/services"
-              className="px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Gallery
-            </Link>
-          </div>
-        </nav>
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+            <div className="flex items-center">
+              <Link
+                href="/about"
+                className="px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Home
+              </Link>
+              <Link
+                href="/services"
+                className="px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Gallery
+              </Link>
+            </div>
+          </nav>
           {children}
         </main>
       </body>

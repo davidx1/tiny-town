@@ -1,0 +1,6 @@
+# Ignore artifacts:
+node_mondules
+build
+coverage
+.next
+public
