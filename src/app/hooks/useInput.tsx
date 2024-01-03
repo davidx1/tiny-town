@@ -53,7 +53,7 @@ export const useInput = () => {
 
     if (!e.repeat) {
       setKeyDownCount(keyDownCount + 1);
-      directionRef.current = keyMapping[e.key];
+      directionRef.current = keyMapping[e.key] || "left";
       setIsMoving(true);
     }
   };
