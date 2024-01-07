@@ -13,7 +13,7 @@ export default function Player({ direction }: PlayerProps) {
     down: "👇",
   };
   return (
-    <div className="size-24 flex items-center justify-center fixed top-1/2 left-1/2">
+    <div className="size-12 flex items-center justify-center fixed top-1/2 left-1/2">
       {directionIconMap[direction]}
     </div>
   );
