@@ -1,7 +1,13 @@
 export type DirectionType = "left" | "right" | "up" | "down";
 export type CoordinateType = [number, number];
 export type Cell = {
-  isFree: boolean;
+  occupierId: string | null;
   groundType: "grass" | "path";
-  occupiedComp: { comp: React.ReactNode; anchor: CoordinateType } | null;
+  comp: { name: string; anchor: CoordinateType } | null;
 };
+
+export interface FeatureType {
+  anchor: CoordinateType;
+  footprint: number[][];
+  name: string;
+}

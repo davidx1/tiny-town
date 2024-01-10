@@ -1,100 +1,124 @@
 "use client";
 
 import Grid from "@/components/grid/Grid";
-import { mapData as rawMapData } from "./map";
-import { useState } from "react";
-import { Cell, CoordinateType } from "../type";
-import {
-  House1,
-  House1Anchor,
-  House1Footprint,
-} from "@/components/houses/House1";
-import { features } from "process";
-
-interface FeatureType {
-  anchor: CoordinateType;
-  footprint: number[][];
-  comp: React.ReactNode;
-}
+import JSONPretty from "react-json-pretty";
+import { useEditorStates } from "../hooks/useEditorStates";
+import { useRef } from "react";
+import { House1, house1Info } from "@/components/houses/House1";
+import { House2, house2Info } from "@/components/houses/House2";
+import { House3, house3Info } from "@/components/houses/House3";
+import { House4, house4Info } from "@/components/houses/House4";
+import { House5, house5Info } from "@/components/houses/House5";
 
 export default function Home() {
-  const [mapData, setMapData] = useState(rawMapData);
-  const [featureSelected, setFeatureSelected] = useState<FeatureType>();
+  const {
+    mapData,
+    onFeatureSelection,
+    onDeleteSelection,
+    onCellClick,
+    viewMode,
+    setViewMode,
+    editorMode,
+    setEditorMode,
+    initMap,
+  } = useEditorStates();
 
-  const onFeatureSelection = (input: FeatureType) => {
-    setFeatureSelected(input);
-  };
+  const wInputRef = useRef<HTMLInputElement>(null);
+  const hInputRef = useRef<HTMLInputElement>(null);
 
-  const onCellClick = (input: CoordinateType) => {
-    if (
-      featureSelected &&
-      featureSelected.anchor[0] <= input[0] &&
-      featureSelected.anchor[1] <= input[1]
-    ) {
-      const { footprint, anchor } = featureSelected;
-      for (let i = 0; i < footprint.length; i++) {
-        for (let j = 0; j < footprint[0].length; j++) {
-          const row = i + input[0] - anchor[0];
-          const col = j + input[1] - anchor[1];
-          if (!mapData[row][col].isFree) {
-            return;
-          }
-        }
-      }
+  const handleFormSubmission = (e: React.FormEvent) => {
+    e.preventDefault();
+    const cols = wInputRef.current?.value;
+    const rows = hInputRef.current?.value;
+    console.log(`Received request to initiate a ${cols} by ${rows} map`);
 
-      const newMapData: Cell[][] = mapData.map((row, i) => {
-        return row.map((col, j) => {
-          if (
-            i >= input[0] - anchor[0] &&
-            i < input[0] - anchor[0] + footprint.length &&
-            j >= input[1] - anchor[1] &&
-            j < input[1] - anchor[1] + footprint[0].length
-          ) {
-            {
-              return {
-                isFree:
-                  !!footprint[i - (input[0] - anchor[0])][
-                    j - (input[1] - anchor[1])
-                  ],
-                groundType: "grass",
-                occupiedComp:
-                  i === input[0] && j === input[1]
-                    ? {
-                        comp: featureSelected.comp,
-                        anchor: anchor,
-                      }
-                    : null,
-              };
-            }
-          }
-          return col;
-        });
-      });
-
-      setMapData(newMapData);
+    if (cols && rows) {
+      initMap(Number(cols), Number(rows));
     }
   };
 
   return (
     <div
-      className=" relative w-full min-h-screen bg-slate-700 flex-column items-center justify-center"
+      className="flex relative overflow-hidden w-full h-screen"
       tabIndex={-1}
     >
-      <div>
-        <button
-          onClick={() =>
-            onFeatureSelection({
-              anchor: House1Anchor,
-              footprint: House1Footprint,
-              comp: <House1 />,
-            })
-          }
-        >
-          <House1 />
-        </button>
+      <div className="overflow-scroll w-1/6 flex flex-col border-r-2 pt-20 pb-6 bg-slate-400 relative justify-between ">
+        <div className="flex flex-col items-center">
+          <button onClick={() => onFeatureSelection(house1Info)}>
+            <House1 />
+          </button>
+          <button onClick={() => onFeatureSelection(house2Info)}>
+            <House2 />
+          </button>
+          <button onClick={() => onFeatureSelection(house3Info)}>
+            <House3 />
+          </button>
+          <button onClick={() => onFeatureSelection(house4Info)}>
+            <House4 />
+          </button>
+          <button onClick={() => onFeatureSelection(house5Info)}>
+            <House5 />
+          </button>
+        </div>
+        <div className="p-4 text-center">
+          <button className="bg-white p-2 px-4" onClick={onDeleteSelection}>
+            Delete
+          </button>
+        </div>
+        {!mapData && (
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-80"></div>
+        )}
       </div>
-      <Grid data={mapData} onCellClick={onCellClick}></Grid>
-      <div>{JSON.stringify(mapData, null, 2)}</div>
+      <div className="w-5/6 flex flex-col p-8 pt-20 flex-1 gap-2 bg-slate-400 ">
+        <div className=" overflow-scroll">
+          {!mapData ? (
+            <div className="w-36 m-auto">
+              <form
+                className="flex flex-col gap-2"
+                onSubmit={handleFormSubmission}
+              >
+                <label htmlFor="width-input">Width:</label>
+                <input id="width-input" type="number" ref={wInputRef} />
+
+                <label htmlFor="height-input">Height:</label>
+                <input id="height-input" type="number" ref={hInputRef} />
+                <button className="px-2 p-2 bg-white" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          ) : viewMode === "map" ? (
+            <>
+              <div className="flex items-center justify-center gap-2 p-6">
+                <button onClick={() => setViewMode("code")}>
+                  Switch To Code View
+                </button>
+              </div>
+              <div className="flex-1">
+                <Grid isDevMode data={mapData} onCellClick={onCellClick}></Grid>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex items-center justify-center gap-2 p-6">
+                <button onClick={() => setViewMode("map")}>
+                  Switch To Map View
+                </button>
+              </div>
+              <div className="p-2 bg-gray-50">
+                <button
+                  onClick={() =>
+                    window.navigator.clipboard.writeText(mapData.toString())
+                  }
+                >
+                  Copy
+                </button>
+                <JSONPretty data={mapData}></JSONPretty>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { CoordinateType } from "@/app/type";
 
-export const name = "house1";
+export const name = "house5";
 const anchor: CoordinateType = [2, 2];
 const footprint = [
   [0, 0, 0, 0, 0],
@@ -10,14 +10,14 @@ const footprint = [
   [0, 0, 0, 0, 0],
 ];
 
-export const house1Info = { name, anchor, footprint };
+export const house5Info = { name, anchor, footprint };
 
-export const House1 = () => {
+export const House5 = () => {
   return (
     <div
-      className="bg-tile-set w-60 h-60 bg-clip-content px-2"
+      className="bg-tile-set w-56 h-60 bg-clip-content pl-2"
       style={{
-        backgroundPosition: "-1081px -2180px",
+        backgroundPosition: "-1690px -2470px",
         backgroundSize: "4480px 4800px",
       }}
     ></div>

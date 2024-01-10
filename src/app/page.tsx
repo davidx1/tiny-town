@@ -1,6 +1,6 @@
 "use client";
 
-import Grid, { Cell } from "@/components/grid/Grid";
+import Grid from "@/components/grid/Grid";
 import Player from "@/components/player/Player";
 import { mapData } from "./map";
 import { useInput } from "./hooks/useInput";
