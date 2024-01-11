@@ -12,7 +12,6 @@ export const useEditorStates = () => {
   );
 
   const initMap = (width: number, height: number) => {
-    console.log("initMape");
     const initMap: Cell[][] = Array.from({ length: height }, () =>
       Array.from({ length: width }, () => ({
         occupierId: null,
@@ -26,18 +25,20 @@ export const useEditorStates = () => {
   const deleteFeature = ({ cell }: { cell: CoordinateType }) => {
     if (action === "delete" && mapData) {
       const idToDelete = mapData[cell[0]][cell[1]].occupierId;
-      const newMapData = mapData.map((row) =>
-        row.map((col) =>
-          col.occupierId === idToDelete
-            ? {
-                occupierId: null,
-                groundType: col.groundType,
-                comp: null,
-              }
-            : col,
-        ),
-      );
-      setMapData(newMapData);
+      if (idToDelete) {
+        const newMapData = mapData.map((row) =>
+          row.map((col) =>
+            col.occupierId === idToDelete
+              ? {
+                  occupierId: null,
+                  groundType: col.groundType,
+                  comp: null,
+                }
+              : col,
+          ),
+        );
+        setMapData(newMapData);
+      }
     }
   };
 
@@ -55,8 +56,8 @@ export const useEditorStates = () => {
       featureToAdd.anchor[1] <= cell[1]
     ) {
       const { footprint, anchor } = featureToAdd;
-      for (let i = 0; i < footprint.length; i++) {
-        for (let j = 0; j < footprint[0].length; j++) {
+      for (let i = 0; i < footprint.length - 1; i++) {
+        for (let j = 0; j < footprint[0].length - 1; j++) {
           const row = i + cell[0] - anchor[0];
           const col = j + cell[1] - anchor[1];
           if (footprint[i][j] && mapData[row][col].occupierId) {
@@ -76,23 +77,23 @@ export const useEditorStates = () => {
             j >= cell[1] - anchor[1] &&
             j < cell[1] - anchor[1] + footprint[0].length
           ) {
-            {
-              return {
-                occupierId: !!footprint[i - (cell[0] - anchor[0])][
+            console.log("row", i, "col", j);
+            return {
+              occupierId:
+                footprint[i - (cell[0] - anchor[0])][
                   j - (cell[1] - anchor[1])
-                ]
+                ] === 1
                   ? newOccupierId
                   : mapData[i][j].occupierId,
-                groundType: "grass",
-                comp:
-                  i === cell[0] && j === cell[1]
-                    ? {
-                        name: featureToAdd.name,
-                        anchor: anchor,
-                      }
-                    : null,
-              };
-            }
+              groundType: "grass",
+              comp:
+                i === cell[0] && j === cell[1]
+                  ? {
+                      name: featureToAdd.name,
+                      anchor: anchor,
+                    }
+                  : mapData[i][j].comp,
+            };
           }
           return col;
         });

@@ -15,7 +15,7 @@ export const house3Info = { name, anchor, footprint };
 export const House3 = () => {
   return (
     <div
-      className="bg-tile-set w-60 h-60 bg-clip-content px-2"
+      className="bg-tile-set w-60 h-60 bg-clip-content px-2 pointer-events-none"
       style={{
         backgroundPosition: "-1466px -2180px",
         backgroundSize: "4480px 4800px",

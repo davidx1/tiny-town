@@ -4,6 +4,7 @@ import { House2, house2Info } from "../houses/House2";
 import { house3Info, House3 } from "../houses/House3";
 import { house4Info, House4 } from "../houses/House4";
 import { house5Info, House5 } from "../houses/House5";
+import { tree1Info, Tree1 } from "../houses/Tree1";
 
 interface GridProps {
   isDevMode?: boolean;
@@ -24,6 +25,8 @@ const renderComp = (name: string) => {
       return <House4></House4>;
     case house5Info.name:
       return <House5></House5>;
+    case tree1Info.name:
+      return <Tree1></Tree1>;
     default:
       return <></>;
   }
@@ -56,40 +59,37 @@ export default function Grid({
               const back = !cell.occupierId ? "bg-green-100" : "bg-red-100";
 
               return (
-                <>
-                  <div
-                    key={x}
-                    className={`bg-tile-set relative inline-block size-12 min-w-12 min-h-12 border-slate-300 ${
-                      isDevMode && "border"
-                    }`}
-                    onClick={() => onCellClick?.([y, x])}
-                    style={{
-                      backgroundPosition: "-3506px -1728px",
-                      backgroundSize: "6720px 7200px",
-                    }}
-                  >
-                    {cell.comp && (
-                      <div
-                        className={`absolute z-20 ${
-                          isDevMode &&
-                          "inline-block opacity-50 border border-black box-border w-auto"
-                        }`}
-                        style={{
-                          transform: `translate(-${
-                            cell.comp?.anchor[1] * 3
-                          }rem, -${cell.comp?.anchor[0] * 3}rem)`,
-                        }}
-                      >
-                        {renderComp(cell.comp?.name)}
-                      </div>
-                    )}
-                    {isDevMode && cell.occupierId && (
-                      <span className="absolute z-30 bg-red-500 bg-opacity-30 h-full w-full">
-                        {cell.occupierId}
-                      </span>
-                    )}
-                  </div>
-                </>
+                <div
+                  key={x}
+                  className={`bg-tile-set relative inline-block size-12 min-w-12 min-h-12 border-slate-300 ${
+                    isDevMode && "border"
+                  }`}
+                  onClick={() => onCellClick?.([y, x])}
+                  style={{
+                    backgroundPosition: "-3506px -1728px",
+                    backgroundSize: "6720px 7200px",
+                  }}
+                >
+                  {cell.comp && (
+                    <div
+                      className={`absolute z-20 ${
+                        isDevMode && "inline-block  w-auto pointer-events-none"
+                      }`}
+                      style={{
+                        transform: `translate(-${
+                          cell.comp?.anchor[1] * 3
+                        }rem, -${cell.comp?.anchor[0] * 3}rem)`,
+                      }}
+                    >
+                      {renderComp(cell.comp?.name)}
+                    </div>
+                  )}
+                  {isDevMode && cell.occupierId && (
+                    <span className="absolute z-30 bg-red-500 bg-opacity-30 h-full w-full">
+                      {cell.occupierId}
+                    </span>
+                  )}
+                </div>
               );
             })}
           </div>
