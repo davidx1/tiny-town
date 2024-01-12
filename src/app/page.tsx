@@ -7,7 +7,10 @@ import { useInput } from "./hooks/useInput";
 import { useRef, RefObject, useEffect } from "react";
 
 export default function Home() {
-  const { isMoving, direction, position, onKeyDown, onKeyUp } = useInput();
+  const { isMoving, direction, position, onKeyDown, onKeyUp } = useInput({
+    mapData,
+    initialPosition: [16, 20],
+  });
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,8 +27,8 @@ export default function Home() {
       tabIndex={-1}
       ref={divRef}
     >
-      <Grid data={mapData} position={position}></Grid>
       <Player direction={direction} isMoving={isMoving} />
+      <Grid data={mapData} position={position}></Grid>
     </div>
   );
 }

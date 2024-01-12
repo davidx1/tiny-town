@@ -9,7 +9,7 @@ export const tree1Info = { name, anchor, footprint };
 export const Tree1 = () => {
   return (
     <div
-      className="bg-tile-set w-24 h-24 bg-clip-content pointer-events-none "
+      className="bg-tile-set w-24 h-24 bg-clip-content pointer-events-none z-20"
       style={{
         backgroundPosition: "-32px -0px",
         backgroundSize: "4480px 4800px",

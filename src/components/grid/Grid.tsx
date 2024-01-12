@@ -42,31 +42,24 @@ export default function Grid({
     transform: `translate(-${position[1] * 3}rem, -${position[0] * 3}rem)`,
   };
 
-  const wrapperClass = position
-    ? "fixed top-1/2 left-1/2 transition-transformduration-1000"
-    : "";
+  const wrapperClass = position ? "fixed top-1/2 left-1/2" : "";
 
   return (
     <div className={wrapperClass}>
       <div
-        className={`transition-transform ease-linear duration-100`}
+        className={`transition-transform ease-linear duration-150`}
         style={style}
       >
         {data.map((row, y) => (
           <div key={y} className="flex">
             {row.map((cell, x) => {
-              //Pick the background color and image
-              const back = !cell.occupierId ? "bg-green-100" : "bg-red-100";
-
               return (
                 <div
                   key={x}
-                  className={`bg-tile-set relative inline-block size-12 min-w-12 min-h-12 border-slate-300 ${
-                    isDevMode && "border"
-                  }`}
+                  className={`bg-tile-set relative inline-block size-12 min-w-12 min-h-12`}
                   onClick={() => onCellClick?.([y, x])}
                   style={{
-                    backgroundPosition: "-3506px -1728px",
+                    backgroundPosition: "-3504px -1728px",
                     backgroundSize: "6720px 7200px",
                   }}
                 >

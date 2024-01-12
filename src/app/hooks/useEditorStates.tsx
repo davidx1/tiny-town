@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Cell, CoordinateType, FeatureType } from "../type";
 import uid from "tiny-uid";
 
-export const useEditorStates = () => {
-  const [mapData, setMapData] = useState<Cell[][]>();
+export const useEditorStates = (initialMapData?: Cell[][]) => {
+  const [mapData, setMapData] = useState<Cell[][]>(initialMapData || []);
   const [featureToAdd, setFeatureToAdd] = useState<FeatureType>();
   const [viewMode, setViewMode] = useState<"map" | "code">("map");
   const [editorMode, setEditorMode] = useState<"tile" | "occupied">();
@@ -13,12 +13,32 @@ export const useEditorStates = () => {
 
   const initMap = (width: number, height: number) => {
     const initMap: Cell[][] = Array.from({ length: height }, () =>
-      Array.from({ length: width }, () => ({
-        occupierId: null,
-        groundType: "grass",
-        comp: null,
-      })),
+      Array.from(
+        { length: width },
+        () =>
+          ({
+            occupierId: null,
+            groundType: "grass",
+            comp: null,
+          }) as Cell,
+      ),
+    ).map((row, y) =>
+      row.map((cell, x) => {
+        if (y < 5 || y > height - 6 || x < 5 || x > width - 6) {
+          const newId = uid();
+          return {
+            occupierId: newId,
+            groundType: "grass",
+            comp: {
+              name: "tree1",
+              anchor: [1, 0],
+            },
+          } as Cell;
+        }
+        return cell;
+      }),
     );
+
     setMapData(initMap);
   };
 
@@ -90,7 +110,7 @@ export const useEditorStates = () => {
                 i === cell[0] && j === cell[1]
                   ? {
                       name: featureToAdd.name,
-                      anchor: anchor,
+                      anchor: featureToAdd.anchor,
                     }
                   : mapData[i][j].comp,
             };

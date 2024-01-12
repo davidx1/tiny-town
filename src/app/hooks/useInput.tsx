@@ -1,18 +1,21 @@
 import { useState, useRef, useEffect, KeyboardEventHandler } from "react";
-import { mapData } from "../map";
-import { CoordinateType, DirectionType } from "../type";
+import { Cell, CoordinateType, DirectionType } from "../type";
 
-export const useInput = () => {
+export interface useInputInitProp {
+  mapData: Cell[][];
+  initialPosition: CoordinateType;
+}
+
+export const useInput = ({ mapData, initialPosition }: useInputInitProp) => {
   const [isMoving, setIsMoving] = useState<boolean>(false);
   const [keyDownCount, setKeyDownCount] = useState<number>(0);
-  const [position, setPosition] = useState<CoordinateType>([0, 0]);
+  const [position, setPosition] = useState<CoordinateType>(initialPosition);
   const [direction, setCharDirection] = useState<DirectionType>("left");
   const timeoutRef = useRef<NodeJS.Timeout>();
   const directionRef = useRef<DirectionType>("left");
 
   useEffect(() => {
     const move = () => {
-      setCharDirection(directionRef.current);
       setPosition((position) => {
         const directionDeltaMap = {
           left: [0, -1],
@@ -25,7 +28,8 @@ export const useInput = () => {
           position[0] + delta[0],
           position[1] + delta[1],
         ];
-        return mapData[newPosition[0]]?.[newPosition[1]]?.isFree
+        setCharDirection(directionRef.current);
+        return mapData[newPosition[0]]?.[newPosition[1]]?.occupierId === null
           ? newPosition
           : position;
       });
@@ -34,7 +38,7 @@ export const useInput = () => {
       move();
       timeoutRef.current = setInterval(() => {
         move();
-      }, 110);
+      }, 165);
     }
 
     return () => {

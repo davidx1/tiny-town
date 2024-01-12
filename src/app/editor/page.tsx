@@ -10,6 +10,7 @@ import { House3, house3Info } from "@/components/houses/House3";
 import { House4, house4Info } from "@/components/houses/House4";
 import { House5, house5Info } from "@/components/houses/House5";
 import { tree1Info, Tree1 } from "@/components/houses/Tree1";
+import { mapData as initialMapData } from "../map";
 
 export default function Home() {
   const {
@@ -22,7 +23,7 @@ export default function Home() {
     editorMode,
     setEditorMode,
     initMap,
-  } = useEditorStates();
+  } = useEditorStates(initialMapData);
 
   const wInputRef = useRef<HTMLInputElement>(null);
   const hInputRef = useRef<HTMLInputElement>(null);
@@ -38,7 +39,9 @@ export default function Home() {
     }
   };
 
-  useEffect(() => initMap(Number(10), Number(10)), []);
+  async function handleSaveObjectAsJson() {
+    //TODO: to complete
+  }
 
   return (
     <div
@@ -75,55 +78,48 @@ export default function Home() {
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-80"></div>
         )}
       </div>
-      <div className="w-5/6 flex flex-col p-8 pt-20 flex-1 gap-2 bg-slate-400 ">
-        <div className=" overflow-scroll">
-          {!mapData ? (
-            <div className="w-36 m-auto">
-              <form
-                className="flex flex-col gap-2"
-                onSubmit={handleFormSubmission}
-              >
-                <label htmlFor="width-input">Width:</label>
-                <input id="width-input" type="number" ref={wInputRef} />
+      <div className="w-5/6 h-screen flex flex-col p-8 pt-20 flex-1 gap-2 bg-slate-400 ">
+        {!mapData ? (
+          <div className="w-36 m-auto">
+            <form
+              className="flex flex-col gap-2"
+              onSubmit={handleFormSubmission}
+            >
+              <label htmlFor="width-input">Width:</label>
+              <input id="width-input" type="number" ref={wInputRef} />
 
-                <label htmlFor="height-input">Height:</label>
-                <input id="height-input" type="number" ref={hInputRef} />
-                <button className="px-2 p-2 bg-white" type="submit">
-                  Submit
-                </button>
-              </form>
+              <label htmlFor="height-input">Height:</label>
+              <input id="height-input" type="number" ref={hInputRef} />
+              <button className="px-2 p-2 bg-white" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        ) : viewMode === "map" ? (
+          <div className="flex flex-col gap-6 h-full w-full">
+            <div className="flex bg-white items-center justify-center gap-6 p-4">
+              <button onClick={() => setViewMode("code")}>
+                Switch To Code View
+              </button>
+              <button onClick={handleSaveObjectAsJson}>Save</button>
             </div>
-          ) : viewMode === "map" ? (
-            <>
-              <div className="flex items-center justify-center gap-2 p-6">
-                <button onClick={() => setViewMode("code")}>
-                  Switch To Code View
-                </button>
-              </div>
-              <div className="flex-1">
-                <Grid isDevMode data={mapData} onCellClick={onCellClick}></Grid>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="flex items-center justify-center gap-2 p-6">
-                <button onClick={() => setViewMode("map")}>
-                  Switch To Map View
-                </button>
-              </div>
-              <div className="p-2 bg-gray-50">
-                <button
-                  onClick={() =>
-                    window.navigator.clipboard.writeText(mapData.toString())
-                  }
-                >
-                  Copy
-                </button>
-                <JSONPretty data={mapData}></JSONPretty>
-              </div>
-            </>
-          )}
-        </div>
+            <div className="flex-1 overflow-scroll p-24">
+              <Grid isDevMode data={mapData} onCellClick={onCellClick}></Grid>
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-6 h-full w-full">
+            <div className="flex bg-white items-center justify-center gap-6 p-4">
+              <button onClick={() => setViewMode("map")}>
+                Switch To Map View
+              </button>
+              <button onClick={handleSaveObjectAsJson}>Save</button>
+            </div>
+            <div className="p-2 bg-gray-50  overflow-scroll">
+              <JSONPretty data={mapData}></JSONPretty>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
