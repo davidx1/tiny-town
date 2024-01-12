@@ -47,7 +47,7 @@ export default function Grid({
   return (
     <div className={wrapperClass}>
       <div
-        className={`transition-transform ease-linear duration-150`}
+        className={`transition-transform ease-linear duration-100`}
         style={style}
       >
         {data.map((row, y) => (
@@ -61,6 +61,7 @@ export default function Grid({
                   style={{
                     backgroundPosition: "-3504px -1728px",
                     backgroundSize: "6720px 7200px",
+                    backgroundColor: "#97d883",
                   }}
                 >
                   {cell.comp && (

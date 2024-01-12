@@ -38,7 +38,7 @@ export const useInput = ({ mapData, initialPosition }: useInputInitProp) => {
       move();
       timeoutRef.current = setInterval(() => {
         move();
-      }, 165);
+      }, 115);
     }
 
     return () => {
