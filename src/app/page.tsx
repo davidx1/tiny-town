@@ -21,14 +21,16 @@ export default function Home() {
 
   return (
     <div
-      className="relative overflow-hidden w-full min-h-screen bg-slate-700"
+      className="relative overflow-hidden w-full min-h-screen max-h-screen bg-slate-700"
       onKeyDown={onKeyDown}
       onKeyUp={onKeyUp}
       tabIndex={-1}
       ref={divRef}
     >
-      <Player direction={direction} isMoving={isMoving} />
-      <Grid data={mapData} position={position}></Grid>
+      <div className="relative" style={{ top: "49vh", left: "49vw" }}>
+        <Player direction={direction} isMoving={isMoving} />
+        <Grid data={mapData} position={position}></Grid>
+      </div>
     </div>
   );
 }

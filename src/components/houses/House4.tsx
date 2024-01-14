@@ -17,7 +17,7 @@ export const House4 = () => {
     <div
       className="bg-tile-set w-48 h-60 bg-clip-content px-4 pointer-events-none"
       style={{
-        backgroundPosition: "-1680px -2180px",
+        backgroundPosition: "-1674px -2180px",
         backgroundSize: "4480px 4800px",
       }}
     ></div>

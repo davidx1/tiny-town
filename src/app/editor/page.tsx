@@ -44,11 +44,8 @@ export default function Home() {
   }
 
   return (
-    <div
-      className="flex relative overflow-hidden w-full h-screen"
-      tabIndex={-1}
-    >
-      <div className="overflow-scroll w-1/6 flex flex-col border-r-2 pt-20 pb-6 bg-slate-400 relative justify-between ">
+    <div className="flex overflow-hidden w-full h-screen" tabIndex={-1}>
+      <div className="overflow-scroll w-1/6 flex flex-col border-r-2 pt-20 pb-6 bg-slate-400 justify-between ">
         <div className="flex flex-col items-center">
           <button onClick={() => onFeatureSelection(house1Info)}>
             <House1 />
@@ -103,7 +100,7 @@ export default function Home() {
               </button>
               <button onClick={handleSaveObjectAsJson}>Save</button>
             </div>
-            <div className="flex-1 overflow-scroll p-24">
+            <div className="flex-1 overflow-scroll relative p-24">
               <Grid isDevMode data={mapData} onCellClick={onCellClick}></Grid>
             </div>
           </div>

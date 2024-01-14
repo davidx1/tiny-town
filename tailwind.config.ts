@@ -5,6 +5,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "tile-set": "url('/tileset.png')",
+        "char1-set": "url('/char1.png')",
       },
     },
   },

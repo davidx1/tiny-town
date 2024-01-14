@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="flex min-h-screen flex-col items-center">
-          <nav className="bg-white w-full fixed z-10 ">
+          <nav className="bg-white w-full fixed z-50 ">
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
               <Link href="/" className="font-semibold text-xl tracking-tight">
                 Tiny Town
