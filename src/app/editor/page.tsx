@@ -17,6 +17,7 @@ export default function Home() {
     mapData,
     onFeatureSelection,
     onDeleteSelection,
+    onTriggerSelection,
     onCellClick,
     viewMode,
     setViewMode,
@@ -69,6 +70,11 @@ export default function Home() {
         <div className="p-4 text-center">
           <button className="bg-white p-2 px-4" onClick={onDeleteSelection}>
             Delete
+          </button>
+        </div>
+        <div className="p-4 text-center">
+          <button className="bg-white p-2 px-4" onClick={onTriggerSelection}>
+            Trigger
           </button>
         </div>
         {!mapData && (

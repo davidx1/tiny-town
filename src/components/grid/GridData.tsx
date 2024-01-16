@@ -40,15 +40,15 @@ export const GridData = memo(function GridData({
                 />
 
                 {cell.comp && renderComp(cell.comp?.name)}
-                {isDevMode && (cell.occupierId || cell.triggerId) && (
-                  <div className="absolute z-50 border h-12 w-12">
-                    <span className="bg-red-500 bg-opacity-40 block h-6 w-12 text-xs">
-                      {cell.occupierId}
-                    </span>
-                    <span className="bg-blue-500 bg-opacity-40 block h-6 w-12 text-xs">
-                      {cell.triggerId}
-                    </span>
-                  </div>
+                {isDevMode && cell.occupierId && (
+                  <span className="absolute z-50 border bg-red-500 bg-opacity-40 block h-12 w-12 text-xs">
+                    {cell.occupierId}
+                  </span>
+                )}
+                {isDevMode && cell.triggerId && (
+                  <span className="absolute z-50 border bg-blue-500 bg-opacity-40 block h-12 w-12 text-xs">
+                    {cell.triggerId}
+                  </span>
                 )}
               </div>
             );
