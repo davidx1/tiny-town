@@ -12,25 +12,34 @@ const footprint = [
 
 export const house2Info = { name, anchor, footprint };
 
+export const House2Img = ({ className = "px-2" }: { className?: string }) => (
+  <div
+    className={`bg-tile-set bg-clip-content w-48 h-60 pointer-events-none ${className}`}
+    style={{
+      backgroundPosition: "-1290px -2173px",
+      backgroundSize: "4480px 4800px",
+    }}
+  ></div>
+);
 export const House2 = () => {
   return (
     <>
       <div
-        className="absolute z-40 bg-tile-set w-48 h-40 bg-clip-content px-8 pointer-events-none"
+        className="absolute z-40 w-48 h-40 pointer-events-none overflow-hidden"
         style={{
           transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
-          backgroundPosition: "-1290px -2173px",
-          backgroundSize: "4480px 4800px",
         }}
-      ></div>
+      >
+        <House2Img className="px-8" />
+      </div>
       <div
-        className="absolute z-20 bg-tile-set w-48 h-60 bg-clip-content pl-4 pointer-events-none"
+        className="absolute z-20 w-48 h-60 pointer-events-none"
         style={{
           transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
-          backgroundPosition: "-1290px -2173px",
-          backgroundSize: "4480px 4800px",
         }}
-      ></div>
+      >
+        <House2Img className="pl-4" />
+      </div>
     </>
   );
 };

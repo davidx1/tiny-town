@@ -3,6 +3,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "fvn5xtp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11,6 +12,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9z5q78g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -19,6 +21,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "03r2b6v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -27,6 +30,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c7f8m1e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -35,6 +39,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1c3ewaq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -43,6 +48,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ivx6gks",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -51,6 +57,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9g2a89h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -59,6 +66,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "60omsmo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -67,6 +75,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ir6s8ek",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -75,6 +84,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6ndcxeu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -83,6 +93,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1x1n8rx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -91,6 +102,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1davui6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -99,6 +111,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9h5nykt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -107,6 +120,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zo7eld4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -115,6 +129,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "45gq6ut",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -123,6 +138,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kd6cial",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -131,6 +147,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2g177w6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -139,6 +156,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gzdidh0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -147,6 +165,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "amzrmh5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -155,6 +174,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9wld4s7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -163,6 +183,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "942i0s0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -171,6 +192,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kbbf0ig",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -179,6 +201,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vmjhipt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -187,6 +210,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zzyysji",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -195,6 +219,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "nx5m4mb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -203,6 +228,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "p95l96p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -211,6 +237,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6jzlwxq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -219,6 +246,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3aqvbg0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -227,6 +255,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cu4t1qc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -235,6 +264,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "q82lsox",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -243,6 +273,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rnrp7x4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -251,6 +282,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ecvsmgu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -259,6 +291,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tkit8zw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -267,6 +300,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "i8lfhso",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -275,31 +309,37 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "okw86c2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -308,6 +348,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "52ag64a",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -316,6 +357,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zk8ub0i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -324,6 +366,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xgagu9b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -332,6 +375,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wxu0287",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -340,6 +384,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ow1x2t9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -348,6 +393,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zmnh893",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -356,6 +402,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "89wq0vr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -364,6 +411,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0tz85zt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -372,6 +420,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gbfn83s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -380,6 +429,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6w1qmrn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -390,6 +440,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "ie7n1yb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -398,6 +449,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xtjfbsr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -406,6 +458,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "s32hz70",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -414,6 +467,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "si13lnc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -422,6 +476,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "schm0gn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -430,6 +485,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "if3037l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -438,6 +494,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uxg1u9x",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -446,6 +503,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z757t1h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -454,6 +512,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0drtnjs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -462,6 +521,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8plc6k4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -470,6 +530,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ajtpnse",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -478,6 +539,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vmdzqpe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -486,6 +548,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l2tbyqw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -494,6 +557,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sm7rbb4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -502,6 +566,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "a72aaom",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -510,6 +575,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7qesfz0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -518,6 +584,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2n6jn88",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -526,6 +593,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9m5ck6f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -534,6 +602,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hlqzgav",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -542,6 +611,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "febk80w",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -550,6 +620,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u631mbj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -558,6 +629,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "g1g9kpw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -566,6 +638,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "dl1fjtg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -574,6 +647,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pn1sca9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -582,16 +656,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "au68ysu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -600,6 +677,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r3og5ka",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -608,6 +686,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pjpqir8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -616,16 +695,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "jra8ize",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -634,6 +716,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yxk2joo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -642,6 +725,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sscj2mh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -650,6 +734,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2si72",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -658,21 +743,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ej3vpvx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -681,6 +770,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8h30gix",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -689,6 +779,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ma5efv8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -697,6 +788,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5coyn8k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -705,6 +797,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zsrilkk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -713,6 +806,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3hhb5dj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -721,6 +815,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ty4pxba",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -729,6 +824,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zgfzmmt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -737,6 +833,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "728r9ng",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -745,6 +842,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "e2ifmf3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -753,6 +851,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t15433g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -761,6 +860,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yde0ggk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -771,6 +871,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "25cmyy4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -779,6 +880,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ikk0a09",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -787,11 +889,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "phmquhj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -800,11 +904,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "iipemyy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -813,6 +919,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ncs5p4q",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -821,6 +928,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "om8dmvs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -829,6 +937,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "d5t1qzd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -837,6 +946,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6ti2gpe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -845,6 +955,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "crqj1x8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -853,6 +964,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8avtglo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -861,6 +973,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lp6uj37",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -869,6 +982,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9fvr944",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -877,6 +991,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u53tyoz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -885,6 +1000,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fsexpvm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -893,6 +1009,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zz8zrqe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -901,6 +1018,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tp3mblq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -909,6 +1027,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wtk6pq3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -917,6 +1036,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "enyh9sg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -925,6 +1045,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "77adm45",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -933,6 +1054,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "i3naxbf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -941,6 +1063,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fm5pjgw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -949,6 +1072,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jepp0ag",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -957,6 +1081,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wh05xgt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -965,11 +1090,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fnpyvb9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -978,6 +1105,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kgra2jg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -986,6 +1114,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yxelvlu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -994,6 +1123,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ra6vxtu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1002,11 +1132,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "0nh7iw2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1015,6 +1147,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pjlqmvj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1023,6 +1156,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ek6fsfs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1031,26 +1165,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vaq3epp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1059,6 +1198,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "juo71bv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1067,6 +1207,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jseb1h8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1075,6 +1216,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9h3wv27",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1083,6 +1225,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "49k07ni",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1091,6 +1234,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "iskd0mr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1099,6 +1243,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1ylegi7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1107,6 +1252,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "us5k1sh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1115,6 +1261,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b76qgq5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1123,6 +1270,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "d4t0jrj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1131,6 +1279,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7vj1ubz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1139,6 +1288,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "d3r17d2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1149,6 +1299,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "oic0pz6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1157,6 +1308,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lssxvn2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1165,6 +1317,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "81bacew",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1173,6 +1326,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cljwl39",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1181,6 +1335,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8843yoi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1189,6 +1344,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kgl2ls1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1197,6 +1353,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wmft3tm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1205,6 +1362,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6k5lsfp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1213,11 +1371,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "z13db1v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1226,6 +1386,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y4p2fad",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1234,6 +1395,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z4447im",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1242,6 +1404,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4rt16mr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1250,6 +1413,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sosgq7c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1258,6 +1422,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "m4b8pmz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1266,6 +1431,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0g0bjpz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1274,6 +1440,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ni5m4y9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1282,16 +1449,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vy01lij",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1300,6 +1470,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v4jpo1e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1308,6 +1479,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ecp00ca",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1316,6 +1488,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y3xy23i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1324,6 +1497,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "s4ra42x",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1332,6 +1506,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xx2b5rd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1340,6 +1515,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "p97qlb8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1348,6 +1524,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "p9xmoxw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1356,6 +1533,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cd3lxo4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1364,6 +1542,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1g3m5ok",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1372,6 +1551,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7t1o9u1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1380,6 +1560,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9f36xvp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1388,6 +1569,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0192r68",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1396,6 +1578,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tz5xyo4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1404,21 +1587,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "1klik",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1427,6 +1614,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l9list8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1435,6 +1623,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "btj3lc8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1443,6 +1632,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3fl7q7u",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1451,6 +1641,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w40nvya",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1459,6 +1650,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zkn1z3v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1467,6 +1659,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t67g2cg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1475,6 +1668,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z1bshcf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1483,6 +1677,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5s2m4um",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1491,6 +1686,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u9j56t4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1499,6 +1695,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "clnhqfy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1507,6 +1704,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b6oer78",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1515,6 +1713,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "noqa74i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1523,6 +1722,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "m0sd3qz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1533,6 +1733,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "elzxd15",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1541,6 +1742,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4ii2yul",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1549,11 +1751,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qe1f9v2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1562,6 +1766,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "nga4wwd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1570,11 +1775,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3pamytc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1583,6 +1790,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "10booll",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1591,6 +1799,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "904zmj0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1599,6 +1808,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u89dak2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1607,6 +1817,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ibgky94",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1615,6 +1826,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5a2qs9y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1623,6 +1835,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xzcvtai",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1631,6 +1844,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kbjvm30",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1639,6 +1853,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ulwdrvq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1647,6 +1862,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o57cd61",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1655,16 +1871,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "cp4fxpq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1673,6 +1892,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1w07dqg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1681,6 +1901,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "24m6xz1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1689,6 +1910,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "of37r0b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1697,6 +1919,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qwfxk0a",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1705,6 +1928,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2v2948v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1713,6 +1937,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "md9wflh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1721,6 +1946,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u0pxf18",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1729,6 +1955,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ob1srzi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1737,6 +1964,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "327u1dt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1745,6 +1973,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "x2aiayh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1753,6 +1982,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ra475qw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1761,6 +1991,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uybl17r",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1769,6 +2000,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hnzwn39",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1777,31 +2009,37 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "o0js559",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1810,11 +2048,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "d3yl6yi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1823,6 +2063,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ytl8qlx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1831,6 +2072,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v41kgod",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1839,6 +2081,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "q1gxqxe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1847,6 +2090,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "und12yp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1855,6 +2099,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t0bhfqy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1863,6 +2108,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1tzyqei",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1871,6 +2117,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qb7y5th",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1879,6 +2126,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "thdgeqp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1887,11 +2135,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "v8rl71l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1902,6 +2152,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "xvdxq6l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1910,6 +2161,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "e93efri",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1918,6 +2170,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1h91txs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1926,6 +2179,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "dgpw7ep",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1934,6 +2188,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w04bqz1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1942,6 +2197,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2rldx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1950,6 +2206,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ky19i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1958,6 +2215,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5e2s8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1966,6 +2224,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2id5k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -1974,66 +2233,79 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ty5au",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2042,6 +2314,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "twx18",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2050,11 +2323,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "q5x16",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2063,21 +2338,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "rkh7q",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2086,76 +2365,91 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xly1l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2164,6 +2458,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bqtw0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2172,6 +2467,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0jlo5cl",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2180,6 +2476,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8lica8f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2188,6 +2485,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hu0vfm9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2196,6 +2494,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o3dzht1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2204,6 +2503,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zsbf29n",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2214,6 +2514,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "x1qnney",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2222,6 +2523,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1co64i0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2230,11 +2532,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "411qtmd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2243,6 +2547,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xewi9ys",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2251,6 +2556,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2rr0x",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2259,6 +2565,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vun5d",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2267,16 +2574,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "tfp2y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2285,61 +2595,73 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "t7zr8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2348,11 +2670,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "zekmd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2361,66 +2685,79 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ke0jd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2429,36 +2766,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "0nf7k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2467,11 +2811,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "1uw6y37",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2480,6 +2826,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7jor014",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2488,6 +2835,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5o6xz16",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2496,11 +2844,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "m3p2eoh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2511,6 +2861,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "u2ye12e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2519,6 +2870,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sr0wfz3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2527,6 +2879,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b8irdy3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2535,6 +2888,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t2wj079",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2543,6 +2897,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b02gxbb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2551,16 +2906,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "66ndr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2569,76 +2927,91 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qcdbj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2647,111 +3020,133 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vh857",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vh857",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "15cvw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2760,6 +3155,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2hfsdcu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2768,6 +3164,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "leufilm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2776,6 +3173,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uwhakw7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2784,11 +3182,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "4sm3u8q",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2799,6 +3199,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "3l3g4ig",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2807,11 +3208,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "6phtenw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2820,6 +3223,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xl98ecf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2828,6 +3232,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2eqztif",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2836,16 +3241,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "stdu6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2854,11 +3262,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house5",
@@ -2867,71 +3277,85 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3bxv4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -2940,26 +3364,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vh857",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vh857",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house2",
@@ -2968,56 +3397,67 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house5",
@@ -3026,16 +3466,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5jcev",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3044,16 +3487,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "712mury",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3062,6 +3508,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gt9e2wt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3070,6 +3517,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9mnkglb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3078,6 +3526,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "10ekucz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3086,6 +3535,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vutxo75",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3096,6 +3546,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "km7m38c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3104,6 +3555,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uu2ngyt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3112,6 +3564,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "toqeqio",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3120,6 +3573,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2jycbss",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3128,6 +3582,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gum2mce",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3136,56 +3591,67 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "foa91",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house5",
@@ -3194,111 +3660,133 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vh857",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "1l4rq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3307,21 +3795,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb1vz",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qx13t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3330,21 +3822,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lk26qjn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3353,6 +3849,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j9fmn8q",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3361,11 +3858,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "e2p5gsc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3374,6 +3873,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "oriqv7b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3384,6 +3884,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "v0dud3z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3392,6 +3893,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "adp1r31",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3400,6 +3902,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "931ds8o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3408,6 +3911,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4dm2xpe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3416,6 +3920,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3rekm11",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3424,71 +3929,85 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5u7l1",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xixmq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3497,6 +4016,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lfojh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3505,131 +4025,157 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xzgb07z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3638,6 +4184,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b3yc8ic",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3646,11 +4193,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "4cbu3gq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3659,6 +4208,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7av37ln",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3669,6 +4219,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "h5qax80",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3677,6 +4228,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j3hrjyn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3685,6 +4237,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y0h2mjg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3693,6 +4246,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "304uqrp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3701,6 +4255,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1nd0djm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3709,191 +4264,229 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "8lijg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3902,16 +4495,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "194j3a6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3920,16 +4516,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qwkfjrj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3938,6 +4537,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3y9txv7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3948,6 +4548,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "1vtu08m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3956,6 +4557,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "dl58a25",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3964,6 +4566,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9h06eec",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3972,6 +4575,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xtm98lm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3980,6 +4584,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9e6ti2h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -3988,181 +4593,217 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fp5ih",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4171,21 +4812,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3ebzc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4194,6 +4839,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tyatyq2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4202,6 +4848,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hvlv6xb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4210,6 +4857,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uqh0upj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4218,6 +4866,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "plypg2s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4226,6 +4875,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "st5pdbo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4236,6 +4886,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "uhmvwie",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4244,6 +4895,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zl29lug",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4252,6 +4904,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uu5ch3b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4260,6 +4913,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "riv5n64",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4268,6 +4922,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "h4qg77z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4276,36 +4931,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house5",
@@ -4314,161 +4976,193 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xyszo",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xyszo",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ptx4s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4477,6 +5171,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ll80g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4485,6 +5180,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "n39op2g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4493,6 +5189,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wtbk6oq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4501,6 +5198,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "85hx8mk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4509,6 +5207,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7ge0ceq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4517,6 +5216,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yqzszqm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4527,6 +5227,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "9tei4nw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4535,6 +5236,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z52gsgo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4543,6 +5245,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8b4vcra",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4551,6 +5254,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gtzo35v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4559,6 +5263,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yxcic5y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4567,81 +5272,97 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ned0p",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xyszo",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xyszo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house4",
@@ -4650,121 +5371,145 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "01urp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4773,6 +5518,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ix4g1bg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4781,6 +5527,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0gc9mot",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4789,6 +5536,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jhrcvgs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4797,6 +5545,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cnws14u",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4805,6 +5554,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bfhropf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4815,6 +5565,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "qsgodki",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4823,6 +5574,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "59rvhhq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4831,6 +5583,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cgf67pc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4839,6 +5592,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zbdc7mr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4847,6 +5601,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y6pfmzf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -4855,146 +5610,175 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "xyszo",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house1",
@@ -5003,26 +5787,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house3",
@@ -5031,36 +5820,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "stm1vku",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5069,6 +5865,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pgf1lfg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5077,6 +5874,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "60uhf53",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5085,6 +5883,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t4kpy0o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5093,6 +5892,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0wwo5qx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5103,6 +5903,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "8ug7kte",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5111,11 +5912,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "2em489z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5124,6 +5927,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "13vyupy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5132,6 +5936,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yjgcz1s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5140,201 +5945,241 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l99gr",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lgyok",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "r5l6a",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5343,6 +6188,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vm3l1lw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5351,11 +6197,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "y3oxv0e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5364,6 +6212,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rwnezqe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5372,6 +6221,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2oyu99t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5382,6 +6232,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "31u1aqo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5390,6 +6241,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wz4ml4p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5398,6 +6250,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "alclr3g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5406,6 +6259,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yqwkdax",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5414,6 +6268,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1fwmjl1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5422,36 +6277,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "cwaqr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5460,6 +6322,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2x2f5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5468,6 +6331,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r5ns9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5476,6 +6340,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uhleq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5484,156 +6349,187 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "gkym21s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5642,6 +6538,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bfoa87y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5650,6 +6547,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sfisuzg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5658,6 +6556,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b7s29gv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5666,6 +6565,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ogq2n1l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5676,6 +6576,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "5khfo4y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5684,6 +6585,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bvimikj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5692,6 +6594,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j4qs0k0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5700,6 +6603,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "39jvp8h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5708,21 +6612,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "2089j",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5731,6 +6639,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rd5o7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5739,6 +6648,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b9htg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5747,6 +6657,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fr6ie",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5755,171 +6666,205 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qqpde",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5928,6 +6873,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kt6h4t6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5936,6 +6882,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "83kyrh2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5944,6 +6891,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xnrvj9z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5952,11 +6900,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "o99xo51",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5967,6 +6917,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "3tzpe30",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5975,6 +6926,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c7j9zs6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5983,6 +6935,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hwq7myz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5991,6 +6944,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "luvdu0p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -5999,6 +6953,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yu0rqn0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6007,206 +6962,247 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "tplaojq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6215,6 +7211,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "30bmda7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6223,16 +7220,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "r2nulkv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6243,6 +7243,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "208ppt1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6251,6 +7252,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "p7eh6r5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6259,6 +7261,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9oqmkyr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6267,6 +7270,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "grte558",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6275,6 +7279,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rbihgg0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6283,81 +7288,97 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "tibn4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6366,66 +7387,79 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house3",
@@ -6434,26 +7468,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house1",
@@ -6462,21 +7501,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "a4j5y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6485,11 +7528,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ardxa",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6498,6 +7543,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9botsof",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6506,6 +7552,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rbkcnac",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6514,6 +7561,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "s285k6n",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6522,6 +7570,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "iz0hkg2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6530,6 +7579,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qvctdbu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6540,6 +7590,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "08985fc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6548,6 +7599,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lg4q7fd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6556,6 +7608,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b1j4jnr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6564,216 +7617,259 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fblc2",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fblc2",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lnwea",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3w1f8",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "l44e4kn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6782,6 +7878,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ezete99",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6790,6 +7887,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l20s4ky",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6798,6 +7896,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xigsqyz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6806,6 +7905,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ecmbyal",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6816,6 +7916,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "fz493nd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6824,6 +7925,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zoiwxxo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6832,6 +7934,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9bs18a1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6840,6 +7943,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5k0o7vc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6848,6 +7952,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jqsc89o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6856,36 +7961,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fblc2",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fblc2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "house2",
@@ -6894,81 +8006,97 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "rycxg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -6977,91 +8105,109 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "zs3gqc0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7070,6 +8216,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "detnp21",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7078,6 +8225,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xyeo0ac",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7086,6 +8234,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1hh0dos",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7094,6 +8243,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8w83t5f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7104,6 +8254,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "7n39mob",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7112,6 +8263,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kgvay64",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7120,6 +8272,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jcs0m8k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7128,6 +8281,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qoqsjis",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7136,6 +8290,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xgmryfg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7144,11 +8299,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ippiu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7157,16 +8314,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ty9r9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7175,161 +8335,193 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "fblc2",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "oo1wy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7338,11 +8530,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qc377",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7351,6 +8545,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tis8i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7359,6 +8554,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qas9isq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7367,6 +8563,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "aotn9e6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7375,6 +8572,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pu6cagx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7383,6 +8581,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "byf1cos",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7391,6 +8590,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "369s26s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7401,6 +8601,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "1c761vl",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7409,6 +8610,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qvd82xs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7417,6 +8619,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "px4gu0c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7425,6 +8628,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "arxkv6m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7433,6 +8637,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "38cuw6n",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7441,6 +8646,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z9oju",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7449,201 +8655,241 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "t6zfgx3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7652,6 +8898,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b0hj2y2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7660,6 +8907,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "511gix5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7668,6 +8916,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tcj5gln",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7676,6 +8925,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "eweuxnd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7686,6 +8936,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "rb8e8yw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7694,6 +8945,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v2pq8aq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7702,6 +8954,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xa9jqv8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7710,6 +8963,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9om01pc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7718,6 +8972,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7fntemu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7726,6 +8981,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o7lcv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7734,71 +8990,85 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "imskw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7807,121 +9077,145 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "t562i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7930,6 +9224,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "74ev4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7938,6 +9233,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "deggm53",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7946,6 +9242,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r9rm0t9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7954,16 +9251,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "wvphd1u",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7974,6 +9274,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "2flw2ox",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7982,6 +9283,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zgic6bk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7990,6 +9292,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "55ix5kl",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -7998,6 +9301,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cpcg22y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8006,6 +9310,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y8fnui3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8014,51 +9319,61 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vjg1t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8067,21 +9382,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "r947h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8090,6 +9409,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4cf5f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8098,6 +9418,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1164o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8106,101 +9427,121 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "5rbtb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8209,11 +9550,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vck5i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8222,6 +9565,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5tn57",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8230,6 +9574,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uvjgd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8238,6 +9583,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lmaolc2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8246,6 +9592,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bdde3ue",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8254,6 +9601,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5bxym7t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8262,11 +9610,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ezrlayn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8277,6 +9627,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "qsxzmqq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8285,6 +9636,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5npzvel",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8293,6 +9645,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t7upwsb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8301,6 +9654,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r2d8t4h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8309,6 +9663,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xxjtlet",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8317,41 +9672,49 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lqngd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8360,6 +9723,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3x5hq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8368,36 +9732,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3be9c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8406,6 +9777,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c9m72",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8414,6 +9786,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "h3465",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8422,21 +9795,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "cx03b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8445,16 +9822,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "e585o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8463,36 +9843,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "bb3n2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8501,36 +9888,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "mtvbd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8539,6 +9933,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kltkk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8547,6 +9942,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qjgasuh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8555,6 +9951,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "x4s1xy2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8563,6 +9960,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8lwhia6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8571,6 +9969,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "i8p7i8w",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8579,6 +9978,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "eqhvtno",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8589,6 +9989,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "od2lda8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8597,6 +9998,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "h89k2ds",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8605,6 +10007,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ot31ws3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8613,6 +10016,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hvvxy82",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8621,6 +10025,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5yqmxbm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8629,31 +10034,37 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "mwcht",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8662,21 +10073,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "m2yiq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8685,6 +10100,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tk0tn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8693,11 +10109,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "uc7zo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8706,6 +10124,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ich97",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8714,6 +10133,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1cf4c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8722,11 +10142,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "8lg84",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8735,26 +10157,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "u0bko",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8763,6 +10190,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "um9rg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8771,6 +10199,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ycc67",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8779,11 +10208,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "c7m0v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8792,16 +10223,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "syxth",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8810,36 +10244,43 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "y4k7k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8848,11 +10289,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "r5lc7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8861,6 +10304,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "atbgu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8869,6 +10313,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6k901",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8877,6 +10322,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hvq6v6c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8885,6 +10331,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w3604lj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8893,6 +10340,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9fq37bi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8901,11 +10349,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "qp1277c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8916,6 +10366,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "us3e3ju",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8924,6 +10375,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xcpqi6z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8932,6 +10384,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "e0ny0z0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8940,6 +10393,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tfxp8hg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8948,6 +10402,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mnmtr3n",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8956,16 +10411,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "nxtkb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8974,11 +10432,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "1ulnp",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -8987,11 +10447,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ys82e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9000,11 +10462,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "ocnn3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9013,6 +10477,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "g2l6m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9021,16 +10486,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "sol03",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9039,11 +10507,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "hrcv3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9052,6 +10522,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zszgb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9060,6 +10531,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j1iw9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9068,21 +10540,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lfrz0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9091,6 +10567,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c9vbm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9099,6 +10576,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hz59g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9107,6 +10585,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "p7vru",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9115,11 +10594,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "f5c0y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9128,51 +10609,61 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "3saby",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9181,6 +10672,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ueff3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9189,11 +10681,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "mnwo3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9202,6 +10696,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "cuoht",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9210,6 +10705,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8qase1f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9218,6 +10714,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xgp4y06",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9226,6 +10723,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jrfp0ky",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9234,6 +10732,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jh6ly7g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9242,6 +10741,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v8uf1dy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9252,6 +10752,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "bqi1dbx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9260,6 +10761,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ws7d2a8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9268,6 +10770,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ytl2b6f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9276,6 +10779,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pbcssn4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9284,6 +10788,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vf3sx4s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9292,6 +10797,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "z632pn1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9300,11 +10806,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "1mqci86",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9313,6 +10821,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pjivg9s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9321,6 +10830,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mtjuvzu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9329,6 +10839,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1my0d38",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9337,6 +10848,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7u4cify",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9345,6 +10857,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gwp2xdo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9353,6 +10866,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6tcv292",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9361,6 +10875,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lduvx7e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9369,6 +10884,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uri5pct",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9377,6 +10893,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w3snero",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9385,6 +10902,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ys82p8g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9393,6 +10911,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jt27xgy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9401,6 +10920,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5w30d3d",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9409,6 +10929,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7h2c4hn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9417,11 +10938,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "crdsxt5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9430,21 +10953,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "48n6hdv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9453,6 +10980,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "432tlz9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9461,6 +10989,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wi3de7p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9469,6 +10998,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zvy0l62",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9477,6 +11007,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qmi3tmw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9485,6 +11016,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kfz3qjr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9493,6 +11025,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yhly3j9",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9501,6 +11034,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j2awzz8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9509,16 +11043,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "h7yeh1o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9527,16 +11064,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "tp8xr0y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9545,6 +11085,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rn98h6y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9553,6 +11094,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0dcti10",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9561,6 +11103,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "suc7bfi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9569,6 +11112,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2vsji7a",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9577,6 +11121,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "f3q3x92",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9585,6 +11130,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ljh4qmb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9593,6 +11139,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "wywvtyw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9601,6 +11148,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "thy83hu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9609,6 +11157,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lcyjoa1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9617,6 +11166,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8v1n2p3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9627,6 +11177,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "8lzt0y4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9635,6 +11186,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hfdu8rg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9643,6 +11195,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fthgpgj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9651,6 +11204,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o2aat1e",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9659,6 +11213,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "j4u9ouk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9667,6 +11222,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "1zibg8f",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9675,6 +11231,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "li5c8ec",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9683,6 +11240,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0fq4sw3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9691,6 +11249,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8r72p72",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9699,6 +11258,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "q83t570",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9707,6 +11267,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c0exfh7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9715,6 +11276,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lgi6y5q",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9723,6 +11285,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sq5ivfi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9731,6 +11294,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6z547rc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9739,6 +11303,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v3w3jkn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9747,6 +11312,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vxxjtvc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9755,6 +11321,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "31nzjpa",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9763,6 +11330,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "x7xwr7m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9771,16 +11339,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "tmdjxx6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9789,6 +11360,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "izwzrld",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9797,6 +11369,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "h4al50i",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9805,16 +11378,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "vdhc5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9823,11 +11399,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "0ys6l6m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9836,11 +11414,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "v4h5rx4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9849,6 +11429,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "5s9snik",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9857,6 +11438,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kf6oflj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9865,6 +11447,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "c7g2qjd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9873,6 +11456,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "6f49hlv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9881,6 +11465,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kdtp4tc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9889,6 +11474,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rqachbm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9897,6 +11483,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "x2l0so7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9905,6 +11492,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "85wuf87",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9913,6 +11501,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mo7qzpk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9921,6 +11510,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jv2e571",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9929,6 +11519,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "tfhdws3",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9937,6 +11528,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "nyhbl8x",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9945,6 +11537,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jwzcot6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9953,6 +11546,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "86fi7dd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9961,6 +11555,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7yg8074",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9969,11 +11564,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "14ewt5v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9982,6 +11579,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lagnr7c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9990,6 +11588,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ywd9e18",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -9998,6 +11597,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jkwe2ok",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10008,6 +11608,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "xmc8xke",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10016,6 +11617,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pdage22",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10024,6 +11626,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pa8svu1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10032,6 +11635,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ziqv2de",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10040,6 +11644,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "s7y34y0",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10048,6 +11653,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "31ca7yg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10056,6 +11662,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3ci0pdd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10064,6 +11671,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "emktq32",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10072,6 +11680,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vw1rojy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10080,6 +11689,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "75g23yy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10088,6 +11698,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "izy0tjy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10096,6 +11707,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "odb9ncd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10104,6 +11716,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0a73828",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10112,6 +11725,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gcavh3a",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10120,11 +11734,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "k7n36za",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10133,6 +11749,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "nimit02",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10141,6 +11758,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xbhub8h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10149,11 +11767,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "j4rclfq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10162,6 +11782,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rmeg9ai",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10170,6 +11791,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ailfavb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10178,6 +11800,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "t5dmmeh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10186,6 +11809,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "3i1zx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10194,21 +11818,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "lzbx54h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10217,11 +11845,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "j93n9ap",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10230,6 +11860,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w456rx2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10238,11 +11869,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "16bai95",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10251,6 +11884,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bf2a1bk",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10259,6 +11893,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lfx0ojj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10267,6 +11902,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qt92am5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10275,6 +11911,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "40v07bf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10283,6 +11920,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "udnrf0p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10291,6 +11929,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "knodbjf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10299,6 +11938,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ehrfke7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10307,6 +11947,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ouvrfp1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10315,6 +11956,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "eow3122",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10323,6 +11965,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "x3pqnyi",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10331,6 +11974,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mph3l9o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10339,6 +11983,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hcs9zd1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10347,6 +11992,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fr4267r",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10355,6 +12001,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "a1yzs6b",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10363,6 +12010,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kl43wx1",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10371,6 +12019,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0sbarob",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10379,6 +12028,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "oxtuduv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10389,6 +12039,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "r3zhjgv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10397,6 +12048,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "fmvm92l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10405,6 +12057,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "w84wjsy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10413,6 +12066,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "0wredex",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10421,6 +12075,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bolxz1r",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10429,6 +12084,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lkcbkyn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10437,6 +12093,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "354tcqf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10445,6 +12102,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "oa0boqw",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10453,6 +12111,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r15znhc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10461,6 +12120,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9mowgk7",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10469,6 +12129,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pq3nxwn",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10477,6 +12138,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jbfvlbd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10485,6 +12147,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "feojk22",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10493,6 +12156,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "644acgd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10501,6 +12165,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jafcv7v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10509,6 +12174,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "iqviksa",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10517,6 +12183,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vj3g5pu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10525,6 +12192,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jz1tk1k",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10533,6 +12201,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "gqaa2ke",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10541,6 +12210,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "7ppilsu",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10549,6 +12219,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xudeolz",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10557,6 +12228,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o2j4l0s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10565,6 +12237,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2wep8",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10573,26 +12246,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "2porduv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10601,6 +12279,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "q2bcz9t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10609,6 +12288,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vdayb3p",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10617,6 +12297,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "xbr5rbc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10625,6 +12306,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "297fvfs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10633,6 +12315,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "679nufr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10641,6 +12324,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "bont785",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10649,6 +12333,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "f6wbj84",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10657,6 +12342,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qa0rf33",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10665,6 +12351,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mq9u8fq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10673,6 +12360,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kuuv9ts",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10681,6 +12369,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "14jh22x",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10689,6 +12378,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8o1jfgs",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10697,6 +12387,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "y25u0f6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10705,6 +12396,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "krx09rv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10713,6 +12405,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yqe189g",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10721,6 +12414,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "31lwstg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10729,6 +12423,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "r058i98",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10737,6 +12432,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "oepo509",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10745,6 +12441,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "o3q8zly",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10753,6 +12450,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "76ryvqr",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10761,11 +12459,13 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "848mp0h",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10776,6 +12476,7 @@ export const mapData: Cell[][] = [
   [
     {
       occupierId: "3khbm40",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10784,6 +12485,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "iuzksma",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10792,6 +12494,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "jk65i3m",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10800,6 +12503,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "2ff2biq",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10808,6 +12512,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "v8ugsua",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10816,6 +12521,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "orhg5ba",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10824,6 +12530,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mfisp14",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10832,6 +12539,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "76gmx3t",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10840,6 +12548,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "m3udggx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10848,6 +12557,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "iemp8ky",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10856,6 +12566,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "yrh7otd",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10864,6 +12575,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4fxdz1o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10872,6 +12584,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "u75rtqa",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10880,6 +12593,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "paxpetc",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10888,6 +12602,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "vrqpx2c",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10896,6 +12611,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rccw7yf",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10904,6 +12620,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l68juxv",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10912,6 +12629,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lxr9sqy",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10920,6 +12638,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zp51cca",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10928,6 +12647,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "pbp5u1z",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10936,6 +12656,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hd9y2sg",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10944,6 +12665,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lle0ci6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10952,21 +12674,25 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: "si0kj",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10975,6 +12701,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lakwe",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10983,6 +12710,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "4hjatje",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10991,6 +12719,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "eit3ckh",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -10999,6 +12728,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "zi6p721",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11007,6 +12737,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "rh2vd91",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11015,6 +12746,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "9yfsotx",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11023,6 +12755,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8oif9ze",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11031,6 +12764,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mfev108",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11039,6 +12773,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "aggx18y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11047,6 +12782,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "q701ytm",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11055,6 +12791,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "ezjw4bt",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11063,6 +12800,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "sbpxdq2",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11071,6 +12809,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "8fnsdzo",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11079,6 +12818,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "qn0sfa4",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11087,6 +12827,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "b5lrp0s",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11095,6 +12836,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "hmrf65y",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11103,6 +12845,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "lf6duha",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11111,6 +12854,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "19oqweb",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11119,6 +12863,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "k3ea56v",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11127,6 +12872,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "s2fmql6",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11135,6 +12881,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "l64e47o",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11143,6 +12890,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "uos6vr5",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11151,6 +12899,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "kpezpjl",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",
@@ -11159,6 +12908,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: "mvt6e7l",
+      triggerId: null,
       groundType: "grass",
       comp: {
         name: "tree1",

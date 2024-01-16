@@ -3,13 +3,13 @@
 import Grid from "@/components/grid/Grid";
 import JSONPretty from "react-json-pretty";
 import { useEditorStates } from "../hooks/useEditorStates";
-import { useEffect, useRef } from "react";
-import { House1, house1Info } from "@/components/houses/House1";
-import { House2, house2Info } from "@/components/houses/House2";
-import { House3, house3Info } from "@/components/houses/House3";
-import { House4, house4Info } from "@/components/houses/House4";
-import { House5, house5Info } from "@/components/houses/House5";
-import { tree1Info, Tree1 } from "@/components/houses/Tree1";
+import { useRef } from "react";
+import { House1Img, house1Info } from "@/components/houses/House1";
+import { House2Img, house2Info } from "@/components/houses/House2";
+import { House3Img, house3Info } from "@/components/houses/House3";
+import { House4Img, house4Info } from "@/components/houses/House4";
+import { House5Img, house5Info } from "@/components/houses/House5";
+import { tree1Info, Tree1, Tree1Img } from "@/components/houses/Tree1";
 import { mapData as initialMapData } from "../map";
 
 export default function Home() {
@@ -48,22 +48,22 @@ export default function Home() {
       <div className="overflow-scroll w-1/6 flex flex-col border-r-2 pt-20 pb-6 bg-slate-400 justify-between ">
         <div className="flex flex-col items-center">
           <button onClick={() => onFeatureSelection(house1Info)}>
-            <House1 />
+            <House1Img />
           </button>
           <button onClick={() => onFeatureSelection(house2Info)}>
-            <House2 />
+            <House2Img />
           </button>
           <button onClick={() => onFeatureSelection(house3Info)}>
-            <House3 />
+            <House3Img />
           </button>
           <button onClick={() => onFeatureSelection(house4Info)}>
-            <House4 />
+            <House4Img />
           </button>
           <button onClick={() => onFeatureSelection(house5Info)}>
-            <House5 />
+            <House5Img />
           </button>
           <button onClick={() => onFeatureSelection(tree1Info)}>
-            <Tree1 />
+            <Tree1Img />
           </button>
         </div>
         <div className="p-4 text-center">
