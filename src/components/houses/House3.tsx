@@ -14,12 +14,23 @@ export const house3Info = { name, anchor, footprint };
 
 export const House3 = () => {
   return (
-    <div
-      className="bg-tile-set w-60 h-60 bg-clip-content px-2 pointer-events-none"
-      style={{
-        backgroundPosition: "-1466px -2180px",
-        backgroundSize: "4480px 4800px",
-      }}
-    ></div>
+    <>
+      <div
+        className="absolute z-40 bg-tile-set w-60 h-40 bg-clip-content px-12 pointer-events-none"
+        style={{
+          transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
+          backgroundPosition: "-1466px -2175px",
+          backgroundSize: "4480px 4800px",
+        }}
+      ></div>
+      <div
+        className="absolute z-20 bg-tile-set w-60 h-60 bg-clip-content px-2 pointer-events-none"
+        style={{
+          transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
+          backgroundPosition: "-1466px -2175px",
+          backgroundSize: "4480px 4800px",
+        }}
+      ></div>
+    </>
   );
 };

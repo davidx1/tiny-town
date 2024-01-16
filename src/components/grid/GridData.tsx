@@ -39,20 +39,9 @@ export const GridData = memo(function GridData({
                   }}
                 />
 
-                {cell.comp && (
-                  <div
-                    className={`absolute w-auto pointer-events-none z-30`}
-                    style={{
-                      transform: `translate(-${cell.comp?.anchor[1] * 3}rem, -${
-                        cell.comp?.anchor[0] * 3
-                      }rem)`,
-                    }}
-                  >
-                    {renderComp(cell.comp?.name)}
-                  </div>
-                )}
+                {cell.comp && renderComp(cell.comp?.name)}
                 {isDevMode && cell.occupierId && (
-                  <span className="absolute z-40 bg-red-500 bg-opacity-30 h-12 w-12">
+                  <span className="absolute z-50 bg-red-500 bg-opacity-30 h-12 w-12">
                     {cell.occupierId}
                   </span>
                 )}

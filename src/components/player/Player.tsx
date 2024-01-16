@@ -29,7 +29,7 @@ export default function Player({ direction, isMoving }: PlayerProps) {
   }, [isMoving]);
 
   return (
-    <div className="size-12 flex items-center justify-center absolute z-20">
+    <div className="size-12 flex items-center justify-center absolute z-30">
       <div
         className="bg-char1-set w-12 h-16 "
         style={{

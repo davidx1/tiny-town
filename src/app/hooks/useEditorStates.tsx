@@ -81,7 +81,6 @@ export const useEditorStates = (initialMapData?: Cell[][]) => {
           const row = i + cell[0] - anchor[0];
           const col = j + cell[1] - anchor[1];
           if (footprint[i][j] && mapData[row][col].occupierId) {
-            console.log("overlap with others");
             return;
           }
         }
@@ -97,7 +96,6 @@ export const useEditorStates = (initialMapData?: Cell[][]) => {
             j >= cell[1] - anchor[1] &&
             j < cell[1] - anchor[1] + footprint[0].length
           ) {
-            console.log("row", i, "col", j);
             return {
               occupierId:
                 footprint[i - (cell[0] - anchor[0])][
