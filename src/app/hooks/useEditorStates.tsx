@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Cell, CoordinateType, FeatureType } from "../type";
+import { Cell, CoordinateType, FeatureType } from "../town/type";
 import uid from "tiny-uid";
 
 export const useEditorStates = (initialMapData?: Cell[][]) => {
-  const [mapData, setMapData] = useState<Cell[][]>(initialMapData || []);
+  const [mapData, setMapData] = useState<Cell[][] | undefined>(initialMapData);
   const [featureToAdd, setFeatureToAdd] = useState<FeatureType>();
   const [viewMode, setViewMode] = useState<"map" | "code">("map");
   const [editorMode, setEditorMode] = useState<"tile" | "occupied">();
@@ -127,6 +127,7 @@ export const useEditorStates = (initialMapData?: Cell[][]) => {
     // If the player can't enter the cell, then it can't be triggered action can happen
     if (
       action === "trigger" &&
+      mapData &&
       !mapData[cellClicked[0]][cellClicked[1]].occupierId
     ) {
       const newMap = mapData.map((row, i) => {

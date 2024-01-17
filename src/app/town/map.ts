@@ -315,19 +315,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "3qvfuii",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "3qvfuii",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "3qvfuii",
       groundType: "grass",
       comp: null,
     },
@@ -3801,7 +3801,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "xb0atlc",
       groundType: "grass",
       comp: null,
     },
@@ -5694,7 +5694,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "xih07jt",
       groundType: "grass",
       comp: null,
     },
@@ -7827,7 +7827,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "89mpm7u",
       groundType: "grass",
       comp: null,
     },
@@ -12674,19 +12674,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "wgmnklq",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "wgmnklq",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "wgmnklq",
       groundType: "grass",
       comp: null,
     },

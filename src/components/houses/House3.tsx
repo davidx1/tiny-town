@@ -1,4 +1,4 @@
-import { CoordinateType } from "@/app/type";
+import { CoordinateType } from "@/app/town/type";
 
 export const name = "house3";
 const anchor: CoordinateType = [2, 2];

@@ -3,15 +3,18 @@
 import Grid from "@/components/grid/Grid";
 import Player from "@/components/player/Player";
 import { mapData } from "./map";
-import { useInput } from "./hooks/useInput";
-import { useRef, RefObject, useEffect } from "react";
+import { useInput } from "../hooks/useInput";
+import { useRef, useEffect } from "react";
+import { useTownTriggers } from "./useTownTriggers";
 
 export default function Home() {
   const { isMoving, direction, position, onKeyDown, onKeyUp } = useInput({
     mapData,
     initialPosition: [16, 20],
+    initialDirection: "left",
   });
   const divRef = useRef<HTMLDivElement>(null);
+  useTownTriggers(position);
 
   useEffect(() => {
     if (divRef.current) {

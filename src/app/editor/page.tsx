@@ -10,7 +10,6 @@ import { House3Img, house3Info } from "@/components/houses/House3";
 import { House4Img, house4Info } from "@/components/houses/House4";
 import { House5Img, house5Info } from "@/components/houses/House5";
 import { tree1Info, Tree1, Tree1Img } from "@/components/houses/Tree1";
-import { mapData as initialMapData } from "../map";
 
 export default function Home() {
   const {
@@ -24,7 +23,7 @@ export default function Home() {
     editorMode,
     setEditorMode,
     initMap,
-  } = useEditorStates(initialMapData);
+  } = useEditorStates();
 
   const wInputRef = useRef<HTMLInputElement>(null);
   const hInputRef = useRef<HTMLInputElement>(null);
@@ -67,18 +66,8 @@ export default function Home() {
             <Tree1Img />
           </button>
         </div>
-        <div className="p-4 text-center">
-          <button className="bg-white p-2 px-4" onClick={onDeleteSelection}>
-            Delete
-          </button>
-        </div>
-        <div className="p-4 text-center">
-          <button className="bg-white p-2 px-4" onClick={onTriggerSelection}>
-            Trigger
-          </button>
-        </div>
         {!mapData && (
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-80"></div>
+          <div className="absolute top-0 bottom-0 left-0 w-1/6 bg-slate-400 opacity-80"></div>
         )}
       </div>
       <div className="w-5/6 h-screen flex flex-col p-8 pt-20 flex-1 gap-2 bg-slate-400 ">
@@ -101,10 +90,10 @@ export default function Home() {
         ) : viewMode === "map" ? (
           <div className="flex flex-col gap-6 h-full w-full">
             <div className="flex bg-white items-center justify-center gap-6 p-4">
-              <button onClick={() => setViewMode("code")}>
-                Switch To Code View
-              </button>
+              <button onClick={() => setViewMode("code")}>Code View</button>
               <button onClick={handleSaveObjectAsJson}>Save</button>
+              <button onClick={onDeleteSelection}>Delete</button>
+              <button onClick={onTriggerSelection}>Trigger</button>
             </div>
             <div className="flex-1 overflow-scroll relative p-24">
               <Grid isDevMode data={mapData} onCellClick={onCellClick}></Grid>
@@ -113,10 +102,10 @@ export default function Home() {
         ) : (
           <div className="flex flex-col gap-6 h-full w-full">
             <div className="flex bg-white items-center justify-center gap-6 p-4">
-              <button onClick={() => setViewMode("map")}>
-                Switch To Map View
-              </button>
+              <button onClick={() => setViewMode("map")}>Map View</button>
               <button onClick={handleSaveObjectAsJson}>Save</button>
+              <button onClick={onDeleteSelection}>Delete</button>
+              <button onClick={onTriggerSelection}>Trigger</button>
             </div>
             <div className="p-2 bg-gray-50  overflow-scroll">
               <JSONPretty data={mapData}></JSONPretty>

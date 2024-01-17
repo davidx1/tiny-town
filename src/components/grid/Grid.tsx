@@ -1,4 +1,4 @@
-import { Cell, CoordinateType } from "@/app/type";
+import { Cell, CoordinateType } from "@/app/town/type";
 import { House1, house1Info } from "../houses/House1";
 import { House2, house2Info } from "../houses/House2";
 import { house3Info, House3 } from "../houses/House3";

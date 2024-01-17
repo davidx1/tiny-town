@@ -1,4 +1,4 @@
-import { DirectionType } from "@/app/type";
+import { DirectionType } from "@/app/town/type";
 import { useEffect, useRef, useState } from "react";
 
 interface PlayerProps {

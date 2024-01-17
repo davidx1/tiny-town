@@ -1,18 +1,24 @@
 import { useState, useRef, useEffect, KeyboardEventHandler } from "react";
-import { Cell, CoordinateType, DirectionType } from "../type";
+import { Cell, CoordinateType, DirectionType } from "../town/type";
 
 export interface useInputInitProp {
   mapData: Cell[][];
   initialPosition: CoordinateType;
+  initialDirection: DirectionType;
 }
 
-export const useInput = ({ mapData, initialPosition }: useInputInitProp) => {
+export const useInput = ({
+  mapData,
+  initialPosition,
+  initialDirection,
+}: useInputInitProp) => {
   const [isMoving, setIsMoving] = useState<boolean>(false);
   const [keyDownCount, setKeyDownCount] = useState<number>(0);
   const [position, setPosition] = useState<CoordinateType>(initialPosition);
-  const [direction, setCharDirection] = useState<DirectionType>("left");
+  const [direction, setCharDirection] =
+    useState<DirectionType>(initialDirection);
   const timeoutRef = useRef<NodeJS.Timeout>();
-  const directionRef = useRef<DirectionType>("left");
+  const directionRef = useRef<DirectionType>(initialDirection);
 
   useEffect(() => {
     const move = () => {
