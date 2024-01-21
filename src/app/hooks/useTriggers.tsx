@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Cell, CoordinateType } from "../town/type";
+import { Cell, CoordinateType } from "../type";
 
 export const useTriggers = (
   mapData: Cell[][],
@@ -9,9 +9,7 @@ export const useTriggers = (
   useEffect(() => {
     const triggerId = mapData[position[0]][position[1]].triggerId;
     if (triggerId) {
-      setTimeout(() => {
-        triggerActionMap[triggerId](position);
-      }, 90);
+      triggerActionMap[triggerId](position);
     }
   }, [mapData, position, triggerActionMap]);
 };

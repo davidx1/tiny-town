@@ -1,4 +1,4 @@
-import { CoordinateType } from "@/app/town/type";
+import { CoordinateType } from "@/app/type";
 
 export const name = "house4";
 const anchor: CoordinateType = [2, 2];
@@ -14,7 +14,7 @@ export const house4Info = { name, anchor, footprint };
 
 export const House4Img = ({ className = "px-3.5" }: { className?: string }) => (
   <div
-    className={`bg-tile-set bg-clip-content w-48 h-60 pointer-events-none ${className}`}
+    className={`bg-tile-set bg-clip-content w-48 h-60 pointer-events-none border border-dashed ${className}`}
     style={{
       backgroundPosition: "-1674px -2173px",
       backgroundSize: "4480px 4800px",

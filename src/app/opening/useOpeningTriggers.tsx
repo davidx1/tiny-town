@@ -1,13 +1,13 @@
 import { useRouter } from "next/navigation";
 import { useTriggers } from "../hooks/useTriggers";
 import { mapData } from "./map";
-import { CoordinateType } from "./type";
+import { CoordinateType } from "../type";
 
-export const usePondTriggers = (position: CoordinateType) => {
+export const useOpeningTriggers = (position: CoordinateType) => {
   const router = useRouter();
 
   const triggerActionMap: Record<string, (c: CoordinateType) => void> = {
-    wgmnklq: () => router.push("/123"),
+    a3lvu7x: () => router.push("/town?prev=opening"),
   };
 
   useTriggers(mapData, position, triggerActionMap);

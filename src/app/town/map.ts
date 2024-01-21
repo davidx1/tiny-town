@@ -1,4 +1,5 @@
-import { Cell } from "./type";
+import { Cell } from "../type";
+
 export const mapData: Cell[][] = [
   [
     {
@@ -11368,13 +11369,10 @@ export const mapData: Cell[][] = [
       },
     },
     {
-      occupierId: "h4al50i",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: null,
@@ -11790,31 +11788,22 @@ export const mapData: Cell[][] = [
       },
     },
     {
-      occupierId: "ailfavb",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
-      occupierId: "t5dmmeh",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
-      occupierId: "3i1zx",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: null,
@@ -12236,13 +12225,10 @@ export const mapData: Cell[][] = [
       },
     },
     {
-      occupierId: "2wep8",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: null,

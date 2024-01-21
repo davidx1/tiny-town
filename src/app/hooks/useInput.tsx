@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, KeyboardEventHandler } from "react";
-import { Cell, CoordinateType, DirectionType } from "../town/type";
+import { Cell, CoordinateType, DirectionType } from "../type";
 
 export interface useInputInitProp {
   mapData: Cell[][];
@@ -13,7 +13,7 @@ export const useInput = ({
   initialDirection,
 }: useInputInitProp) => {
   const [isMoving, setIsMoving] = useState<boolean>(false);
-  const [keyDownCount, setKeyDownCount] = useState<number>(0);
+  const [keysDown, setKeysDown] = useState<DirectionType[]>([]);
   const [position, setPosition] = useState<CoordinateType>(initialPosition);
   const [direction, setCharDirection] =
     useState<DirectionType>(initialDirection);
@@ -52,26 +52,33 @@ export const useInput = ({
     };
   }, [isMoving]);
 
-  const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
-    const keyMapping: Record<string, DirectionType> = {
-      a: "left",
-      w: "up",
-      s: "down",
-      d: "right",
-    };
+  const keyMapping: Record<string, DirectionType> = {
+    a: "left",
+    w: "up",
+    s: "down",
+    d: "right",
+  };
 
-    if (!e.repeat) {
-      setKeyDownCount(keyDownCount + 1);
-      directionRef.current = keyMapping[e.key] || "left";
+  const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
+    const newDirection = keyMapping[e.key];
+
+    if (newDirection && !keysDown.includes(newDirection)) {
+      setKeysDown([...keysDown, newDirection]);
+      directionRef.current = newDirection;
       setIsMoving(true);
     }
   };
 
   const onKeyUp: KeyboardEventHandler<HTMLDivElement> = (e) => {
-    if (keyDownCount === 1) {
+    const directionReleased = keyMapping[e.key];
+    const newKeysDown = keysDown.filter((k) => k !== directionReleased);
+    if (newKeysDown.length === 0) {
       setIsMoving(false);
+    } else {
+      directionRef.current = newKeysDown[newKeysDown.length - 1];
     }
-    setKeyDownCount(keyDownCount - 1);
+
+    setKeysDown(newKeysDown);
   };
 
   return { isMoving, direction, position, onKeyDown, onKeyUp };

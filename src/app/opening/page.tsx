@@ -5,16 +5,21 @@ import Player from "@/components/player/Player";
 import { mapData } from "./map";
 import { useInput } from "../hooks/useInput";
 import { useRef, useEffect } from "react";
-import { usePondTriggers } from "./usePondTriggers";
+import { useOpeningTriggers } from "./useOpeningTriggers";
+import { useInitialPosition } from "../hooks/useInitialPosition";
+import { initialPositionRecords } from "./initialPositionRecords";
 
 export default function Home() {
+  const { initialPosition, initialDirection } = useInitialPosition(
+    initialPositionRecords,
+  );
   const { isMoving, direction, position, onKeyDown, onKeyUp } = useInput({
     mapData,
-    initialPosition: [0, 20],
-    initialDirection: "down",
+    initialPosition: initialPosition,
+    initialDirection: initialDirection,
   });
   const divRef = useRef<HTMLDivElement>(null);
-  usePondTriggers(position);
+  useOpeningTriggers(position);
 
   useEffect(() => {
     if (divRef.current) {

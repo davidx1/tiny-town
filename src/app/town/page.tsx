@@ -6,12 +6,17 @@ import { mapData } from "./map";
 import { useInput } from "../hooks/useInput";
 import { useRef, useEffect } from "react";
 import { useTownTriggers } from "./useTownTriggers";
+import { useInitialPosition } from "../hooks/useInitialPosition";
+import { initialPositionRecords } from "./initialPositionRecords";
 
 export default function Home() {
+  const { initialPosition, initialDirection } = useInitialPosition(
+    initialPositionRecords,
+  );
   const { isMoving, direction, position, onKeyDown, onKeyUp } = useInput({
     mapData,
-    initialPosition: [16, 20],
-    initialDirection: "left",
+    initialPosition: initialPosition,
+    initialDirection: initialDirection,
   });
   const divRef = useRef<HTMLDivElement>(null);
   useTownTriggers(position);

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Cell, CoordinateType, FeatureType } from "../town/type";
+import { Cell, CoordinateType, FeatureType } from "../../app/type";
 import uid from "tiny-uid";
 
 export const useEditorStates = (initialMapData?: Cell[][]) => {
@@ -11,7 +11,7 @@ export const useEditorStates = (initialMapData?: Cell[][]) => {
     "none" | "add" | "move" | "delete" | "trigger"
   >("none");
 
-  const initMap = (width: number, height: number) => {
+  const initMap = (width: number, height: number, forestThickness: number) => {
     const initMap: Cell[][] = Array.from({ length: height }, () =>
       Array.from(
         { length: width },
@@ -24,7 +24,12 @@ export const useEditorStates = (initialMapData?: Cell[][]) => {
       ),
     ).map((row, y) =>
       row.map((cell, x) => {
-        if (y < 5 || y > height - 6 || x < 5 || x > width - 6) {
+        if (
+          y < forestThickness ||
+          y > height - forestThickness - 1 ||
+          x < forestThickness ||
+          x > width - forestThickness - 1
+        ) {
           const newId = uid();
           return {
             occupierId: newId,
