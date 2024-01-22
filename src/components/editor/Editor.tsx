@@ -14,9 +14,10 @@ import { Cell } from "@/app/type";
 
 interface EditorProps {
   initialMapData?: Cell[][];
+  saveMapData: (mapData: Cell[][]) => void;
 }
 
-export default function Editor({ initialMapData }: EditorProps) {
+export default function Editor({ initialMapData, saveMapData }: EditorProps) {
   const {
     mapData,
     onFeatureSelection,
@@ -25,8 +26,6 @@ export default function Editor({ initialMapData }: EditorProps) {
     onCellClick,
     viewMode,
     setViewMode,
-    editorMode,
-    setEditorMode,
     initMap,
   } = useEditorStates(initialMapData);
 
@@ -39,16 +38,17 @@ export default function Editor({ initialMapData }: EditorProps) {
     const cols = wInputRef.current?.value;
     const rows = hInputRef.current?.value;
     const forestThickness = forestThicknessRef.current?.value;
-    console.log(`Received request to initiate a ${cols} by ${rows} map`);
 
     if (cols && rows) {
       initMap(Number(cols), Number(rows), Number(forestThickness));
     }
   };
 
-  async function handleSaveObjectAsJson() {
-    //TODO: to complete
-  }
+  const handleSave = () => {
+    if (mapData) {
+      saveMapData(mapData);
+    }
+  };
 
   return (
     <div className="flex overflow-hidden w-full h-screen" tabIndex={-1}>
@@ -100,7 +100,7 @@ export default function Editor({ initialMapData }: EditorProps) {
           <div className="flex flex-col gap-6 h-full w-full">
             <div className="flex bg-white items-center justify-center gap-6 p-4">
               <button onClick={() => setViewMode("code")}>Code View</button>
-              <button onClick={handleSaveObjectAsJson}>Save</button>
+              <button onClick={handleSave}>Save</button>
               <button onClick={onDeleteSelection}>Delete</button>
               <button onClick={onTriggerSelection}>Trigger</button>
             </div>
@@ -112,7 +112,7 @@ export default function Editor({ initialMapData }: EditorProps) {
           <div className="flex flex-col gap-6 h-full w-full">
             <div className="flex bg-white items-center justify-center gap-6 p-4">
               <button onClick={() => setViewMode("map")}>Map View</button>
-              <button onClick={handleSaveObjectAsJson}>Save</button>
+              <button onClick={handleSave}>Save</button>
               <button onClick={onDeleteSelection}>Delete</button>
               <button onClick={onTriggerSelection}>Trigger</button>
             </div>

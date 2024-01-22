@@ -1,8 +1,11 @@
 "use client";
 
-import { mapData } from "@/app/town/map";
+import { useMapData } from "@/app/hooks/useMapData";
 import Editor from "@/components/editor/Editor";
 
 export default function NewPage() {
-  return <Editor initialMapData={mapData} />;
+  const { mapData, saveMapData, isLoading } = useMapData("town");
+  return (
+    !isLoading && <Editor initialMapData={mapData} saveMapData={saveMapData} />
+  );
 }

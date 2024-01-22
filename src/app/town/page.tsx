@@ -2,14 +2,16 @@
 
 import Grid from "@/components/grid/Grid";
 import Player from "@/components/player/Player";
-import { mapData } from "./map";
 import { useInput } from "../hooks/useInput";
 import { useRef, useEffect } from "react";
 import { useTownTriggers } from "./useTownTriggers";
 import { useInitialPosition } from "../hooks/useInitialPosition";
 import { initialPositionRecords } from "./initialPositionRecords";
+import { useMapData } from "../hooks/useMapData";
 
 export default function Home() {
+  const { mapData } = useMapData("town");
+
   const { initialPosition, initialDirection } = useInitialPosition(
     initialPositionRecords,
   );
