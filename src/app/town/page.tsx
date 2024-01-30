@@ -8,6 +8,11 @@ import { useTownTriggers } from "./useTownTriggers";
 import { useInitialPosition } from "../hooks/useInitialPosition";
 import { initialPositionRecords } from "./initialPositionRecords";
 import { useMapData } from "../hooks/useMapData";
+import { TextArea } from "@/components/textarea/TextArea";
+import {
+  TextareaContext,
+  textareaInitialValue,
+} from "../../components/textarea/useTextareaContext";
 
 export default function Home() {
   const { mapData } = useMapData("town");
@@ -30,17 +35,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className="relative overflow-hidden w-full min-h-screen max-h-screen bg-slate-700"
-      onKeyDown={onKeyDown}
-      onKeyUp={onKeyUp}
-      tabIndex={-1}
-      ref={divRef}
-    >
-      <div className="relative" style={{ top: "49vh", left: "49vw" }}>
-        <Player direction={direction} isMoving={isMoving} />
-        <Grid data={mapData} position={position}></Grid>
+    <TextareaContext.Provider value={textareaInitialValue}>
+      <div
+        className="relative overflow-hidden w-full min-h-screen max-h-screen bg-slate-700"
+        onKeyDown={onKeyDown}
+        onKeyUp={onKeyUp}
+        tabIndex={-1}
+        ref={divRef}
+      >
+        <div className="relative" style={{ top: "49vh", left: "49vw" }}>
+          <Player direction={direction} isMoving={isMoving} />
+          <Grid data={mapData} position={position}></Grid>
+        </div>
+        <TextArea></TextArea>
       </div>
-    </div>
+    </TextareaContext.Provider>
   );
 }

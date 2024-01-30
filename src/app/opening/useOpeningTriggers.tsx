@@ -7,7 +7,7 @@ export const useOpeningTriggers = (position: CoordinateType) => {
   const router = useRouter();
 
   const triggerActionMap: Record<string, (c: CoordinateType) => void> = {
-    a3lvu7x: () => router.push("/town?prev=opening"),
+    a3lvu7x: () => router.replace("/town?prev=opening", {}),
   };
 
   useTriggers(mapData, position, triggerActionMap);

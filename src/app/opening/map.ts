@@ -177,7 +177,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: "dot0rwf",
+      triggerId: "a3lvu7x",
       groundType: "grass",
       comp: null,
     },

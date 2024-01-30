@@ -316,19 +316,19 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: "3qvfuii",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: "3qvfuii",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: "3qvfuii",
+      triggerId: null,
       groundType: "grass",
       comp: null,
     },
@@ -7720,7 +7720,7 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "rsn336m",
       groundType: "grass",
       comp: null,
     },

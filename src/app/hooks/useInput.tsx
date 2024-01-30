@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect, KeyboardEventHandler } from "react";
-import { Cell, CoordinateType, DirectionType } from "../type";
+import { Cell, CoordinateType, CommandType } from "../type";
 
 export interface useInputInitProp {
   mapData: Cell[][];
   initialPosition: CoordinateType;
-  initialDirection: DirectionType;
+  initialDirection: CommandType;
 }
 
 export const useInput = ({
@@ -13,12 +13,11 @@ export const useInput = ({
   initialDirection,
 }: useInputInitProp) => {
   const [isMoving, setIsMoving] = useState<boolean>(false);
-  const [keysDown, setKeysDown] = useState<DirectionType[]>([]);
+  const [keysDown, setKeysDown] = useState<CommandType[]>([]);
   const [position, setPosition] = useState<CoordinateType>(initialPosition);
-  const [direction, setCharDirection] =
-    useState<DirectionType>(initialDirection);
+  const [direction, setCharDirection] = useState<CommandType>(initialDirection);
   const timeoutRef = useRef<NodeJS.Timeout>();
-  const directionRef = useRef<DirectionType>(initialDirection);
+  const directionRef = useRef<CommandType>(initialDirection);
 
   useEffect(() => {
     const move = () => {
@@ -52,11 +51,16 @@ export const useInput = ({
     };
   }, [isMoving]);
 
-  const keyMapping: Record<string, DirectionType> = {
+  const keyMapping: Record<string, CommandType> = {
     a: "left",
     w: "up",
     s: "down",
     d: "right",
+    ArrowUp: "up",
+    ArrowLeft: "left",
+    ArrowDown: "down",
+    ArrowRight: "right",
+    e: "activate",
   };
 
   const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {

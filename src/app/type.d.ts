@@ -1,8 +1,8 @@
-export type DirectionType = "left" | "right" | "up" | "down";
+export type CommandType = "left" | "right" | "up" | "down" | "activate";
 export type CoordinateType = [number, number];
 export type InitialCoDirType = {
   initialPosition: CoordinateType;
-  initialDirection: DirectionType;
+  initialDirection: CommandType;
 };
 export type Cell = {
   occupierId: string | null;

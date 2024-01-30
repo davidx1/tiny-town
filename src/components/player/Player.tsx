@@ -1,8 +1,8 @@
-import { DirectionType } from "@/app/town/type";
+import { CommandType } from "@/app/town/type";
 import { useEffect, useRef, useState } from "react";
 
 interface PlayerProps {
-  direction: DirectionType;
+  direction: CommandType;
   isMoving?: boolean;
 }
 
