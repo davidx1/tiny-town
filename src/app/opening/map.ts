@@ -1,4 +1,4 @@
-import { Cell } from "../type";
+import { Cell } from "../type.d";
 export const mapData: Cell[][] = [
   [
     {

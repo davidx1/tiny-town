@@ -1,6 +1,6 @@
 import { mapData as permenentTownMap } from "../town/map";
 import { mapData as permenentOpeningMap } from "../opening/map";
-import { Cell } from "../type";
+import { Cell } from "../type.d";
 import { useEffect, useState } from "react";
 
 export type mapKeys = "town" | "opening";
@@ -11,11 +11,11 @@ const permenentMaps = {
 };
 
 export const useMapData = (key: mapKeys) => {
-  const [mapData, setMapData] = useState<Cell[][]>([[]]);
+  const permenentMap = permenentMaps[key];
+  const [mapData, setMapData] = useState<Cell[][]>(permenentMap);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const permenentMap = permenentMaps[key];
     const storedMapString = window.sessionStorage.getItem(`${key}-session-map`);
     setMapData(
       storedMapString

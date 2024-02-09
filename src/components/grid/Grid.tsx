@@ -1,4 +1,4 @@
-import { Cell, CoordinateType } from "@/app/type";
+import { Cell, CoordinateType } from "@/app/type.d";
 import { GridData } from "./GridData";
 
 interface GridProps {
@@ -16,7 +16,7 @@ export default function Grid({
 }: GridProps) {
   const style = position && {
     transitionProperty: "left, top",
-    transitionDuration: "0.1s",
+    transitionDuration: "0.2s",
     transitionTimingFunction: "linear",
     top: `-${position[0] * 3}rem`,
     left: `-${position[1] * 3}rem`,

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Cell, CoordinateType, FeatureType } from "../../app/type";
+import { Cell, CoordinateType, FeatureType } from "../../app/type.d";
 import uid from "tiny-uid";
 
 export const useEditorStates = (initialMapData?: Cell[][]) => {

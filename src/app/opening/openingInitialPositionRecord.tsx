@@ -1,6 +1,6 @@
 import { InitialPositionRecord } from "../hooks/useInitialPosition";
 
-export const initialPositionRecords: InitialPositionRecord = {
+export const openingInitialPositionRecord: InitialPositionRecord = {
   town: {
     initialPosition: [2, 20],
     initialDirection: "down",

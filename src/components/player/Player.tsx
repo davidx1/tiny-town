@@ -1,4 +1,4 @@
-import { CommandType } from "@/app/town/type";
+import { CommandType } from "@/app/type.d";
 import { useEffect, useRef, useState } from "react";
 
 interface PlayerProps {
@@ -21,7 +21,7 @@ export default function Player({ direction, isMoving }: PlayerProps) {
       setMoveOffset((currentOffset) => currentOffset - 64);
       timingRef.current = setInterval(() => {
         setMoveOffset((currentOffset) => currentOffset - 64);
-      }, 115);
+      }, 200);
     } else {
       clearInterval(timingRef.current);
       setMoveOffset(-8);
