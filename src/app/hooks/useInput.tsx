@@ -73,6 +73,7 @@ export const useInput = ({
     if (isTextAreaOpen) {
       setIsMoving(false);
       setKeysDown([]);
+      setTimeout(() => setCharDirection("up"), 200);
     }
   }, [isTextAreaOpen]);
 
