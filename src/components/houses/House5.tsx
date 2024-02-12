@@ -31,7 +31,7 @@ export const House5 = () => {
           transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
         }}
       >
-        <House5Img className="px-4" />
+        <House5Img className="px-8" />
       </div>
       <div
         className="absolute z-20 w-60 h-60 pointer-events-none overflow-hidden"

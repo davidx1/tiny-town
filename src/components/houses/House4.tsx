@@ -31,7 +31,7 @@ export const House4 = () => {
           transform: `translate(-${anchor[1] * 3}rem, -${anchor[0] * 3}rem)`,
         }}
       >
-        <House4Img className="px-8" />
+        <House4Img className="px-7" />
       </div>
       <div
         className="absolute z-20 w-48 h-60 pointer-events-none overflow-hidden"
