@@ -5,7 +5,7 @@ export const TextArea = () => {
   const { label, options, selectedOptionIndex } = useContext(TextareaContext);
 
   return label ? (
-    <div className="absolute w-full h-[30vh] left-0 bottom-0 z-50 flex items-center justify-center p-10">
+    <div className="absolute w-full min-h-[30vh] left-0 bottom-0 z-50 flex items-center justify-center p-10">
       <div className="w-[70vw] h-full bg-opacity-80 bg-gray-800 rounded-lg p-6">
         <div className="p-5 border-white border-4 rounded-lg h-full">
           <p className="text-white text-xl">{label}</p>

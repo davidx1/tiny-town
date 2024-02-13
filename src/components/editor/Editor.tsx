@@ -3,14 +3,22 @@
 import Grid from "@/components/grid/Grid";
 import JSONPretty from "react-json-pretty";
 import { useRef } from "react";
-import { House1Img, house1Info } from "@/components/houses/House1";
-import { House2Img, house2Info } from "@/components/houses/House2";
-import { House3Img, house3Info } from "@/components/houses/House3";
-import { House4Img, house4Info } from "@/components/houses/House4";
-import { House5Img, house5Info } from "@/components/houses/House5";
-import { tree1Info, Tree1, Tree1Img } from "@/components/houses/Tree1";
+import { House1Img, house1Info } from "@/components/Placeables/House1";
+import { House2Img, house2Info } from "@/components/Placeables/House2";
+import { House3Img, house3Info } from "@/components/Placeables/House3";
+import { House4Img, house4Info } from "@/components/Placeables/House4";
+import { House5Img, house5Info } from "@/components/Placeables/House5";
+import { tree1Info, Tree1, Tree1Img } from "@/components/Placeables/Tree1";
 import { useEditorStates } from "./useEditorStates";
 import { Cell } from "@/app/type.d";
+import Character from "../character/Character";
+import {
+  characterBlondHair,
+  characterSilverHair,
+  characterSpikyHair,
+  characterWhiteShirt,
+  characterYellowHat,
+} from "../Placeables/Characters";
 
 interface EditorProps {
   initialMapData?: Cell[][];
@@ -71,6 +79,21 @@ export default function Editor({ initialMapData, saveMapData }: EditorProps) {
           </button>
           <button onClick={() => onFeatureSelection(tree1Info)}>
             <Tree1Img />
+          </button>
+          <button onClick={() => onFeatureSelection(characterBlondHair)}>
+            <Character characterBgClass={"bg-blond-hair-sprite"} />
+          </button>
+          <button onClick={() => onFeatureSelection(characterSilverHair)}>
+            <Character characterBgClass={"bg-silver-hair-sprite"} />
+          </button>
+          <button onClick={() => onFeatureSelection(characterSpikyHair)}>
+            <Character characterBgClass={"bg-spiky-hair-sprite"} />
+          </button>
+          <button onClick={() => onFeatureSelection(characterWhiteShirt)}>
+            <Character characterBgClass={"bg-white-shirt-sprite"} />
+          </button>
+          <button onClick={() => onFeatureSelection(characterYellowHat)}>
+            <Character characterBgClass={"bg-yellow-hat-sprite"} />
           </button>
         </div>
         {!mapData && (

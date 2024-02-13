@@ -1,5 +1,6 @@
 import { Cell, CoordinateType } from "@/app/type.d";
 import { GridData } from "./GridData";
+import Character from "../character/Character";
 
 interface GridProps {
   isDevMode?: boolean;

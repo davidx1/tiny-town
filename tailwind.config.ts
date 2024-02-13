@@ -5,7 +5,12 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "tile-set": "url('/tileset.png')",
-        "char1-set": "url('/char1.png')",
+        "player-sprite": "url('/player.png')",
+        "blond-hair-sprite": "url('/blond-hair.png')",
+        "silver-hair-sprite": "url('/silver-hair.png')",
+        "spiky-hair-sprite": "url('/spiky-hair.png')",
+        "white-shirt-sprite": "url('/white-shirt.png')",
+        "yellow-hat-sprite": "url('/yellow-hat.png')",
       },
     },
   },

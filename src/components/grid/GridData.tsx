@@ -1,11 +1,19 @@
 import { Cell, CoordinateType } from "@/app/type.d";
 import { memo } from "react";
-import { house1Info, House1 } from "../houses/House1";
-import { house2Info, House2 } from "../houses/House2";
-import { house3Info, House3 } from "../houses/House3";
-import { house4Info, House4 } from "../houses/House4";
-import { house5Info, House5 } from "../houses/House5";
-import { tree1Info, Tree1 } from "../houses/Tree1";
+import { house1Info, House1 } from "../Placeables/House1";
+import { house2Info, House2 } from "../Placeables/House2";
+import { house3Info, House3 } from "../Placeables/House3";
+import { house4Info, House4 } from "../Placeables/House4";
+import { house5Info, House5 } from "../Placeables/House5";
+import { tree1Info, Tree1 } from "../Placeables/Tree1";
+import Character from "../character/Character";
+import {
+  characterBlondHair,
+  characterSilverHair,
+  characterSpikyHair,
+  characterWhiteShirt,
+  characterYellowHat,
+} from "../Placeables/Characters";
 
 export interface GridDataProps {
   data: Cell[][];
@@ -73,6 +81,36 @@ const renderComp = (name: string) => {
       return <House5></House5>;
     case tree1Info.name:
       return <Tree1></Tree1>;
+    case characterBlondHair.name:
+      return (
+        <div className="absolute z-20">
+          <Character characterBgClass={"bg-blond-hair-sprite"} />
+        </div>
+      );
+    case characterSilverHair.name:
+      return (
+        <div className="absolute z-20">
+          <Character characterBgClass={"bg-silver-hair-sprite"} />
+        </div>
+      );
+    case characterSpikyHair.name:
+      return (
+        <div className="absolute z-20">
+          <Character characterBgClass={"bg-spiky-hair-sprite"} />
+        </div>
+      );
+    case characterWhiteShirt.name:
+      return (
+        <div className="absolute z-20">
+          <Character characterBgClass={"bg-white-shirt-sprite"} />
+        </div>
+      );
+    case characterYellowHat.name:
+      return (
+        <div className="absolute z-20">
+          <Character characterBgClass={"bg-yellow-hat-sprite"} />
+        </div>
+      );
     default:
       return <></>;
   }

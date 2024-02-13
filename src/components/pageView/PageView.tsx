@@ -5,10 +5,10 @@ import { useInput } from "@/app/hooks/useInput";
 import { useMapData } from "@/app/hooks/useMapData";
 import { useTriggers } from "@/app/hooks/useTriggers";
 import Grid from "@/components/grid/Grid";
-import Player from "@/components/player/Player";
 import { TextArea } from "@/components/textarea/TextArea";
 import { useRef, useEffect, useContext } from "react";
 import { TextareaContext } from "../textarea/useTextareaContext";
+import Character from "@/components/character/Character";
 
 export function PageView({
   mapDataKey,
@@ -51,7 +51,15 @@ export function PageView({
         tabIndex={-1}
         ref={playDivRef}
       >
-        <Player direction={direction} isMoving={isMoving} />
+        {/* This is the player */}
+        <div className="size-12 flex items-center justify-center absolute z-30">
+          <Character
+            direction={direction}
+            isMoving={isMoving}
+            characterBgClass="bg-player-sprite"
+          />
+        </div>
+
         <Grid data={mapData} position={position}></Grid>
       </div>
       <TextArea />
