@@ -8,7 +8,7 @@ export const tree1Info = { name, anchor, footprint };
 
 export const Tree1Img = () => (
   <div
-    className="bg-tile-set w-24 h-24 bg-clip-content pointer-events-none border border-dashed"
+    className="bg-tile-set w-24 h-24 bg-clip-content pointer-events-none"
     style={{
       backgroundPosition: "-32px -0px",
       backgroundSize: "4480px 4800px",

@@ -14,7 +14,7 @@ export const house5Info = { name, anchor, footprint };
 
 export const House5Img = ({ className = "px-3" }: { className?: string }) => (
   <div
-    className={`bg-tile-set bg-clip-content w-60 h-60 pointer-events-none border border-dashed ${className}`}
+    className={`bg-tile-set bg-clip-content w-60 h-60 pointer-events-none  ${className}`}
     style={{
       backgroundPosition: "-1690px -2470px",
       backgroundSize: "4480px 4800px",

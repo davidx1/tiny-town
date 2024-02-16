@@ -1,6 +1,24 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
-export const useInventoryData = () => {
+export interface InventoryValueType {
+  inventory: string[];
+  isLoading: boolean;
+  addToInventory: (item: string) => void;
+  removeFromInventory: (item: string) => void;
+}
+
+const inventoryDefaultValue: InventoryValueType = {
+  inventory: [],
+  isLoading: true,
+  addToInventory: (item) => console.log(`Add ${item} to inventory`),
+  removeFromInventory: (item) => console.log(`Remove ${item} from inventory`),
+};
+
+export const InventoryContext = createContext<InventoryValueType>(
+  inventoryDefaultValue,
+);
+
+export const useInventoryData = (): InventoryValueType => {
   const [inventory, setInventory] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 

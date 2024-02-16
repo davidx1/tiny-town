@@ -61,7 +61,7 @@ export const useInput = ({
       move();
       timeoutRef.current = setInterval(() => {
         move();
-      }, 200);
+      }, 150);
     }
 
     return () => {

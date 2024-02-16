@@ -9,6 +9,7 @@ import { TextArea } from "@/components/textarea/TextArea";
 import { useRef, useEffect, useContext } from "react";
 import { TextareaContext } from "../textarea/useTextareaContext";
 import Character from "@/components/character/Character";
+import { Gui } from "../gui/Gui";
 
 export function PageView({
   mapDataKey,
@@ -62,6 +63,7 @@ export function PageView({
         <Grid data={mapData} position={position}></Grid>
       </div>
       <TextArea />
+      <Gui />
     </div>
   );
 }
