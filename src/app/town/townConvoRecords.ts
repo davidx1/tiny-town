@@ -80,7 +80,7 @@ export const townConvoRecord: TextRecord = {
   },
   firstGesture: {
     init: {
-      label: "Hey adventurer, have you seen a wallet?",
+      label: "Hey adventurer, have you seen a wallet? I seem to have lost mine",
       options: [
         {
           optionLabel: "No, I don't think so",

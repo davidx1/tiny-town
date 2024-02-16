@@ -3151,7 +3151,7 @@ export const mapData: Cell[][] = [
       occupierId: "1vbi6t9",
       triggerId: null,
       groundType: "grass",
-      comp: { name: "house3", anchor: [2, 2] },
+      comp: { name: "house1", anchor: [2, 2] },
     },
     { occupierId: "1vbi6t9", triggerId: null, groundType: "grass", comp: null },
     { occupierId: null, triggerId: null, groundType: "grass", comp: null },

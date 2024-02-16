@@ -59,7 +59,6 @@ export function PageView({
             characterBgClass="bg-player-sprite"
           />
         </div>
-
         <Grid data={mapData} position={position}></Grid>
       </div>
       <TextArea />

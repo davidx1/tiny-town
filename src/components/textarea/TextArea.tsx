@@ -1,10 +1,21 @@
-import { TextareaContext } from "@/components/textarea/useTextareaContext";
-import { useContext } from "react";
+import {
+  TextareaContext,
+  textareaContextValues,
+} from "@/components/textarea/useTextareaContext";
+import { memo, useContext } from "react";
 
 export const TextArea = () => {
-  const { label, options, selectedOptionIndex } = useContext(TextareaContext);
+  const values = useContext(TextareaContext);
 
-  return label ? (
+  return values.label ? <TextAreaView {...values} /> : <></>;
+};
+
+const TextAreaView = memo(function TextAreaView({
+  label,
+  options,
+  selectedOptionIndex,
+}: textareaContextValues) {
+  return (
     <div className="absolute w-full min-h-[30vh] left-0 bottom-0 z-50 flex items-center justify-center p-10">
       <div className="w-[70vw] h-full bg-opacity-80 bg-gray-800 rounded-lg p-6">
         <div className="p-5 border-white border-4 rounded-lg h-full">
@@ -28,7 +39,5 @@ export const TextArea = () => {
         </div>
       </div>
     </div>
-  ) : (
-    <></>
   );
-};
+});
