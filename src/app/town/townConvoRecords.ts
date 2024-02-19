@@ -1,7 +1,7 @@
 import { TextRecord } from "../type.d";
 
 export const townConvoRecord: TextRecord = {
-  introduction: {
+  doctor: {
     init: {
       label:
         "Welcome, adventurer! You must be new. Would you like to learn about our town?",
@@ -45,13 +45,22 @@ export const townConvoRecord: TextRecord = {
       next: "gestures2",
     },
     gestures2: {
-      label:
-        "Some of the towns folk might have some spares too if you help them with their day.",
+      label: "Here is a few Rock gestures to get you started",
       next: "gestures3",
+      itemAction: {
+        type: "add",
+        key: "gesture-rock",
+        count: 4,
+      },
     },
     gestures3: {
       label:
-        "I hear Jenny the shopkeeper have quite a few PAPER gestures, you should talk to her.",
+        "Some of the towns folk might have some spares too. You should ask around.",
+      next: "gestures4",
+    },
+    gestures4: {
+      label:
+        "I hear Jenny the shopkeeper, and the fisherman.... whatever his name is... have quite a few extra gestures.",
       next: "selection",
     },
     farewell: {
@@ -71,29 +80,89 @@ export const townConvoRecord: TextRecord = {
           optionLabel: "No, I don't think so",
           next: "farewell",
         },
+        {
+          optionLabel: "Do you have any spare gestures?",
+          next: "farewell2",
+          itemCondition: {
+            type: "has",
+            key: "gesture-rock",
+          },
+        },
       ],
     },
     farewell: {
       label: "Henehn...(short laughter)",
       next: null,
     },
+    farewell2: {
+      label: "Henehn...(short laughter)",
+      next: "farewell2_2",
+    },
+    farewell2_2: {
+      label: "...",
+      next: "farewell2_3",
+    },
+    farewell2_3: {
+      label: "... ...",
+      next: "farewell2_4",
+    },
+    farewell2_4: {
+      label: "... ... ...",
+      next: "farewell2_5",
+    },
+    farewell2_5: {
+      label: "ok, here you go, henehn (short laughter)",
+      next: null,
+      itemAction: {
+        type: "add",
+        key: "gesture-scissors",
+        count: 7,
+      },
+    },
   },
-  firstGesture: {
+  shopkeeper: {
     init: {
-      label: "Hey adventurer, have you seen a wallet? I seem to have lost mine",
+      label: "Hello adventurer, are you looking to buy something?",
       options: [
         {
-          optionLabel: "No, I don't think so",
+          optionLabel: "Thanks, but I'm okay for now.",
           next: "farewell",
         },
         {
           optionLabel: "No, but do you have any spare gestures?",
-          next: "farewell",
+          next: "gesture",
+          itemCondition: {
+            type: "has",
+            key: "gesture-rock",
+          },
         },
       ],
     },
+    gesture: {
+      label: "Oh yea I do!",
+      next: "gesture2",
+    },
+    gesture2: {
+      label:
+        "You know I dreamt of being a Rock Paper Scissors battler too when I was young",
+      next: "gesture3",
+    },
+    gesture3: {
+      label: "But I just couldn't get the hang of it.",
+      next: "gesture4",
+    },
+    gesture4: {
+      label:
+        "Here are some paper gestures. Hope they serve you better than they've served me!",
+      next: null,
+      itemAction: {
+        type: "add",
+        key: "gesture-paper",
+        count: 2,
+      },
+    },
     farewell: {
-      label: "Hmm... where is my wallet, It must be around here somewhere...",
+      label: "Ah alright. Well I'm here if you need me.",
       next: null,
     },
   },

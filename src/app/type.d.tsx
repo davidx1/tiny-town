@@ -24,20 +24,35 @@ export interface FeatureType {
   name: string;
 }
 
+export type ItemKey = "gesture-paper" | "gesture-rock" | "gesture-scissors";
+export type InventoryType = Record<ItemKey, number>;
+
 export type TextRecord = Record<string, Conversation>;
 export type Conversation = Record<string, Segment>;
-export type Segment = ConversationPassiveText | ConversationUserSelection;
-export type ConversationPassiveText = {
-  label: string;
-  next: string | null;
-};
+export type Segment = SegmentPassive | SegmentWSelection;
 
-export type ConversationUserSelection = {
+type SegmentBase = {
+  label: string;
+  itemAction?: {
+    type: "add" | "remove";
+    key: ItemKey;
+    count?: number;
+  };
+};
+export interface SegmentPassive extends SegmentBase {
+  next: string | null;
+}
+
+export interface SegmentWSelection extends SegmentBase {
   label: string;
   options: ConversationOption[];
-};
+}
 
 export type ConversationOption = {
+  itemCondition?: {
+    type: "has";
+    key: ItemKey;
+  };
   optionLabel: string;
   next: string | null;
 };

@@ -1,5 +1,6 @@
+import { InventoryContext } from "@/app/hooks/useInventoryData";
 import { ConversationOption, TextRecord } from "@/app/type.d";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export interface textareaContextValues {
   label: string | null;
@@ -31,6 +32,22 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
   const [label, setLabel] = useState<string | null>(null);
   const [options, setOptions] = useState<ConversationOption[] | null>(null);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState<number>(0);
+  const { addToInventory, removeFromInventory } = useContext(InventoryContext);
+
+  useEffect(() => {
+    if (conversationKey && segmentKey) {
+      const newSegmentAction =
+        textRecord[conversationKey][segmentKey].itemAction;
+      if (newSegmentAction?.type === "add") {
+        addToInventory(newSegmentAction.key, newSegmentAction.count);
+      }
+
+      if (newSegmentAction?.type === "remove") {
+        removeFromInventory(newSegmentAction.key, newSegmentAction.count);
+      }
+    }
+  }, [segmentKey, conversationKey]);
+
   const goToNextSegment = () => {
     if (conversationKey && segmentKey) {
       const segment = textRecord[conversationKey][segmentKey];
@@ -39,7 +56,6 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
           ? segment.options[selectedOptionIndex].next
           : segment.next;
 
-      console.log(nextSegmentKey);
       setSegmentKey(nextSegmentKey);
       if (nextSegmentKey === null) {
         setConversationKey(null);

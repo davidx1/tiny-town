@@ -1,17 +1,19 @@
 import { createContext, useEffect, useState } from "react";
+import { InventoryType, ItemKey } from "../type.d";
 
 export interface InventoryValueType {
-  inventory: string[];
+  inventory: InventoryType;
   isLoading: boolean;
-  addToInventory: (item: string) => void;
-  removeFromInventory: (item: string) => void;
+  addToInventory: (item: ItemKey, count?: number) => void;
+  removeFromInventory: (item: ItemKey, count?: number) => void;
 }
 
 const inventoryDefaultValue: InventoryValueType = {
-  inventory: [],
+  inventory: {} as InventoryType,
   isLoading: true,
-  addToInventory: (item) => console.log(`Add ${item} to inventory`),
-  removeFromInventory: (item) => console.log(`Remove ${item} from inventory`),
+  addToInventory: (item) => console.log(`Default Add ${item} to inventory`),
+  removeFromInventory: (item) =>
+    console.log(`Default Remove ${item} from inventory`),
 };
 
 export const InventoryContext = createContext<InventoryValueType>(
@@ -19,7 +21,9 @@ export const InventoryContext = createContext<InventoryValueType>(
 );
 
 export const useInventoryData = (): InventoryValueType => {
-  const [inventory, setInventory] = useState<string[]>([]);
+  const [inventory, setInventory] = useState<InventoryType>(
+    {} as InventoryType,
+  );
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -27,7 +31,9 @@ export const useInventoryData = (): InventoryValueType => {
       `tiny-town-inventory-array`,
     );
     setInventory(
-      storedMapString ? (JSON.parse(storedMapString) as string[]) : [],
+      storedMapString
+        ? (JSON.parse(storedMapString) as InventoryType)
+        : ({} as InventoryType),
     );
     setIsLoading(false);
   }, []);
@@ -40,13 +46,27 @@ export const useInventoryData = (): InventoryValueType => {
     );
   };
 
-  const addToInventory = (newItemStr: string) => {
-    setInventory([...inventory, newItemStr]);
+  const addToInventory = (newItemStr: ItemKey, count: number = 1) => {
+    console.log("addToInventory");
+    setInventory((inventory) => ({
+      ...inventory,
+      [newItemStr]: (inventory[newItemStr] || 0) + count,
+    }));
     saveInventory();
   };
 
-  const removeFromInventory = (itemToRemoveStr: string) => {
-    setInventory(inventory.filter((item) => item !== itemToRemoveStr));
+  const removeFromInventory = (itemToRemoveStr: ItemKey, count: number = 1) => {
+    if (inventory?.[itemToRemoveStr] >= count) {
+      setInventory((inventory) => ({
+        ...inventory,
+        [itemToRemoveStr]: inventory[itemToRemoveStr] - count,
+      }));
+    } else {
+      setInventory((inventory) => ({
+        ...inventory,
+        [itemToRemoveStr]: 0,
+      }));
+    }
     saveInventory();
   };
 

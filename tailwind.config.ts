@@ -11,6 +11,7 @@ const config: Config = {
         "spiky-hair-sprite": "url('/spiky-hair.png')",
         "white-shirt-sprite": "url('/white-shirt.png')",
         "yellow-hat-sprite": "url('/yellow-hat.png')",
+        "gestures-sprite": "url('/gesture.png')",
       },
     },
   },

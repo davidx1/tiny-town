@@ -9,18 +9,24 @@ import {
 import { townConvoRecord } from "./townConvoRecords";
 import { InventoryContext, useInventoryData } from "../hooks/useInventoryData";
 
-export default function Home() {
+export function HomeLayer2() {
   const textareaValue = useTextarea(townConvoRecord);
+  return (
+    <TextareaContext.Provider value={textareaValue}>
+      <PageView
+        mapDataKey="town"
+        initialPositionRecords={townInitialPositionRecord}
+        triggerRecord={townTriggerRecord}
+      />
+    </TextareaContext.Provider>
+  );
+}
+
+export default function Home() {
   const inventoryValue = useInventoryData();
   return (
     <InventoryContext.Provider value={inventoryValue}>
-      <TextareaContext.Provider value={textareaValue}>
-        <PageView
-          mapDataKey="town"
-          initialPositionRecords={townInitialPositionRecord}
-          triggerRecord={townTriggerRecord}
-        />
-      </TextareaContext.Provider>
+      <HomeLayer2 />
     </InventoryContext.Provider>
   );
 }
