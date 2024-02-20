@@ -26,6 +26,7 @@ const TextAreaView = memo(function TextAreaView({
             <ul className="mt-3 text-lg">
               {options.map((option, index) => (
                 <li
+                  key={option.optionLabel}
                   className={
                     index !== selectedOptionIndex
                       ? "ml-5 text-gray-400"

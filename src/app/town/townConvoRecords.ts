@@ -14,6 +14,22 @@ export const townConvoRecord: TextRecord = {
           optionLabel: "No thanks",
           next: "farewell",
         },
+        {
+          optionLabel: "Do you have any spare gestures?",
+          next: "getRock",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: false },
+          ],
+        },
+        {
+          optionLabel: "Do you have any spare gestures?",
+          next: "noGetRock",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: true },
+          ],
+        },
       ],
     },
     intro2: {
@@ -34,6 +50,22 @@ export const townConvoRecord: TextRecord = {
           next: "gestures",
         },
         {
+          optionLabel: "Do you have any spare gestures?",
+          next: "getRock",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: false },
+          ],
+        },
+        {
+          optionLabel: "Do you have any spare gestures?",
+          next: "noGetRock",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: true },
+          ],
+        },
+        {
           optionLabel: "No thanks",
           next: "farewell",
         },
@@ -43,10 +75,21 @@ export const townConvoRecord: TextRecord = {
       label:
         "Gestures are scattered across the land. You could find them everywhere.",
       next: "gestures2",
+      reachedPlotPoint: "talked-to-professor",
     },
     gestures2: {
-      label: "Here is a few Rock gestures to get you started",
+      label:
+        "Some of the towns folk might have some spares too. You should ask around.",
       next: "gestures3",
+    },
+    gestures3: {
+      label:
+        "I hear Jenny the shopkeeper, and the fisherman.... whatever his name is... have quite a few extra gestures.",
+      next: "selection",
+    },
+    getRock: {
+      label: "Here is a few Rock gestures to get you started",
+      next: "selection",
       itemAction: {
         type: "add",
         key: "gesture-rock",
@@ -54,14 +97,8 @@ export const townConvoRecord: TextRecord = {
       },
       reachedPlotPoint: "collected-rock",
     },
-    gestures3: {
-      label:
-        "Some of the towns folk might have some spares too. You should ask around.",
-      next: "gestures4",
-    },
-    gestures4: {
-      label:
-        "I hear Jenny the shopkeeper, and the fisherman.... whatever his name is... have quite a few extra gestures.",
+    noGetRock: {
+      label: "I'm afraid I've given you all the gestures I can spare",
       next: "selection",
     },
     farewell: {
@@ -85,7 +122,7 @@ export const townConvoRecord: TextRecord = {
           optionLabel: "Do you have any spare gestures?",
           next: "farewell2",
           plotCondition: [
-            { key: "collected-rock", status: true },
+            { key: "talked-to-professor", status: true },
             { key: "collected-scissor", status: false },
           ],
         },
@@ -119,6 +156,7 @@ export const townConvoRecord: TextRecord = {
         key: "gesture-scissors",
         count: 7,
       },
+      reachedPlotPoint: "collected-scissor",
     },
   },
   shopkeeper: {
@@ -133,7 +171,7 @@ export const townConvoRecord: TextRecord = {
           optionLabel: "No, but do you have any spare gestures?",
           next: "gesture",
           plotCondition: [
-            { key: "collected-rock", status: true },
+            { key: "talked-to-professor", status: true },
             { key: "collected-paper", status: false },
           ],
         },
@@ -161,6 +199,7 @@ export const townConvoRecord: TextRecord = {
         key: "gesture-paper",
         count: 2,
       },
+      reachedPlotPoint: "collected-paper",
     },
     farewell: {
       label: "Ah alright. Well I'm here if you need me.",

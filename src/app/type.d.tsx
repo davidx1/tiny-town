@@ -47,7 +47,6 @@ type SegmentBase = {
     count?: number;
   };
   reachedPlotPoint?: PlotKey;
-  notReachedPlotPoint?: PlotKey;
 };
 export interface SegmentPassive extends SegmentBase {
   next: string | null;

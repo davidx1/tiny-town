@@ -30,11 +30,21 @@ export const TextareaContext = createContext<textareaContextValues>(
 export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
   const [conversationKey, setConversationKey] = useState<string | null>(null);
   const [segmentKey, setSegmentKey] = useState<string | null>(null);
+  const [nextSegmentKey, setNextSegmentKey] = useState<string | null>(null);
   const [label, setLabel] = useState<string | null>(null);
   const [options, setOptions] = useState<ConversationOption[] | null>(null);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState<number>(0);
   const { addToInventory, removeFromInventory } = useContext(InventoryContext);
-  const { plot } = useContext(PlotContext);
+  const { plot, reachedPlotPoint } = useContext(PlotContext);
+
+  const validOptionsFilter = (option: ConversationOption) => {
+    return (
+      !option?.plotCondition ||
+      option.plotCondition.every(
+        (condition) => !!plot[condition.key] === condition.status,
+      )
+    );
+  };
 
   useEffect(() => {
     if (conversationKey && segmentKey) {
@@ -51,33 +61,28 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
   }, [segmentKey, conversationKey]);
 
   const goToNextSegment = () => {
-    if (conversationKey && segmentKey) {
-      const segment = textRecord[conversationKey][segmentKey];
-      const nextSegmentKey =
-        "options" in segment
-          ? segment.options[selectedOptionIndex].next
-          : segment.next;
-
-      setSegmentKey(nextSegmentKey);
-      if (nextSegmentKey === null) {
-        setConversationKey(null);
-      }
+    setSegmentKey(nextSegmentKey);
+    if (nextSegmentKey === null) {
+      setConversationKey(null);
     }
   };
+
   const prevOption = () => {
     if (options) {
-      setSelectedOptionIndex((selectedOptionIndex) =>
+      const newIndex =
         selectedOptionIndex === 0
           ? options.length - 1
-          : selectedOptionIndex - 1,
-      );
+          : selectedOptionIndex - 1;
+      setSelectedOptionIndex(newIndex);
+      setNextSegmentKey(options[newIndex].next);
     }
   };
   const nextOption = () => {
     if (options) {
-      setSelectedOptionIndex((selectedOptionIndex) =>
-        selectedOptionIndex === options.length ? 0 : selectedOptionIndex + 1,
-      );
+      const newIndex =
+        selectedOptionIndex === options.length ? 0 : selectedOptionIndex + 1;
+      setSelectedOptionIndex(newIndex);
+      setNextSegmentKey(options[newIndex].next);
     }
   };
 
@@ -92,17 +97,15 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
       setLabel(segment.label);
       if ("options" in segment) {
         setSelectedOptionIndex(0);
-        setOptions(
-          segment.options.filter(
-            (option) =>
-              !option.plotCondition ||
-              option.plotCondition.every(
-                (condition) => plot[condition.key] === condition.status,
-              ),
-          ),
-        );
+        setOptions(segment.options.filter(validOptionsFilter));
+        setNextSegmentKey(segment.options.filter(validOptionsFilter)[0].next);
       } else {
         setOptions(null);
+        setNextSegmentKey(segment.next);
+      }
+
+      if (segment.reachedPlotPoint) {
+        reachedPlotPoint(segment.reachedPlotPoint);
       }
     } else {
       setLabel(null);

@@ -47,7 +47,6 @@ export const useInventoryData = (): InventoryValueType => {
   };
 
   const addToInventory = (newItemStr: ItemKey, count: number = 1) => {
-    console.log("addToInventory");
     setInventory((inventory) => ({
       ...inventory,
       [newItemStr]: (inventory[newItemStr] || 0) + count,
