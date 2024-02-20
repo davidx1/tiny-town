@@ -27,6 +27,14 @@ export interface FeatureType {
 export type ItemKey = "gesture-paper" | "gesture-rock" | "gesture-scissors";
 export type InventoryType = Record<ItemKey, number>;
 
+export type PlotKey =
+  | "talked-to-professor"
+  | "collected-rock"
+  | "collected-paper"
+  | "collected-scissor"
+  | "fought-first-battle";
+export type PlotType = Record<PlotKey, boolean>;
+
 export type TextRecord = Record<string, Conversation>;
 export type Conversation = Record<string, Segment>;
 export type Segment = SegmentPassive | SegmentWSelection;
@@ -38,6 +46,8 @@ type SegmentBase = {
     key: ItemKey;
     count?: number;
   };
+  reachedPlotPoint?: PlotKey;
+  notReachedPlotPoint?: PlotKey;
 };
 export interface SegmentPassive extends SegmentBase {
   next: string | null;
@@ -49,10 +59,7 @@ export interface SegmentWSelection extends SegmentBase {
 }
 
 export type ConversationOption = {
-  itemCondition?: {
-    type: "has";
-    key: ItemKey;
-  };
+  plotCondition?: { key: PlotKey; status: boolean }[];
   optionLabel: string;
   next: string | null;
 };

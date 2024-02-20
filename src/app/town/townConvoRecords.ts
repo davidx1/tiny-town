@@ -52,6 +52,7 @@ export const townConvoRecord: TextRecord = {
         key: "gesture-rock",
         count: 4,
       },
+      reachedPlotPoint: "collected-rock",
     },
     gestures3: {
       label:
@@ -83,10 +84,10 @@ export const townConvoRecord: TextRecord = {
         {
           optionLabel: "Do you have any spare gestures?",
           next: "farewell2",
-          itemCondition: {
-            type: "has",
-            key: "gesture-rock",
-          },
+          plotCondition: [
+            { key: "collected-rock", status: true },
+            { key: "collected-scissor", status: false },
+          ],
         },
       ],
     },
@@ -131,10 +132,10 @@ export const townConvoRecord: TextRecord = {
         {
           optionLabel: "No, but do you have any spare gestures?",
           next: "gesture",
-          itemCondition: {
-            type: "has",
-            key: "gesture-rock",
-          },
+          plotCondition: [
+            { key: "collected-rock", status: true },
+            { key: "collected-paper", status: false },
+          ],
         },
       ],
     },

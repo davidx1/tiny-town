@@ -8,6 +8,7 @@ import {
 } from "@/components/textarea/useTextareaContext";
 import { townConvoRecord } from "./townConvoRecords";
 import { InventoryContext, useInventoryData } from "../hooks/useInventoryData";
+import { PlotContext, usePlotData } from "../hooks/usePlotData";
 
 export function HomeLayer2() {
   const textareaValue = useTextarea(townConvoRecord);
@@ -23,10 +24,14 @@ export function HomeLayer2() {
 }
 
 export default function Home() {
+  const plotValue = usePlotData();
   const inventoryValue = useInventoryData();
+
   return (
-    <InventoryContext.Provider value={inventoryValue}>
-      <HomeLayer2 />
-    </InventoryContext.Provider>
+    <PlotContext.Provider value={plotValue}>
+      <InventoryContext.Provider value={inventoryValue}>
+        <HomeLayer2 />
+      </InventoryContext.Provider>
+    </PlotContext.Provider>
   );
 }

@@ -1,4 +1,5 @@
 import { InventoryContext } from "@/app/hooks/useInventoryData";
+import { PlotContext } from "@/app/hooks/usePlotData";
 import { ConversationOption, TextRecord } from "@/app/type.d";
 import { createContext, useContext, useEffect, useState } from "react";
 
@@ -33,6 +34,7 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
   const [options, setOptions] = useState<ConversationOption[] | null>(null);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState<number>(0);
   const { addToInventory, removeFromInventory } = useContext(InventoryContext);
+  const { plot } = useContext(PlotContext);
 
   useEffect(() => {
     if (conversationKey && segmentKey) {
@@ -90,7 +92,15 @@ export const useTextarea = (textRecord: TextRecord): textareaContextValues => {
       setLabel(segment.label);
       if ("options" in segment) {
         setSelectedOptionIndex(0);
-        setOptions(segment.options);
+        setOptions(
+          segment.options.filter(
+            (option) =>
+              !option.plotCondition ||
+              option.plotCondition.every(
+                (condition) => plot[condition.key] === condition.status,
+              ),
+          ),
+        );
       } else {
         setOptions(null);
       }
