@@ -8,6 +8,8 @@ export interface InventoryValueType {
   removeFromInventory: (item: ItemKey, count?: number) => void;
 }
 
+const inventoryStoreName = "tiny-town-inventory-store";
+
 const inventoryDefaultValue: InventoryValueType = {
   inventory: {} as InventoryType,
   isLoading: true,
@@ -27,9 +29,7 @@ export const useInventoryData = (): InventoryValueType => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const storedMapString = window.sessionStorage.getItem(
-      `tiny-town-inventory-array`,
-    );
+    const storedMapString = window.sessionStorage.getItem(inventoryStoreName);
     setInventory(
       storedMapString
         ? (JSON.parse(storedMapString) as InventoryType)
@@ -38,35 +38,32 @@ export const useInventoryData = (): InventoryValueType => {
     setIsLoading(false);
   }, []);
 
-  const saveInventory = () => {
-    const newInventoryString = JSON.stringify(inventory);
-    window.sessionStorage.setItem(
-      `tiny-town-inventory-array`,
-      newInventoryString,
-    );
+  const saveInventory = (newInventory: InventoryType) => {
+    const newInventoryString = JSON.stringify(newInventory);
+    window.sessionStorage.setItem(inventoryStoreName, newInventoryString);
+    setInventory(newInventory);
   };
 
   const addToInventory = (newItemStr: ItemKey, count: number = 1) => {
-    setInventory((inventory) => ({
+    const newInventory = {
       ...inventory,
       [newItemStr]: (inventory[newItemStr] || 0) + count,
-    }));
-    saveInventory();
+    };
+    saveInventory(newInventory);
   };
 
   const removeFromInventory = (itemToRemoveStr: ItemKey, count: number = 1) => {
-    if (inventory?.[itemToRemoveStr] >= count) {
-      setInventory((inventory) => ({
-        ...inventory,
-        [itemToRemoveStr]: inventory[itemToRemoveStr] - count,
-      }));
-    } else {
-      setInventory((inventory) => ({
-        ...inventory,
-        [itemToRemoveStr]: 0,
-      }));
-    }
-    saveInventory();
+    const newInventory =
+      inventory?.[itemToRemoveStr] >= count
+        ? {
+            ...inventory,
+            [itemToRemoveStr]: inventory[itemToRemoveStr] - count,
+          }
+        : {
+            ...inventory,
+            [itemToRemoveStr]: 0,
+          };
+    saveInventory(newInventory);
   };
 
   return { inventory, isLoading, addToInventory, removeFromInventory };

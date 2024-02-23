@@ -1,13 +1,16 @@
 import { mapData as permenentTownMap } from "../town/map";
 import { mapData as permenentOpeningMap } from "../opening/map";
+import { mapData as permenentForestMap } from "../forest/map";
+
 import { Cell } from "../type.d";
 import { useEffect, useState } from "react";
 
-export type mapKeys = "town" | "opening";
+export type mapKeys = "town" | "opening" | "forest";
 
 const permenentMaps = {
   town: permenentTownMap,
   opening: permenentOpeningMap,
+  forest: permenentForestMap,
 };
 
 export const useMapData = (key: mapKeys) => {

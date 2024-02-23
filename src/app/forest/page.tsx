@@ -1,23 +1,23 @@
 "use client";
 import { PageView } from "@/components/pageView/PageView";
-import { townInitialPositionRecord } from "./townInitialPositionRecord";
-import { townTriggerRecord } from "./townTriggerRecords";
+import { forestInitialPositionRecord } from "./forestInitialPositionRecord";
+import { forestTriggerRecord } from "./forestTriggerRecord";
 import {
   TextareaContext,
   useTextarea,
 } from "@/components/textarea/useTextareaContext";
-import { townConvoRecord } from "./townConvoRecords";
+import { forestConvoRecord } from "./forestConvoRecord";
 import { InventoryContext, useInventoryData } from "../hooks/useInventoryData";
-import { PlotContext, usePlotData } from "../hooks/usePlotData";
+import { usePlotData, PlotContext } from "../hooks/usePlotData";
 
-export function PageInner() {
-  const textareaValue = useTextarea(townConvoRecord);
+function PageInner() {
+  const textareaValue = useTextarea(forestConvoRecord);
   return (
     <TextareaContext.Provider value={textareaValue}>
       <PageView
-        mapDataKey="town"
-        initialPositionRecords={townInitialPositionRecord}
-        triggerRecord={townTriggerRecord}
+        mapDataKey="forest"
+        initialPositionRecords={forestInitialPositionRecord}
+        triggerRecord={forestTriggerRecord}
       />
     </TextareaContext.Provider>
   );

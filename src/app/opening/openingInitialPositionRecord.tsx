@@ -5,8 +5,12 @@ export const openingInitialPositionRecord: InitialPositionRecord = {
     initialPosition: [2, 20],
     initialDirection: "down",
   },
+  house: {
+    initialPosition: [14, 16],
+    initialDirection: "down",
+  },
   default: {
-    initialPosition: [10, 20],
+    initialPosition: [14, 16],
     initialDirection: "down",
   },
 };

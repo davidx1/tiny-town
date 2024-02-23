@@ -31,7 +31,7 @@ export type PlotKey =
   | "talked-to-professor"
   | "collected-rock"
   | "collected-paper"
-  | "collected-scissor"
+  | "collected-scissors"
   | "fought-first-battle";
 export type PlotType = Record<PlotKey, boolean>;
 

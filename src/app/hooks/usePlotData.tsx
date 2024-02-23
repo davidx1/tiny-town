@@ -13,6 +13,8 @@ const plotDefaultValue: PlotValueType = {
   reachedPlotPoint: (key) => console.log(`Default Reached ${key}`),
 };
 
+const plotStoreName = `tiny-town-plot-store`;
+
 export const PlotContext = createContext<PlotValueType>(plotDefaultValue);
 
 export const usePlotData = (): PlotValueType => {
@@ -20,8 +22,7 @@ export const usePlotData = (): PlotValueType => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const storedMapString =
-      window.sessionStorage.getItem(`tiny-town-plot-store`);
+    const storedMapString = window.sessionStorage.getItem(plotStoreName);
 
     setPlot(
       storedMapString
@@ -31,17 +32,19 @@ export const usePlotData = (): PlotValueType => {
     setIsLoading(false);
   }, []);
 
-  const savePlot = () => {
-    const newPlotString = JSON.stringify(plot);
-    window.sessionStorage.setItem(`tiny-town-plot-array`, newPlotString);
+  const savePlot = (newPlot: PlotType) => {
+    const newPlotString = JSON.stringify(newPlot);
+    window.sessionStorage.setItem(plotStoreName, newPlotString);
+    setPlot(newPlot);
   };
 
   const reachedPlotPoint = (newPlotPointReached: PlotKey) => {
-    setPlot((plot) => ({
+    console.log(newPlotPointReached);
+    const newPlot = {
       ...plot,
       [newPlotPointReached]: true,
-    }));
-    savePlot();
+    };
+    savePlot(newPlot);
   };
 
   return { plot, isLoading, reachedPlotPoint };

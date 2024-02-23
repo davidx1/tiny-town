@@ -123,7 +123,7 @@ export const townConvoRecord: TextRecord = {
           next: "farewell2",
           plotCondition: [
             { key: "talked-to-professor", status: true },
-            { key: "collected-scissor", status: false },
+            { key: "collected-scissors", status: false },
           ],
         },
       ],
@@ -149,14 +149,14 @@ export const townConvoRecord: TextRecord = {
       next: "farewell2_5",
     },
     farewell2_5: {
-      label: "ok, here you go, henehn (short laughter)",
+      label: "Here you go, henehn (short laughter)",
       next: null,
       itemAction: {
         type: "add",
         key: "gesture-scissors",
         count: 7,
       },
-      reachedPlotPoint: "collected-scissor",
+      reachedPlotPoint: "collected-scissors",
     },
   },
   shopkeeper: {

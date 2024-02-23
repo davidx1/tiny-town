@@ -8,20 +8,30 @@ import {
 } from "@/components/textarea/useTextareaContext";
 import { openingConvoRecord } from "./openingConvoRecord";
 import { InventoryContext, useInventoryData } from "../hooks/useInventoryData";
+import { usePlotData, PlotContext } from "../hooks/usePlotData";
 
-export default function Home() {
+function PageInner() {
   const textareaValue = useTextarea(openingConvoRecord);
+  return (
+    <TextareaContext.Provider value={textareaValue}>
+      <PageView
+        mapDataKey="opening"
+        initialPositionRecords={openingInitialPositionRecord}
+        triggerRecord={openingTriggerRecord}
+      />
+    </TextareaContext.Provider>
+  );
+}
+
+export default function Page() {
+  const plotValue = usePlotData();
   const inventoryValue = useInventoryData();
 
   return (
-    <InventoryContext.Provider value={inventoryValue}>
-      <TextareaContext.Provider value={textareaValue}>
-        <PageView
-          mapDataKey="opening"
-          initialPositionRecords={openingInitialPositionRecord}
-          triggerRecord={openingTriggerRecord}
-        />
-      </TextareaContext.Provider>
-    </InventoryContext.Provider>
+    <PlotContext.Provider value={plotValue}>
+      <InventoryContext.Provider value={inventoryValue}>
+        <PageInner />
+      </InventoryContext.Provider>
+    </PlotContext.Provider>
   );
 }

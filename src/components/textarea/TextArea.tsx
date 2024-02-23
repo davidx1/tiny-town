@@ -1,6 +1,3 @@
-import { InventoryContext } from "@/app/hooks/useInventoryData";
-import { PlotContext } from "@/app/hooks/usePlotData";
-import { InventoryType, PlotType } from "@/app/type.d";
 import {
   TextareaContext,
   textareaContextValues,

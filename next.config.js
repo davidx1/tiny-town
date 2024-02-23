@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/town",
+        destination: "/opening",
         permanent: true, // or false if the redirect is temporary
       },
     ];
