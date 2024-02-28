@@ -13,7 +13,7 @@ import {
 } from "../../hooks/useInventoryData";
 import { PlotContext, usePlotData } from "../../hooks/usePlotData";
 
-export function PageInner() {
+function PageInner() {
   const textareaValue = useTextarea(townConvoRecord);
   return (
     <TextareaContext.Provider value={textareaValue}>
