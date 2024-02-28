@@ -10,7 +10,7 @@ import { House4Img, house4Info } from "@/components/Placeables/House4";
 import { House5Img, house5Info } from "@/components/Placeables/House5";
 import { tree1Info, Tree1, Tree1Img } from "@/components/Placeables/Tree1";
 import { useEditorStates } from "./useEditorStates";
-import { Cell } from "@/app/type.d";
+import { Cell } from "@/type.d";
 import Character from "../character/Character";
 import {
   characterBlondHair,

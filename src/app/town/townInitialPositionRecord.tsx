@@ -1,4 +1,4 @@
-import { InitialPositionRecord } from "../hooks/useInitialPosition";
+import { InitialPositionRecord } from "../../hooks/useInitialPosition";
 
 export const townInitialPositionRecord: InitialPositionRecord = {
   opening: {

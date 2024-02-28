@@ -1,4 +1,4 @@
-import { TextRecord } from "../type.d";
+import { TextRecord } from "../../type.d";
 
 export const townConvoRecord: TextRecord = {
   doctor: {

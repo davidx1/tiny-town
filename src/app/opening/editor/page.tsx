@@ -1,6 +1,6 @@
 "use client";
 
-import { useMapData } from "@/app/hooks/useMapData";
+import { useMapData } from "@/hooks/useMapData";
 import Editor from "@/components/editor/Editor";
 
 export default function NewPage() {

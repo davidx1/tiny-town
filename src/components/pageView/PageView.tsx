@@ -1,9 +1,9 @@
 "use client";
 
-import { useInitialPosition } from "@/app/hooks/useInitialPosition";
-import { useInput } from "@/app/hooks/useInput";
-import { useMapData } from "@/app/hooks/useMapData";
-import { useTriggers } from "@/app/hooks/useTriggers";
+import { useInitialPosition } from "@/hooks/useInitialPosition";
+import { useInput } from "@/hooks/useInput";
+import { useMapData } from "@/hooks/useMapData";
+import { useTriggers } from "@/hooks/useTriggers";
 import Grid from "@/components/grid/Grid";
 import { TextArea } from "@/components/textarea/TextArea";
 import { useRef, useEffect, useContext } from "react";

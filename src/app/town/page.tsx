@@ -7,8 +7,11 @@ import {
   useTextarea,
 } from "@/components/textarea/useTextareaContext";
 import { townConvoRecord } from "./townConvoRecords";
-import { InventoryContext, useInventoryData } from "../hooks/useInventoryData";
-import { PlotContext, usePlotData } from "../hooks/usePlotData";
+import {
+  InventoryContext,
+  useInventoryData,
+} from "../../hooks/useInventoryData";
+import { PlotContext, usePlotData } from "../../hooks/usePlotData";
 
 export function PageInner() {
   const textareaValue = useTextarea(townConvoRecord);

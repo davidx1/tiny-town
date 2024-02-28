@@ -24,7 +24,8 @@ export interface FeatureType {
   name: string;
 }
 
-export type ItemKey = "gesture-paper" | "gesture-rock" | "gesture-scissors";
+export type GestureKey = "gesture-paper" | "gesture-rock" | "gesture-scissors";
+export type ItemKey = GestureKey;
 export type InventoryType = Record<ItemKey, number>;
 
 export type PlotKey =

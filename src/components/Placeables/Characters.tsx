@@ -1,4 +1,4 @@
-import { CoordinateType } from "@/app/type.d";
+import { CoordinateType } from "@/type.d";
 
 const anchor: CoordinateType = [0, 0];
 const footprint = [[1]];

@@ -13,6 +13,9 @@ const config: Config = {
         "yellow-hat-sprite": "url('/yellow-hat.png')",
         "gestures-sprite": "url('/gesture.png')",
       },
+      aspectRatio: {
+        "3/2": "3 / 2",
+      },
     },
   },
   content: ["./src//**/*.{js,ts,jsx,tsx,mdx}"],

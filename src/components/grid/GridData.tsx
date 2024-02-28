@@ -1,4 +1,4 @@
-import { Cell, CoordinateType } from "@/app/type.d";
+import { Cell, CoordinateType } from "@/type.d";
 import { memo } from "react";
 import { house1Info, House1 } from "../Placeables/House1";
 import { house2Info, House2 } from "../Placeables/House2";

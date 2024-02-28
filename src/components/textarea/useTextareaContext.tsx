@@ -1,6 +1,6 @@
-import { InventoryContext } from "@/app/hooks/useInventoryData";
-import { PlotContext } from "@/app/hooks/usePlotData";
-import { ConversationOption, TextRecord } from "@/app/type.d";
+import { InventoryContext } from "@/hooks/useInventoryData";
+import { PlotContext } from "@/hooks/usePlotData";
+import { ConversationOption, TextRecord } from "@/type.d";
 import { createContext, useContext, useEffect, useState } from "react";
 
 export interface textareaContextValues {

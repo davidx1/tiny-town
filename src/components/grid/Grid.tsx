@@ -1,4 +1,4 @@
-import { Cell, CoordinateType } from "@/app/type.d";
+import { Cell, CoordinateType } from "@/type.d";
 import { GridData } from "./GridData";
 
 interface GridProps {

@@ -1,4 +1,4 @@
-import { CoordinateType } from "@/app/type.d";
+import { CoordinateType } from "@/type.d";
 
 export const name = "tree1";
 const anchor: CoordinateType = [1, 0];

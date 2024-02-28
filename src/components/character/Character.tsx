@@ -1,4 +1,4 @@
-import { DirectionType } from "@/app/type.d";
+import { DirectionType } from "@/type.d";
 import { useEffect, useRef, useState } from "react";
 
 interface CharacterAnimationProps {

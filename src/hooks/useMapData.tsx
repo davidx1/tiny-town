@@ -1,6 +1,6 @@
-import { mapData as permenentTownMap } from "../town/map";
-import { mapData as permenentOpeningMap } from "../opening/map";
-import { mapData as permenentForestMap } from "../forest/map";
+import { mapData as permenentTownMap } from "../app/town/map";
+import { mapData as permenentOpeningMap } from "../app/opening/map";
+import { mapData as permenentForestMap } from "../app/forest/map";
 
 import { Cell } from "../type.d";
 import { useEffect, useState } from "react";
