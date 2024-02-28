@@ -1,7 +1,13 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useReducer, useContext } from "react";
+import {
+  useReducer,
+  useContext,
+  KeyboardEventHandler,
+  useEffect,
+  useRef,
+} from "react";
 import { GestureKey } from "../../type.d";
 import {
   InventoryContext,
@@ -83,7 +89,8 @@ const useGameState = () => {
       case States.PREP_ADD:
         if (
           action.type === "select" &&
-          playerReserveGestures[cursorIndex][1] > 0
+          playerReserveGestures[cursorIndex][1] > 0 &&
+          playerBattleGestures.length < 6
         ) {
           return {
             ...gameState,
@@ -96,7 +103,7 @@ const useGameState = () => {
             ].sort((a, b) => (a.name > b.name ? 1 : -1)),
           };
         }
-        if (action.type === "cursor_up") {
+        if (action.type === "cursor_up" && playerBattleGestures.length > 0) {
           return {
             ...gameState,
             state: States.PREP_REMOVE,
@@ -133,6 +140,10 @@ const useGameState = () => {
               ...playerBattleGestures.slice(0, cursorIndex),
               ...playerBattleGestures.slice(cursorIndex + 1),
             ],
+            state:
+              playerBattleGestures.length === 1
+                ? States.PREP_ADD
+                : States.PREP_REMOVE,
           };
         }
         if (action.type === "cursor_down" && playerBattleGestures.length > 0) {
@@ -240,34 +251,99 @@ function PageInner() {
   const searchParams = useSearchParams();
   const battleId = searchParams.get("id");
   const { gameState, onSelect, onLeft, onRight, onUp, onDown } = useGameState();
-  console.log(gameState);
+
+  const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
+    switch (e.code) {
+      case "KeyA":
+      case "ArrowLeft":
+        onLeft();
+        return;
+      case "KeyS":
+      case "ArrowDown":
+        onDown();
+        return;
+      case "KeyD":
+      case "ArrowRight":
+        onRight();
+        return;
+      case "KeyW":
+      case "ArrowUp":
+        onUp();
+        return;
+      case "Enter":
+      case "Space":
+        onSelect();
+        return;
+      default:
+        return;
+    }
+  };
+
+  const playDivRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (playDivRef.current) {
+      playDivRef.current.focus();
+    }
+  }, []);
 
   return (
-    <div className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700">
+    <div
+      className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700"
+      onKeyDown={onKeyDown}
+      tabIndex={-1}
+      ref={playDivRef}
+    >
       <div className="w-full aspect-3/2 bg-gray-300">
         {[States.PREP_ADD, States.PREP_REMOVE, States.PREP_READY].includes(
           gameState.state,
         ) && (
           <div className="flex flex-col gap-10 items-center justify-center h-full">
             <h1>Select the gestures to use for this combat</h1>
-            <div className="flex gap-8">
+            <div className="flex gap-4 items-center">
+              <h1>
+                Chosen Gestures ({gameState.playerBattleGestures.length}/6):
+              </h1>
               {Array.from({ length: 6 }).map((_, i) => (
-                <div className="w-24 h-24 bg-green-500">
+                <div className="bg-gray-400 w-20 h-20 rounded-lg">
                   {gameState.playerBattleGestures[i] && (
-                    <h2>{gameState.playerBattleGestures[i].name}</h2>
+                    <GestureIcon
+                      gestureKey={gameState.playerBattleGestures[i].name}
+                      className={
+                        i === gameState.cursorIndex &&
+                        gameState.state === States.PREP_REMOVE
+                          ? "shadow-lg shadow-blue-500 outline outline-gray-700"
+                          : ""
+                      }
+                    />
                   )}
                 </div>
               ))}
             </div>
-            <div className="flex gap-8">
+            <div className="flex gap-8 items-center">
+              <h1>Available Gestures:</h1>
               {Array.from({ length: 3 }).map((_, i) => (
                 <GestureIcon
                   gestureKey={gameState.playerReserveGestures[i][0]}
                   count={gameState.playerReserveGestures[i][1]}
+                  className={
+                    i === gameState.cursorIndex &&
+                    gameState.state === States.PREP_ADD
+                      ? "shadow-lg shadow-blue-500 outline outline-gray-700"
+                      : ""
+                  }
                 />
               ))}
             </div>
-            <button>Chosen</button>
+            <button
+              className={
+                gameState.state === States.PREP_READY
+                  ? "shadow-lg shadow-blue-500 outline outline-gray-700"
+                  : "border-blue-500 border-4 p-4"
+              }
+            >
+              Chosen
+            </button>
           </div>
         )}
       </div>

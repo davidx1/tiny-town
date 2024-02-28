@@ -2,7 +2,7 @@ import { GestureKey } from "@/type.d";
 
 interface GestureIconProp {
   gestureKey: GestureKey;
-  count: number;
+  count?: number;
   className?: string;
 }
 export const GestureIcon = ({
@@ -20,9 +20,11 @@ export const GestureIcon = ({
     <div
       className={`bg-gestures-sprite h-20 w-20 flex justify-end items-end rounded-lg ${positionClass} ${className}`}
     >
-      <p className="bg-gray-800/40 h-8 w-8 flex justify-center items-center p-0 m-0 text-xl rounded-lg text-white">
-        {count}
-      </p>
+      {count !== undefined && (
+        <p className="bg-gray-800/40 h-8 w-8 flex justify-center items-center p-0 m-0 text-xl rounded-lg text-white">
+          {count}
+        </p>
+      )}
     </div>
   );
 };
