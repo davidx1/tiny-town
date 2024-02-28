@@ -308,6 +308,7 @@ function PageInner() {
                 <div className="bg-gray-400 w-20 h-20 rounded-lg">
                   {gameState.playerBattleGestures[i] && (
                     <GestureIcon
+                      key={i}
                       gestureKey={gameState.playerBattleGestures[i].name}
                       className={
                         i === gameState.cursorIndex &&
@@ -324,6 +325,7 @@ function PageInner() {
               <h1>Available Gestures:</h1>
               {Array.from({ length: 3 }).map((_, i) => (
                 <GestureIcon
+                  key={gameState.playerReserveGestures[i][0]}
                   gestureKey={gameState.playerReserveGestures[i][0]}
                   count={gameState.playerReserveGestures[i][1]}
                   className={
