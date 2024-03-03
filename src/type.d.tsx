@@ -35,7 +35,6 @@ export type PlotKey =
   | "collected-scissors"
   | "fought-first-battle";
 export type PlotType = Record<PlotKey, boolean>;
-
 export type TextRecord = Record<string, Conversation>;
 export type Conversation = Record<string, Segment>;
 export type Segment = SegmentPassive | SegmentWSelection;
@@ -63,3 +62,37 @@ export type ConversationOption = {
   optionLabel: string;
   next: string | null;
 };
+
+export interface BattleGesture {
+  name: GestureKey;
+  hp: number;
+}
+
+export enum BattleStates {
+  PREP_ADD,
+  PREP_REMOVE,
+  PREP_READY,
+  SELECT_GESTURE,
+  GESTURE_REVEAL,
+  HEALTH_CHANGE,
+  RESULT,
+}
+
+// Actions
+export type BattleActions =
+  | { type: "select" }
+  | { type: "cursor_up" }
+  | { type: "cursor_down" }
+  | { type: "cursor_left" }
+  | { type: "cursor_right" }
+  | { type: "internal_continue" };
+
+export interface BattleGameState {
+  state: BattleStates;
+  playerReserveGestures: [GestureKey, number][];
+  playerBattleGestures: BattleGesture[];
+  playerPlayedGestureIndex: number;
+  aiBattleGestures: BattleGesture[];
+  aiPlayedGestureIndex: number;
+  cursorIndex: number;
+}

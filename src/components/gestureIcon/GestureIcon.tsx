@@ -3,12 +3,14 @@ import { GestureKey } from "@/type.d";
 interface GestureIconProp {
   gestureKey: GestureKey;
   count?: number;
+  hp?: number;
   className?: string;
 }
 export const GestureIcon = ({
   gestureKey,
   count,
   className = "",
+  hp,
 }: GestureIconProp) => {
   const keyToSpritePositionMap: Record<GestureKey, string> = {
     "gesture-paper": "bg-[length:250px] bg-[position:-172px_0px]",
@@ -25,6 +27,7 @@ export const GestureIcon = ({
           {count}
         </p>
       )}
+      {hp && <progress value={hp} max="4"></progress>}
     </div>
   );
 };
