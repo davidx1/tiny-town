@@ -8,10 +8,10 @@ export const forestTriggerRecord: Record<string, triggerType> = {
   },
   mpamoot: {
     type: "redirect",
-    route: "/battle?id=blond-hair0&strat=random-draw&prev=forest",
+    route: "/battle?id=blond-hair0&strat=random&prev=forest",
   },
   y8ez2p1: {
     type: "redirect",
-    route: "/battle?id=silver-hair0&strat=advantage-play&prev=forest",
+    route: "/battle?id=silver-hair0&strat=random-advantage&prev=forest",
   },
 };

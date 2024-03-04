@@ -9,21 +9,24 @@ export const aiBattleStrategies: Record<
   "first-available": (gestures, _) => {
     return gestures.findIndex((item) => item.hp > 0);
   },
-  "random-draw": (gestures, _) => {
+  random: (gestures, _) => {
     const aiGestureIndexArr = gestures
       .map((item, i) => (item.hp > 0 ? i : null))
       .filter(isNotNull);
-    const aiGestureIndex = Math.trunc(Math.random() * aiGestureIndexArr.length);
-    return aiGestureIndex;
+
+    return aiGestureIndexArr[
+      Math.trunc(Math.random() * aiGestureIndexArr.length)
+    ];
   },
-  "advantage-play": (gestures, playerGesture) => {
-    console.log(playerGesture);
-    const attemptWinningMoveThreshold = 0.5;
+  "random-advantage": (gestures, playerGesture) => {
+    const attemptWinningMoveThreshold = 0.8;
     const playerPower = powerRanking.indexOf(playerGesture);
     const winningGesture = powerRanking[(playerPower + 1) % 3];
     const winningIndex = gestures.findIndex(
       (gesture) => gesture.name === winningGesture && gesture.hp > 0,
     );
+
+    console.log(gestures, playerGesture, winningGesture, winningIndex);
 
     const tryToWin = Math.random() > attemptWinningMoveThreshold;
     if (tryToWin && winningIndex >= 0) {
@@ -33,6 +36,9 @@ export const aiBattleStrategies: Record<
     const aiGestureIndexArr = gestures
       .map((item, i) => (item.hp > 0 ? i : null))
       .filter(isNotNull);
-    return Math.trunc(Math.random() * aiGestureIndexArr.length);
+
+    return aiGestureIndexArr[
+      Math.trunc(Math.random() * aiGestureIndexArr.length)
+    ];
   },
 };

@@ -239,8 +239,13 @@ export const useBattleGameState = (
         }
         return gameState;
       case BattleStates.RESULT:
+        const isVictory = !!playerBattleGestures.filter(
+          (gesture) => !!gesture.hp,
+        ).length
+          ? "_v"
+          : "_d";
         if (action.type === "select") {
-          router.replace(`${returnUrl}?from=${battleId}`);
+          router.replace(`${returnUrl}?prev=${battleId}${isVictory}`);
         }
         return gameState;
       default:

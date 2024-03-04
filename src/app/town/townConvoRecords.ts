@@ -93,7 +93,7 @@ export const townConvoRecord: TextRecord = {
       itemAction: {
         type: "add",
         key: "gesture-rock",
-        count: 4,
+        count: 3,
       },
       reachedPlotPoint: "collected-rock",
     },
@@ -154,7 +154,7 @@ export const townConvoRecord: TextRecord = {
       itemAction: {
         type: "add",
         key: "gesture-scissors",
-        count: 7,
+        count: 1,
       },
       reachedPlotPoint: "collected-scissors",
     },
