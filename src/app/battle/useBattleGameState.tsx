@@ -4,29 +4,40 @@ import {
   BattleStates,
   GestureKey,
   BattleActions,
+  BattleIds,
+  BattleStrategiesKey,
 } from "@/type.d";
-import { isNotNull } from "@/typeguard.d";
 import { useContext, useReducer } from "react";
+import { aiBattleGesturesRecord } from "./const/aiBattleGestureRecord";
+import { powerRanking } from "./const/battlePowerRanking";
+import { aiBattleStrategies } from "./const/aiBattleStrategies";
+import { useRouter } from "next/navigation";
 
-export const useBattleGameState = () => {
+export const useBattleGameState = (
+  battleId: BattleIds,
+  battleStrategyKey: BattleStrategiesKey,
+  returnUrl: string,
+) => {
   // TODO: This assumes the inventory only contains gestures
   // if other items are introduced, a filter need
   // to be introduced here.
   const { inventory } = useContext(InventoryContext);
+  const router = useRouter();
 
   const initialValue: BattleGameState = {
     state: BattleStates.PREP_ADD,
     playerReserveGestures: Object.entries(inventory) as [GestureKey, number][],
     playerBattleGestures: [],
     playerPlayedGestureIndex: 0,
-    aiBattleGestures: [
-      { name: "gesture-rock", hp: 4 },
-      { name: "gesture-paper", hp: 4 },
-      { name: "gesture-scissors", hp: 4 },
-    ],
+    aiBattleGestures: aiBattleGesturesRecord[battleId].map((gestureKey) => ({
+      name: gestureKey,
+      hp: 4,
+    })),
     aiPlayedGestureIndex: 0,
     cursorIndex: 0,
   };
+
+  const aiBattleStrategy = aiBattleStrategies[battleStrategyKey];
 
   const reducer: React.Reducer<BattleGameState, BattleActions> = (
     gameState: BattleGameState,
@@ -64,12 +75,14 @@ export const useBattleGameState = () => {
           return {
             ...gameState,
             state: BattleStates.PREP_REMOVE,
+            cursorIndex: 0,
           };
         }
         if (action.type === "cursor_down" && playerBattleGestures.length > 0) {
           return {
             ...gameState,
             state: BattleStates.PREP_READY,
+            cursorIndex: 0,
           };
         }
         if (action.type === "cursor_right") {
@@ -107,6 +120,7 @@ export const useBattleGameState = () => {
           return {
             ...gameState,
             state: BattleStates.PREP_ADD,
+            cursorIndex: 0,
           };
         }
         if (action.type === "cursor_right") {
@@ -142,12 +156,11 @@ export const useBattleGameState = () => {
           action.type === "select" &&
           playerBattleGestures[cursorIndex].hp > 0
         ) {
-          const aiGestureIndexArr = aiBattleGestures
-            .map((item, i) => (item.hp > 0 ? i : null))
-            .filter(isNotNull);
+          const aiGestureIndex = aiBattleStrategy(
+            aiBattleGestures,
+            playerBattleGestures[cursorIndex].name,
+          );
 
-          console.log(aiGestureIndexArr);
-          const aiGestureIndex = aiGestureIndexArr[0] as number;
           return {
             ...gameState,
             playerPlayedGestureIndex: cursorIndex,
@@ -170,18 +183,13 @@ export const useBattleGameState = () => {
         return gameState;
       case BattleStates.GESTURE_REVEAL:
         if (action.type === "select") {
-          const powers: GestureKey[] = [
-            "gesture-rock",
-            "gesture-paper",
-            "gesture-scissors",
-          ];
           const pIndex = playerPlayedGestureIndex;
           const playedGestureName = playerBattleGestures[pIndex].name;
-          const pPower = powers.indexOf(playedGestureName);
+          const pPower = powerRanking.indexOf(playedGestureName);
 
           const aIndex = aiPlayedGestureIndex;
-          const aGestureName = aiBattleGestures[pIndex].name;
-          const aPower = powers.indexOf(aGestureName);
+          const aGestureName = aiBattleGestures[aIndex].name;
+          const aPower = powerRanking.indexOf(aGestureName);
 
           if (pPower - aPower === 0) {
             //tie
@@ -231,6 +239,9 @@ export const useBattleGameState = () => {
         }
         return gameState;
       case BattleStates.RESULT:
+        if (action.type === "select") {
+          router.replace(`${returnUrl}?from=${battleId}`);
+        }
         return gameState;
       default:
         return gameState;

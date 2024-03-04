@@ -43,11 +43,11 @@ export const StatePrep = ({ gameState }: { gameState: BattleGameState }) => {
       <button
         className={
           gameState.state === BattleStates.PREP_READY
-            ? "shadow-lg shadow-blue-500 outline outline-gray-700"
-            : "border-blue-500 border-4 p-4"
+            ? "bg-blue-400 w-24 h-14 shadow-xl shadow-blue-500 outline outline-gray-700"
+            : "bg-blue-400 w-24 h-14"
         }
       >
-        Chosen
+        Confirm
       </button>
     </div>
   );

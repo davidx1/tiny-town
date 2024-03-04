@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { KeyboardEventHandler, useEffect, useRef } from "react";
-import { BattleStates } from "../../type.d";
+import { BattleIds, BattleStates, BattleStrategiesKey } from "../../type.d";
 import {
   InventoryContext,
   useInventoryData,
@@ -16,9 +16,21 @@ import { useBattleGameState } from "./useBattleGameState";
 
 function PageInner() {
   const searchParams = useSearchParams();
+  const returnUrl = searchParams.get("prev");
   const battleId = searchParams.get("id");
+  const strategy = searchParams.get("strat");
+
+  //TODO: add type guard to ensure the battle Id is a valid battle Id
+  if (!battleId || !returnUrl || !strategy) {
+    throw new Error("Missing critical information for battle");
+  }
+
   const { gameState, onSelect, onLeft, onRight, onUp, onDown } =
-    useBattleGameState();
+    useBattleGameState(
+      battleId as BattleIds,
+      strategy as BattleStrategiesKey,
+      returnUrl,
+    );
 
   const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
     switch (e.code) {

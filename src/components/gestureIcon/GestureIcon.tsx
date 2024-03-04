@@ -18,16 +18,25 @@ export const GestureIcon = ({
     "gesture-rock": "bg-[length:235px] bg-[position:-4px_-150px]",
   };
   const positionClass = keyToSpritePositionMap[gestureKey];
+  const filterClass = hp === 0 ? "grayscale brightnedd-70" : "";
   return (
-    <div
-      className={`bg-gestures-sprite h-20 w-20 flex justify-end items-end rounded-lg ${positionClass} ${className}`}
-    >
-      {count !== undefined && (
-        <p className="bg-gray-800/40 h-8 w-8 flex justify-center items-center p-0 m-0 text-xl rounded-lg text-white">
-          {count}
-        </p>
+    <div>
+      <div
+        className={`bg-gestures-sprite h-20 w-20 flex justify-end items-end rounded-lg overflow-hidden ${positionClass} ${filterClass} ${className}`}
+      >
+        {count !== undefined && (
+          <p className="bg-gray-800/40 h-8 w-8 flex justify-center items-center p-0 m-0 text-xl rounded-lg text-white">
+            {count}
+          </p>
+        )}
+      </div>
+      {hp !== undefined && (
+        <progress
+          value={hp}
+          max="4"
+          className="w-20 h-3 rounded-lg opacity-80"
+        ></progress>
       )}
-      {hp && <progress value={hp} max="4"></progress>}
     </div>
   );
 };

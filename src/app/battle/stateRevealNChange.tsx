@@ -11,14 +11,15 @@ export const StateRevealNChange = ({
   const pHp = gameState.playerBattleGestures[pIndex].hp;
 
   const aIndex = gameState.aiPlayedGestureIndex;
-  const aName = gameState.playerBattleGestures[aIndex].name;
-  const aHp = gameState.playerBattleGestures[aIndex].hp;
+  const aName = gameState.aiBattleGestures[aIndex].name;
+  const aHp = gameState.aiBattleGestures[aIndex].hp;
   return (
     <div className="flex flex-col gap-10 items-center justify-center h-full">
       <div className="flex flex-col gap-4 items-center">
         <GestureIcon gestureKey={aName} hp={aHp} />
         <GestureIcon gestureKey={pName} hp={pHp} />
       </div>
+      <span>Press 'Space' to continue...</span>
     </div>
   );
 };
