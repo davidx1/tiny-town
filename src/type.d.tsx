@@ -102,4 +102,5 @@ export type BattleIds = "spiky-hair0" | "blond-hair0" | "silver-hair0";
 export type BattleStrategiesKey =
   | "first-available"
   | "random"
-  | "random-advantage";
+  | "random-advantage"
+  | "amplified-probability";

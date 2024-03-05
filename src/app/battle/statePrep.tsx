@@ -1,13 +1,17 @@
 import { GestureIcon } from "@/components/gestureIcon/GestureIcon";
 import { BattleGameState, BattleStates } from "@/type.d";
+import { allowedGestureCount } from "./useBattleGameState";
 
 export const StatePrep = ({ gameState }: { gameState: BattleGameState }) => {
   return (
     <div className="flex flex-col gap-10 items-center justify-center h-full">
       <h1>Select the gestures to use for this combat</h1>
       <div className="flex gap-4 items-center">
-        <h1>Chosen Gestures ({gameState.playerBattleGestures.length}/6):</h1>
-        {Array.from({ length: 6 }).map((_, i) => (
+        <h1>
+          Chosen Gestures ({gameState.playerBattleGestures.length}/
+          {allowedGestureCount}):
+        </h1>
+        {Array.from({ length: allowedGestureCount }).map((_, i) => (
           <div className="bg-gray-400 w-20 h-20 rounded-lg">
             {gameState.playerBattleGestures[i] && (
               <GestureIcon

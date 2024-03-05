@@ -13,6 +13,8 @@ import { powerRanking } from "./const/battlePowerRanking";
 import { aiBattleStrategies } from "./const/aiBattleStrategies";
 import { useRouter } from "next/navigation";
 
+export const allowedGestureCount = 4;
+
 export const useBattleGameState = (
   battleId: BattleIds,
   battleStrategyKey: BattleStrategiesKey,
@@ -58,7 +60,7 @@ export const useBattleGameState = (
         if (
           action.type === "select" &&
           playerReserveGestures[cursorIndex][1] > 0 &&
-          playerBattleGestures.length < 6
+          playerBattleGestures.length < allowedGestureCount
         ) {
           return {
             ...gameState,
@@ -126,13 +128,13 @@ export const useBattleGameState = (
         if (action.type === "cursor_right") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 1) % 6,
+            cursorIndex: (cursorIndex + 1) % allowedGestureCount,
           };
         }
         if (action.type === "cursor_left") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 5) % 6,
+            cursorIndex: (cursorIndex + 5) % allowedGestureCount,
           };
         }
         return gameState;
@@ -171,13 +173,14 @@ export const useBattleGameState = (
         if (action.type === "cursor_right") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 1) % 6,
+            cursorIndex: (cursorIndex + 1) % allowedGestureCount,
           };
         }
         if (action.type === "cursor_left") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 5) % 6,
+            cursorIndex:
+              (cursorIndex + allowedGestureCount - 1) % allowedGestureCount,
           };
         }
         return gameState;

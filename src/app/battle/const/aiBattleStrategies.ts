@@ -2,6 +2,16 @@ import { BattleGesture, GestureKey, BattleStrategiesKey } from "@/type.d";
 import { isNotNull } from "@/typeguard.d";
 import { powerRanking } from "./battlePowerRanking";
 
+const playRandom = (gestures: BattleGesture[]) => {
+  const aiGestureIndexArr = gestures
+    .map((item, i) => (item.hp > 0 ? i : null))
+    .filter(isNotNull);
+
+  return aiGestureIndexArr[
+    Math.trunc(Math.random() * aiGestureIndexArr.length)
+  ];
+};
+
 export const aiBattleStrategies: Record<
   BattleStrategiesKey,
   (gestures: BattleGesture[], playerGesture: GestureKey) => number
@@ -9,15 +19,7 @@ export const aiBattleStrategies: Record<
   "first-available": (gestures, _) => {
     return gestures.findIndex((item) => item.hp > 0);
   },
-  random: (gestures, _) => {
-    const aiGestureIndexArr = gestures
-      .map((item, i) => (item.hp > 0 ? i : null))
-      .filter(isNotNull);
-
-    return aiGestureIndexArr[
-      Math.trunc(Math.random() * aiGestureIndexArr.length)
-    ];
-  },
+  random: playRandom,
   "random-advantage": (gestures, playerGesture) => {
     const attemptWinningMoveThreshold = 0.8;
     const playerPower = powerRanking.indexOf(playerGesture);
@@ -26,19 +28,38 @@ export const aiBattleStrategies: Record<
       (gesture) => gesture.name === winningGesture && gesture.hp > 0,
     );
 
-    console.log(gestures, playerGesture, winningGesture, winningIndex);
-
     const tryToWin = Math.random() > attemptWinningMoveThreshold;
     if (tryToWin && winningIndex >= 0) {
       return winningIndex;
     }
 
-    const aiGestureIndexArr = gestures
-      .map((item, i) => (item.hp > 0 ? i : null))
-      .filter(isNotNull);
+    return playRandom(gestures);
+  },
+  "amplified-probability": (gestures, _) => {
+    const probabilityOfPlayingMostCommon = 0.4;
 
-    return aiGestureIndexArr[
-      Math.trunc(Math.random() * aiGestureIndexArr.length)
-    ];
+    if (Math.random() < probabilityOfPlayingMostCommon) {
+      return playRandom(gestures);
+    }
+
+    const occurances: Record<GestureKey, number> = {
+      "gesture-paper": 0,
+      "gesture-rock": 0,
+      "gesture-scissors": 0,
+    };
+    let mostCommonName: GestureKey = "gesture-paper";
+
+    gestures.forEach((gesture) => {
+      if (gesture.hp > 0) {
+        occurances[gesture.name]++;
+        if (occurances[gesture.name] > occurances[mostCommonName]) {
+          mostCommonName = gesture.name;
+        }
+      }
+    });
+
+    return gestures.findIndex(
+      (gesture) => gesture.hp > 0 && gesture.name === mostCommonName,
+    );
   },
 };

@@ -12,6 +12,6 @@ export const forestTriggerRecord: Record<string, triggerType> = {
   },
   y8ez2p1: {
     type: "redirect",
-    route: "/battle?id=silver-hair0&strat=random-advantage&prev=forest",
+    route: "/battle?id=silver-hair0&strat=amplified-probability&prev=forest",
   },
 };
