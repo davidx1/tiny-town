@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { PlotType, ItemKey, PlotKey } from "../type.d";
+import { PlotType, PlotKey } from "../type.d";
 
 export interface PlotValueType {
   plot: PlotType;

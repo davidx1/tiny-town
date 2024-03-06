@@ -29,6 +29,7 @@ export type ItemKey = GestureKey;
 export type InventoryType = Record<ItemKey, number>;
 
 export type PlotKey =
+  | "viewed-controls"
   | "talked-to-professor"
   | "collected-rock"
   | "collected-paper"

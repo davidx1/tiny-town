@@ -12,17 +12,24 @@ import {
   useInventoryData,
 } from "../../hooks/useInventoryData";
 import { usePlotData, PlotContext } from "../../hooks/usePlotData";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 function PageInner() {
   const textareaValue = useTextarea(openingConvoRecord);
-  const [showControl, setShowControl] = useState<boolean>(true);
+  const { plot, reachedPlotPoint, isLoading } = useContext(PlotContext);
+  const [showControl, setShowControl] = useState<boolean>(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowControl(false);
-    }, 3000);
-  }, []);
+    if (!isLoading) {
+      setShowControl(!plot["viewed-controls"]);
+      if (!plot["viewed-controls"]) {
+        setTimeout(() => {
+          setShowControl(false);
+          reachedPlotPoint("viewed-controls");
+        }, 5000);
+      }
+    }
+  }, [isLoading]);
 
   return (
     <TextareaContext.Provider value={textareaValue}>

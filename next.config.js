@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/tiny-town",
+  basePath: process.env.basePath,
   output: "export",
   async redirects() {
     return [
       {
         source: "/",
-        destination: "/opening",
+        destination: `${process.env.basePath}/opening`,
         permanent: true, // or false if the redirect is temporary
       },
     ];
