@@ -19,7 +19,7 @@ export const StateRevealNChange = ({
         <GestureIcon gestureKey={aName} hp={aHp} />
         <GestureIcon gestureKey={pName} hp={pHp} />
       </div>
-      <span>Press 'Space' to continue...</span>
+      <span>{"Press 'Space' to continue..."}</span>
     </div>
   );
 };

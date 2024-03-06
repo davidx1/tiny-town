@@ -11,8 +11,8 @@ export const StatePrep = ({ gameState }: { gameState: BattleGameState }) => {
         <h1>Your opponents loadout:</h1>
         <div className="flex gap-4 col-span-2">
           {gameState.aiBattleGestures.map((gesture, i) => (
-            <div className="bg-gray-400 w-20 h-20 rounded-lg">
-              <GestureIcon key={i} gestureKey={gesture.name} />
+            <div key={i} className="bg-gray-400 w-20 h-20 rounded-lg">
+              <GestureIcon gestureKey={gesture.name} />
             </div>
           ))}
         </div>
@@ -22,10 +22,9 @@ export const StatePrep = ({ gameState }: { gameState: BattleGameState }) => {
         </h1>
         <div className="flex gap-4 col-span-2">
           {Array.from({ length: allowedGestureCount }).map((_, i) => (
-            <div className="bg-gray-400 w-20 h-20 rounded-lg">
+            <div key={i} className="bg-gray-400 w-20 h-20 rounded-lg">
               {gameState.playerBattleGestures[i] && (
                 <GestureIcon
-                  key={i}
                   gestureKey={gameState.playerBattleGestures[i].name}
                   className={
                     i === gameState.cursorIndex &&

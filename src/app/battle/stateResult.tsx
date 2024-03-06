@@ -12,7 +12,7 @@ export const StateResult = ({ gameState }: { gameState: BattleGameState }) => {
       className={`flex flex-col gap-10 items-center justify-center h-full ${bgClass}`}
     >
       <h1>{isVictory ? "Victory!" : "Defeat"}</h1>
-      <span>Press 'Space' to continue...</span>
+      <span>{"Press 'Space' to continue..."}</span>
     </div>
   );
 };
