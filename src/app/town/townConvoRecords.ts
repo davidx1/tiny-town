@@ -3,16 +3,12 @@ import { TextRecord } from "../../type.d";
 export const townConvoRecord: TextRecord = {
   doctor: {
     init: {
-      label:
-        "Welcome, adventurer! You must be new. Would you like to learn about our town?",
+      label: "Welcome, adventurer! How can I help you today?",
       options: [
         {
-          optionLabel: "Yes please!",
+          optionLabel: "Can you teach me about this town?",
           next: "intro2",
-        },
-        {
-          optionLabel: "No thanks",
-          next: "farewell",
+          plotCondition: [{ key: "talked-to-professor", status: false }],
         },
         {
           optionLabel: "Do you have any spare gestures?",
@@ -29,6 +25,18 @@ export const townConvoRecord: TextRecord = {
             { key: "talked-to-professor", status: true },
             { key: "collected-rock", status: true },
           ],
+        },
+        {
+          optionLabel: "Where do I get more gestures?",
+          next: "gestures",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: true },
+          ],
+        },
+        {
+          optionLabel: "Nothing right now, thanks.",
+          next: "farewell",
         },
       ],
     },
@@ -55,14 +63,6 @@ export const townConvoRecord: TextRecord = {
           plotCondition: [
             { key: "talked-to-professor", status: true },
             { key: "collected-rock", status: false },
-          ],
-        },
-        {
-          optionLabel: "Do you have any spare gestures?",
-          next: "noGetRock",
-          plotCondition: [
-            { key: "talked-to-professor", status: true },
-            { key: "collected-rock", status: true },
           ],
         },
         {
@@ -111,12 +111,14 @@ export const townConvoRecord: TextRecord = {
       label: "Good morning, nice day for fishing ain't it?",
       options: [
         {
-          optionLabel: "It sure is!",
+          optionLabel: "Yes it is!",
           next: "farewell",
+          plotCondition: [{ key: "talked-to-professor", status: false }],
         },
         {
-          optionLabel: "No, I don't think so",
+          optionLabel: "Sure! And thanks for the scissors!",
           next: "farewell",
+          plotCondition: [{ key: "collected-scissors", status: true }],
         },
         {
           optionLabel: "Do you have any spare gestures?",
@@ -161,18 +163,27 @@ export const townConvoRecord: TextRecord = {
   },
   shopkeeper: {
     init: {
-      label: "Hello adventurer, are you looking to buy something?",
+      label: "Hello adventurer, What can I do for you?",
       options: [
         {
-          optionLabel: "Thanks, but I'm okay for now.",
+          optionLabel: "Nothing at the moment, thanks.",
           next: "farewell",
+          plotCondition: [{ key: "talked-to-professor", status: false }],
         },
         {
-          optionLabel: "No, but do you have any spare gestures?",
+          optionLabel: "Do you have any spare gestures you can give me?",
           next: "gesture",
           plotCondition: [
             { key: "talked-to-professor", status: true },
             { key: "collected-paper", status: false },
+          ],
+        },
+        {
+          optionLabel: "Do you have any more spare gestures you can give me?",
+          next: "no_gestures",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-paper", status: true },
           ],
         },
       ],
@@ -201,8 +212,27 @@ export const townConvoRecord: TextRecord = {
       },
       reachedPlotPoint: "collected-paper",
     },
+    no_gestures: {
+      label:
+        "I'm afraid not, sorry. Have you tried the fisherman? Or the doc? I hear they've got Rocks and Scissors",
+      next: null,
+    },
     farewell: {
-      label: "Ah alright. Well I'm here if you need me.",
+      label: "That's great. Have a safe trip!",
+      next: null,
+    },
+  },
+  "forest-missing-knowledge": {
+    init: {
+      label:
+        "This is the way into the forest. I should chat to the towns folk and learn more about this world before heading out.",
+      next: null,
+    },
+  },
+  "forest-missing-gesture": {
+    init: {
+      label:
+        "I should collect more rock paper scissors battle gestures before heading into the forest.",
       next: null,
     },
   },

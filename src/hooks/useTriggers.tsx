@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { Cell, CoordinateType, PlotKey } from "../type.d";
 import { useRouter } from "next/navigation";
 import { TextareaContext } from "@/components/textarea/useTextareaContext";
+import { PlotContext } from "./usePlotData";
 
 type redirectTriggerType = {
   type: "redirect";
@@ -22,24 +23,31 @@ export const useTriggers = (
 ) => {
   const router = useRouter();
   const { initConversation } = useContext(TextareaContext);
+  const { plot } = useContext(PlotContext);
 
   useEffect(() => {
     if (mapData && position) {
       const triggerId = mapData[position[0]][position[1]].triggerId;
       const triggers = triggerId ? triggerActionRecord[triggerId] : null;
-      for (const trigger of triggers) {
-        if (trigger) {
-          switch (trigger.type) {
-            case "redirect":
-              router.replace(trigger.route);
-              return;
-            case "conversation":
-              initConversation(trigger.key);
-              return;
-            default:
-              return;
+      if (triggers) {
+        for (const trigger of triggers) {
+          if (
+            !trigger.plotCondition ||
+            trigger.plotCondition.every(
+              (condition) => !!plot[condition.key] === condition.status,
+            )
+          ) {
+            switch (trigger.type) {
+              case "redirect":
+                router.replace(trigger.route);
+                return;
+              case "conversation":
+                initConversation(trigger.key);
+                return;
+              default:
+                return;
+            }
           }
-          break;
         }
       }
     }

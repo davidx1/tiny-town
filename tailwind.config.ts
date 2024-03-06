@@ -12,6 +12,7 @@ const config: Config = {
         "white-shirt-sprite": "url('/white-shirt.png')",
         "yellow-hat-sprite": "url('/yellow-hat.png')",
         "gestures-sprite": "url('/gesture.png')",
+        "control-instruction": "url('/controls.png')",
       },
       aspectRatio: {
         "3/2": "3 / 2",

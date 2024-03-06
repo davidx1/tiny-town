@@ -14,6 +14,7 @@ import { aiBattleStrategies } from "./const/aiBattleStrategies";
 import { useRouter } from "next/navigation";
 
 export const allowedGestureCount = 4;
+export const maxHp = 8;
 
 export const useBattleGameState = (
   battleId: BattleIds,
@@ -33,7 +34,7 @@ export const useBattleGameState = (
     playerPlayedGestureIndex: 0,
     aiBattleGestures: aiBattleGesturesRecord[battleId].map((gestureKey) => ({
       name: gestureKey,
-      hp: 4,
+      hp: maxHp,
     })),
     aiPlayedGestureIndex: 0,
     cursorIndex: 0,
@@ -69,7 +70,7 @@ export const useBattleGameState = (
             ),
             playerBattleGestures: [
               ...playerBattleGestures,
-              { name: playerReserveGestures[cursorIndex][0], hp: 4 },
+              { name: playerReserveGestures[cursorIndex][0], hp: maxHp },
             ].sort((a, b) => (a.name > b.name ? 1 : -1)),
           };
         }
@@ -200,10 +201,10 @@ export const useBattleGameState = (
               ...gameState,
               state: BattleStates.HEALTH_CHANGE,
               aiBattleGestures: aiBattleGestures.map((g, i) =>
-                i === aIndex ? { ...g, hp: g.hp - 1 } : g,
+                i === aIndex ? { ...g, hp: Math.max(g.hp - 2, 0) } : g,
               ),
               playerBattleGestures: playerBattleGestures.map((g, i) =>
-                i === pIndex ? { ...g, hp: g.hp - 1 } : g,
+                i === pIndex ? { ...g, hp: Math.max(g.hp - 2, 0) } : g,
               ),
             };
           } else if (pPower - aPower === 1 || pPower - aPower === -2) {
@@ -212,7 +213,10 @@ export const useBattleGameState = (
               ...gameState,
               state: BattleStates.HEALTH_CHANGE,
               aiBattleGestures: aiBattleGestures.map((g, i) =>
-                i === aIndex ? { ...g, hp: g.hp > 2 ? g.hp - 2 : 0 } : g,
+                i === aIndex ? { ...g, hp: Math.max(g.hp - 4, 0) } : g,
+              ),
+              playerBattleGestures: playerBattleGestures.map((g, i) =>
+                i === pIndex ? { ...g, hp: Math.max(g.hp - 1, 0) } : g,
               ),
             };
           } else if (pPower - aPower === -1 || pPower - aPower === 2) {
@@ -220,8 +224,11 @@ export const useBattleGameState = (
             return {
               ...gameState,
               state: BattleStates.HEALTH_CHANGE,
+              aiBattleGestures: aiBattleGestures.map((g, i) =>
+                i === aIndex ? { ...g, hp: Math.max(g.hp - 1, 0) } : g,
+              ),
               playerBattleGestures: playerBattleGestures.map((g, i) =>
-                i === pIndex ? { ...g, hp: g.hp > 2 ? g.hp - 2 : 0 } : g,
+                i === pIndex ? { ...g, hp: Math.max(g.hp - 4, 0) } : g,
               ),
             };
           }

@@ -18,7 +18,7 @@ export const StateSelect = ({ gameState }: { gameState: BattleGameState }) => {
             gestureKey={gesture.name}
             className={
               i === gameState.cursorIndex
-                ? "shadow-lg shadow-blue-500 outline outline-gray-700"
+                ? "shadow-md shadow-blue-800 outline outline-offset-2 outline-gray-600"
                 : ""
             }
             hp={gesture.hp}

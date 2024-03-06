@@ -1,3 +1,4 @@
+import { maxHp } from "@/app/battle/useBattleGameState";
 import { GestureKey } from "@/type.d";
 
 interface GestureIconProp {
@@ -33,7 +34,7 @@ export const GestureIcon = ({
       {hp !== undefined && (
         <progress
           value={hp}
-          max="4"
+          max={maxHp}
           className="w-20 h-3 rounded-lg opacity-80"
         ></progress>
       )}
