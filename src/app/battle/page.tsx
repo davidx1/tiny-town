@@ -32,7 +32,9 @@ function PageInner() {
       returnUrl,
     );
 
-  const [musicSource, setMusicSource] = useState("/battle-music.mp3");
+  const [musicSource, setMusicSource] = useState(
+    `${process.env.BASE_PATH}battle-music.mp3`,
+  );
 
   const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
     switch (e.code) {
@@ -69,16 +71,18 @@ function PageInner() {
     }
   }, []);
 
-  if (
-    gameState.state === BattleStates.RESULT &&
-    musicSource === `${process.env.basePath}/battle-music.mp3`
-  ) {
-    if (gameState.playerBattleGestures.every((gesture) => gesture.hp === 0)) {
-      setMusicSource(`${process.env.basePath}/defeat.mp3`);
-    } else {
-      setMusicSource(`${process.env.basePath}/victory.mp3`);
+  useEffect(() => {
+    if (
+      gameState.state === BattleStates.RESULT &&
+      musicSource === `${process.env.BASE_PATH}battle-music.mp3`
+    ) {
+      if (gameState.playerBattleGestures.every((gesture) => gesture.hp === 0)) {
+        setMusicSource(`${process.env.BASE_PATH}defeat.mp3`);
+      } else {
+        setMusicSource(`${process.env.BASE_PATH}victory.mp3`);
+      }
     }
-  }
+  }, [gameState.state]);
 
   return (
     <>
