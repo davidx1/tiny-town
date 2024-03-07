@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { KeyboardEventHandler, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-export default function page() {
+export default function Page() {
   const { replace } = useRouter();
 
   const playDivRef = useRef<HTMLButtonElement>(null);
