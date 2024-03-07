@@ -38,7 +38,7 @@ export const aiBattleStrategies: Record<
   "amplified-probability": (gestures, _) => {
     const probabilityOfPlayingMostCommon = 0.4;
 
-    if (Math.random() < probabilityOfPlayingMostCommon) {
+    if (Math.random() > probabilityOfPlayingMostCommon) {
       return playRandom(gestures);
     }
 
