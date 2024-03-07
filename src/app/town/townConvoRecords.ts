@@ -68,6 +68,10 @@ export const townConvoRecord: TextRecord = {
         {
           optionLabel: "No thanks",
           next: "farewell",
+          plotCondition: [
+            { key: "talked-to-professor", status: true },
+            { key: "collected-rock", status: true },
+          ],
         },
       ],
     },
