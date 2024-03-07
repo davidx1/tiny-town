@@ -2,6 +2,9 @@
 const nextConfig = {
   basePath: process.env.BASE_PATH,
   output: "export",
+  env: {
+    myBasePath: process.env.BASE_PATH,
+  },
   async redirects() {
     return [
       {

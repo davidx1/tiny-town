@@ -5,13 +5,13 @@ export const forestTriggerRecord: Record<string, triggerType> = {
   jbhkfz1: [
     {
       type: "redirect",
-      route: "/battle?id=spiky-hair0&strat=first-available&prev=forest",
+      route: "/battle?id=spiky-hair0&strat=amplified-probability&prev=forest",
     },
   ],
   mpamoot: [
     {
       type: "redirect",
-      route: "/battle?id=blond-hair0&strat=random&prev=forest",
+      route: "/battle?id=blond-hair0&strat=amplified-probability&prev=forest",
     },
   ],
   y8ez2p1: [

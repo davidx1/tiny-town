@@ -14,10 +14,10 @@ export const aiBattleGesturesRecord: Record<BattleIds, GestureKey[]> = {
     "gesture-scissors",
   ],
   "silver-hair0": [
-    "gesture-scissors",
-    "gesture-scissors",
-    "gesture-scissors",
     "gesture-rock",
+    "gesture-rock",
+    "gesture-rock",
+    "gesture-scissors",
     "gesture-paper",
     "gesture-paper",
   ],

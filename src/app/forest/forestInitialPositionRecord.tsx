@@ -27,7 +27,7 @@ export const forestInitialPositionRecord: InitialPositionRecord = {
   },
   "silver-hair0_d": {
     initialPosition: [10, 19],
-    initialDirection: "right",
+    initialDirection: "up",
   },
   "silver-hair0_v": {
     initialPosition: [3, 19],
