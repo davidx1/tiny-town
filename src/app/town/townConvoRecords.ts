@@ -12,14 +12,6 @@ export const townConvoRecord: TextRecord = {
         },
         {
           optionLabel: "Do you have any spare gestures?",
-          next: "getRock",
-          plotCondition: [
-            { key: "talked-to-professor", status: true },
-            { key: "collected-rock", status: false },
-          ],
-        },
-        {
-          optionLabel: "Do you have any spare gestures?",
           next: "noGetRock",
           plotCondition: [
             { key: "talked-to-professor", status: true },
@@ -54,16 +46,16 @@ export const townConvoRecord: TextRecord = {
       label: "Is there anything else I can help you with?",
       options: [
         {
-          optionLabel: "Where do I get the gestures?",
-          next: "gestures",
-        },
-        {
           optionLabel: "Do you have any spare gestures?",
           next: "getRock",
           plotCondition: [
             { key: "talked-to-professor", status: true },
             { key: "collected-rock", status: false },
           ],
+        },
+        {
+          optionLabel: "Where do I get the gestures?",
+          next: "gestures",
         },
         {
           optionLabel: "No thanks",
