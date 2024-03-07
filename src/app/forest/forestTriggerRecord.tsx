@@ -20,4 +20,5 @@ export const forestTriggerRecord: Record<string, triggerType> = {
       route: "/battle?id=silver-hair0&strat=amplified-probability&prev=forest",
     },
   ],
+  vboa9ob: [{ type: "redirect", route: "/end" }],
 };

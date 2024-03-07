@@ -147,31 +147,31 @@ export const mapData: Cell[][] = [
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "vboa9ob",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "vboa9ob",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "vboa9ob",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "vboa9ob",
       groundType: "grass",
       comp: null,
     },
     {
       occupierId: null,
-      triggerId: null,
+      triggerId: "vboa9ob",
       groundType: "grass",
       comp: null,
     },
@@ -1100,13 +1100,10 @@ export const mapData: Cell[][] = [
       },
     },
     {
-      occupierId: "ke3ke9c",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: null,
@@ -1115,13 +1112,10 @@ export const mapData: Cell[][] = [
       comp: null,
     },
     {
-      occupierId: "z61pzfs",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: "lwdoq4q",
@@ -1411,13 +1405,7 @@ export const mapData: Cell[][] = [
       comp: null,
     },
     {
-      occupierId: null,
-      triggerId: null,
-      groundType: "grass",
-      comp: null,
-    },
-    {
-      occupierId: "81ow2oi",
+      occupierId: "ilvmx90",
       triggerId: null,
       groundType: "grass",
       comp: {
@@ -1432,19 +1420,25 @@ export const mapData: Cell[][] = [
       comp: null,
     },
     {
-      occupierId: "nz0938y",
+      occupierId: null,
       triggerId: null,
       groundType: "grass",
-      comp: {
-        name: "tree1",
-        anchor: [1, 0],
-      },
+      comp: null,
     },
     {
       occupierId: null,
       triggerId: null,
       groundType: "grass",
       comp: null,
+    },
+    {
+      occupierId: "o2ut81v",
+      triggerId: null,
+      groundType: "grass",
+      comp: {
+        name: "tree1",
+        anchor: [1, 0],
+      },
     },
     {
       occupierId: null,

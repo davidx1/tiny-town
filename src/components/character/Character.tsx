@@ -46,7 +46,7 @@ function useCharacterAnimation({
       setMoveOffset((currentOffset) => currentOffset - 64);
       timingRef.current = setInterval(() => {
         setMoveOffset((currentOffset) => currentOffset - 64);
-      }, 150);
+      }, 200);
     } else {
       clearInterval(timingRef.current);
       setMoveOffset(-8);

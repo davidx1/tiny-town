@@ -13,6 +13,7 @@ const config: Config = {
         "yellow-hat-sprite": `url('${process.env.BASE_PATH}/yellow-hat.png')`,
         "gestures-sprite": `url('${process.env.BASE_PATH}/gesture.png')`,
         "control-instruction": `url('${process.env.BASE_PATH}/controls.png')`,
+        "end-splash": `url('${process.env.BASE_PATH}/end.png')`,
       },
       aspectRatio: {
         "3/2": "3 / 2",
