@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { KeyboardEventHandler, useEffect, useRef } from "react";
+import { KeyboardEventHandler, useEffect, useRef, useState } from "react";
 import { BattleIds, BattleStates, BattleStrategiesKey } from "../../type.d";
 import {
   InventoryContext,
@@ -31,6 +31,8 @@ function PageInner() {
       strategy as BattleStrategiesKey,
       returnUrl,
     );
+
+  const [musicSource, setMusicSource] = useState("/battle-music.mp3");
 
   const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
     switch (e.code) {
@@ -67,6 +69,17 @@ function PageInner() {
     }
   }, []);
 
+  if (
+    gameState.state === BattleStates.RESULT &&
+    musicSource === "/battle-music.mp3"
+  ) {
+    if (gameState.playerBattleGestures.every((gesture) => gesture.hp === 0)) {
+      setMusicSource("/defeat.mp3");
+    } else {
+      setMusicSource("/victory.mp3");
+    }
+  }
+
   return (
     <>
       <div
@@ -96,8 +109,13 @@ function PageInner() {
           )}
         </div>
       </div>
-      <audio autoPlay={true} loop controls style={{ marginTop: "-100px" }}>
-        <source src="/battle-music.mp3" type="audio/mpeg" />
+      <audio
+        autoPlay={true}
+        loop={gameState.state !== BattleStates.RESULT}
+        controls
+        style={{ marginTop: "-100px" }}
+        src={musicSource}
+      >
         Your browser does not support the audio element.
       </audio>
     </>
