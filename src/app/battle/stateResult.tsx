@@ -1,3 +1,4 @@
+import { GestureIcon } from "@/components/gestureIcon/GestureIcon";
 import { BattleGameState } from "@/type.d";
 
 export const StateResult = ({ gameState }: { gameState: BattleGameState }) => {
@@ -11,7 +12,12 @@ export const StateResult = ({ gameState }: { gameState: BattleGameState }) => {
     <div
       className={`flex flex-col gap-10 items-center justify-center h-full ${bgClass}`}
     >
-      <h1>{isVictory ? "Victory!" : "Defeat"}</h1>
+      <h1 className="text-2xl">{isVictory ? "Victory!" : "Defeat"}</h1>
+      <div className="flex gap-4 items-center">
+        {gameState.playerBattleGestures.map((gesture, i) => (
+          <GestureIcon key={i} gestureKey={gesture.name} hp={gesture.hp} />
+        ))}
+      </div>
       <span>{"Press 'Space' to continue..."}</span>
     </div>
   );

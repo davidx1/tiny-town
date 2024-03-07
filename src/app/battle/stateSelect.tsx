@@ -4,13 +4,19 @@ import { BattleGameState, BattleStates } from "@/type.d";
 export const StateSelect = ({ gameState }: { gameState: BattleGameState }) => {
   return (
     <div className="flex flex-col gap-10 items-center justify-center h-full">
-      <h1>Opponent gestures</h1>
       <div className="flex gap-4 items-center">
         {gameState.aiBattleGestures.map((gesture, i) => (
-          <GestureIcon key={i} gestureKey={gesture.name} hp={gesture.hp} />
+          <GestureIcon
+            key={i}
+            gestureKey={gesture.name}
+            hp={gesture.hp}
+            bg="red"
+          />
         ))}
       </div>
-      <h1>Select your next gesture</h1>
+
+      <h1 className="text-xl">Select a gesture to play</h1>
+
       <div className="flex gap-4 items-center">
         {gameState.playerBattleGestures.map((gesture, i) => (
           <GestureIcon

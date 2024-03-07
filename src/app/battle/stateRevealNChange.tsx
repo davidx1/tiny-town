@@ -16,7 +16,7 @@ export const StateRevealNChange = ({
   return (
     <div className="flex flex-col gap-10 items-center justify-center h-full">
       <div className="flex flex-col gap-4 items-center">
-        <GestureIcon gestureKey={aName} hp={aHp} />
+        <GestureIcon gestureKey={aName} hp={aHp} bg="red" />
         <GestureIcon gestureKey={pName} hp={pHp} />
       </div>
       <span>{"Press 'Space' to continue..."}</span>

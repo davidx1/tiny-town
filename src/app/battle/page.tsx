@@ -68,32 +68,39 @@ function PageInner() {
   }, []);
 
   return (
-    <div
-      className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700"
-      onKeyDown={onKeyDown}
-      tabIndex={-1}
-      ref={playDivRef}
-    >
-      <div className="w-full aspect-3/2 bg-gray-300">
-        {[
-          BattleStates.PREP_ADD,
-          BattleStates.PREP_REMOVE,
-          BattleStates.PREP_READY,
-        ].includes(gameState.state) ? (
-          <StatePrep gameState={gameState} />
-        ) : BattleStates.SELECT_GESTURE === gameState.state ? (
-          <StateSelect gameState={gameState} />
-        ) : [BattleStates.GESTURE_REVEAL, BattleStates.HEALTH_CHANGE].includes(
-            gameState.state,
-          ) ? (
-          <StateRevealNChange gameState={gameState} />
-        ) : BattleStates.RESULT === gameState.state ? (
-          <StateResult gameState={gameState} />
-        ) : (
-          <></>
-        )}
+    <>
+      <div
+        className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700"
+        onKeyDown={onKeyDown}
+        tabIndex={-1}
+        ref={playDivRef}
+      >
+        <div className="w-full aspect-3/2 bg-gray-300">
+          {[
+            BattleStates.PREP_ADD,
+            BattleStates.PREP_REMOVE,
+            BattleStates.PREP_READY,
+          ].includes(gameState.state) ? (
+            <StatePrep gameState={gameState} />
+          ) : BattleStates.SELECT_GESTURE === gameState.state ? (
+            <StateSelect gameState={gameState} />
+          ) : [
+              BattleStates.GESTURE_REVEAL,
+              BattleStates.HEALTH_CHANGE,
+            ].includes(gameState.state) ? (
+            <StateRevealNChange gameState={gameState} />
+          ) : BattleStates.RESULT === gameState.state ? (
+            <StateResult gameState={gameState} />
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
-    </div>
+      <audio autoPlay={true} loop controls style={{ marginTop: "-100px" }}>
+        <source src="/battle-music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </>
   );
 }
 

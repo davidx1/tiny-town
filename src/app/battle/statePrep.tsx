@@ -5,19 +5,19 @@ import { allowedGestureCount } from "./useBattleGameState";
 export const StatePrep = ({ gameState }: { gameState: BattleGameState }) => {
   return (
     <div className="flex flex-col gap-10 items-center justify-center h-full">
-      <h1>Select the gestures to use for this combat</h1>
+      <h1 className="text-xl mb-8">Pick your loadout for this combat</h1>
 
       <div className="grid grid-cols-3 grid-rows-3 gap-10 place-content-center">
         <h1>Your opponents loadout:</h1>
         <div className="flex gap-4 col-span-2">
           {gameState.aiBattleGestures.map((gesture, i) => (
             <div key={i} className="bg-gray-400 w-20 h-20 rounded-lg">
-              <GestureIcon gestureKey={gesture.name} />
+              <GestureIcon gestureKey={gesture.name} bg="red" />
             </div>
           ))}
         </div>
         <h1>
-          Your Chosen Gestures ({gameState.playerBattleGestures.length}/
+          Your loadout ({gameState.playerBattleGestures.length}/
           {allowedGestureCount}):
         </h1>
         <div className="flex gap-4 col-span-2">

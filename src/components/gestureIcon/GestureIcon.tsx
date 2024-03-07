@@ -6,11 +6,13 @@ interface GestureIconProp {
   count?: number;
   hp?: number;
   className?: string;
+  bg?: "blue" | "red";
 }
 export const GestureIcon = ({
   gestureKey,
   count,
   className = "",
+  bg = "blue",
   hp,
 }: GestureIconProp) => {
   const keyToSpritePositionMap: Record<GestureKey, string> = {
@@ -20,10 +22,11 @@ export const GestureIcon = ({
   };
   const positionClass = keyToSpritePositionMap[gestureKey];
   const filterClass = hp === 0 ? "grayscale brightnedd-70" : "";
+  const backgroundClass = bg === "blue" ? "bg-blue-400" : "bg-red-400";
   return (
     <div>
       <div
-        className={`bg-gestures-sprite h-20 w-20 flex justify-end items-end rounded-lg overflow-hidden ${positionClass} ${filterClass} ${className}`}
+        className={`bg-gestures-sprite h-20 w-20 flex justify-end items-end rounded-lg overflow-hidden ${backgroundClass} ${positionClass} ${filterClass} ${className}`}
       >
         {count !== undefined && (
           <p className="bg-gray-800/40 h-8 w-8 flex justify-center items-center p-0 m-0 text-xl rounded-lg text-white">
