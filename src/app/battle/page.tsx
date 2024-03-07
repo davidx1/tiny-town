@@ -71,12 +71,12 @@ function PageInner() {
 
   if (
     gameState.state === BattleStates.RESULT &&
-    musicSource === "/battle-music.mp3"
+    musicSource === `${process.env.basePath}/battle-music.mp3`
   ) {
     if (gameState.playerBattleGestures.every((gesture) => gesture.hp === 0)) {
-      setMusicSource("/defeat.mp3");
+      setMusicSource(`${process.env.basePath}/defeat.mp3`);
     } else {
-      setMusicSource("/victory.mp3");
+      setMusicSource(`${process.env.basePath}/victory.mp3`);
     }
   }
 
