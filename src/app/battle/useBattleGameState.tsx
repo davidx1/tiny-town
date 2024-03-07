@@ -129,13 +129,15 @@ export const useBattleGameState = (
         if (action.type === "cursor_right") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 1) % allowedGestureCount,
+            cursorIndex: (cursorIndex + 1) % playerBattleGestures.length,
           };
         }
         if (action.type === "cursor_left") {
           return {
             ...gameState,
-            cursorIndex: (cursorIndex + 5) % allowedGestureCount,
+            cursorIndex:
+              (cursorIndex + playerBattleGestures.length - 1) %
+              playerBattleGestures.length,
           };
         }
         return gameState;
