@@ -4,15 +4,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "tile-set": "url('/tileset.png')",
-        "player-sprite": "url('/player.png')",
-        "blond-hair-sprite": "url('/blond-hair.png')",
-        "silver-hair-sprite": "url('/silver-hair.png')",
-        "spiky-hair-sprite": "url('/spiky-hair.png')",
-        "white-shirt-sprite": "url('/white-shirt.png')",
-        "yellow-hat-sprite": "url('/yellow-hat.png')",
-        "gestures-sprite": "url('/gesture.png')",
-        "control-instruction": "url('/controls.png')",
+        "tile-set": `url('${process.env.BASE_PATH}/tileset.png')`,
+        "player-sprite": `url('${process.env.BASE_PATH}/player.png')`,
+        "blond-hair-sprite": `url('${process.env.BASE_PATH}/blond-hair.png')`,
+        "silver-hair-sprite": `url('${process.env.BASE_PATH}/silver-hair.png')`,
+        "spiky-hair-sprite": `url('${process.env.BASE_PATH}/spiky-hair.png')`,
+        "white-shirt-sprite": `url('${process.env.BASE_PATH}/white-shirt.png')`,
+        "yellow-hat-sprite": `url('${process.env.BASE_PATH}/yellow-hat.png')`,
+        "gestures-sprite": `url('${process.env.BASE_PATH}/gesture.png')`,
+        "control-instruction": `url('${process.env.BASE_PATH}/controls.png')`,
       },
       aspectRatio: {
         "3/2": "3 / 2",
