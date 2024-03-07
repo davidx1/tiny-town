@@ -20,6 +20,5 @@ export const aiBattleGesturesRecord: Record<BattleIds, GestureKey[]> = {
     "gesture-rock",
     "gesture-paper",
     "gesture-paper",
-    "gesture-paper",
   ],
 };
