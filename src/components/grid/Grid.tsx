@@ -1,19 +1,21 @@
 import { Cell, CoordinateType } from "@/type.d";
 import { GridData } from "./GridData";
+import { observer, useObserver } from "mobx-react-lite";
+import { StoreContext } from "@/stores/rootStore";
+import { useContext } from "react";
 
 interface GridProps {
   isDevMode?: boolean;
   data: Cell[][];
-  position?: CoordinateType;
   onCellClick?: (c: CoordinateType) => void;
 }
 
-export default function Grid({
-  isDevMode,
-  data,
-  position,
-  onCellClick,
-}: GridProps) {
+const Grid = observer(({ isDevMode, data, onCellClick }: GridProps) => {
+  const store = useContext(StoreContext); // See the Timer definition above.
+  const position = store?.moveStore.position;
+
+  console.log(store);
+
   const style = position && {
     transitionProperty: "left, top",
     transitionDuration: "0.2s",
@@ -27,4 +29,6 @@ export default function Grid({
       <GridData data={data} onCellClick={onCellClick} isDevMode={isDevMode} />
     </div>
   );
-}
+});
+
+export default Grid;
