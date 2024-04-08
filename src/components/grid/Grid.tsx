@@ -14,8 +14,6 @@ const Grid = observer(({ isDevMode, data, onCellClick }: GridProps) => {
   const store = useContext(StoreContext); // See the Timer definition above.
   const position = store?.moveStore.position;
 
-  console.log(store);
-
   const style = position && {
     transitionProperty: "left, top",
     transitionDuration: "0.2s",

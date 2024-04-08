@@ -39,7 +39,6 @@ export const usePlotData = (): PlotValueType => {
   };
 
   const reachedPlotPoint = (newPlotPointReached: PlotKey) => {
-    console.log(newPlotPointReached);
     const newPlot = {
       ...plot,
       [newPlotPointReached]: true,

@@ -32,8 +32,6 @@ function PageInner() {
       returnUrl,
     );
 
-  console.log(process.env.myBasePath);
-
   const [musicSource, setMusicSource] = useState(
     `${process.env.myBasePath}/battle-music.mp3`,
   );
