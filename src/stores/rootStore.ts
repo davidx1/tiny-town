@@ -1,17 +1,23 @@
-import { makeAutoObservable } from "mobx";
+import { autorun, makeAutoObservable } from "mobx";
 import { MoveStore } from "./moveStore";
 import { ConverseStore } from "./converseStore";
+import { InventoryStore, inventoryStoreName } from "./inventoryStory";
+
 import { createContext } from "react";
-import { Cell, CoordinateType, DirectionType } from "@/type.d";
+import { Cell, CoordinateType, DirectionType, PlotType } from "@/type.d";
+import { triggerType } from "@/hooks/useTriggers";
 
 export class RootStore {
   moveStore: MoveStore;
   converseStore: ConverseStore;
+  inventoryStore: InventoryStore;
   mode: "moveStore" | "converseStore";
+  plot?: PlotType;
 
   constructor() {
     this.moveStore = new MoveStore(this);
     this.converseStore = new ConverseStore(this);
+    this.inventoryStore = new InventoryStore(this);
     this.mode = "moveStore";
     makeAutoObservable(this, {}, { autoBind: true });
   }
@@ -28,6 +34,10 @@ export class RootStore {
     this.moveStore.mapData = mapData;
     this.moveStore.direction = initialDirection;
     this.moveStore.position = initialPosition;
+    const inventoryString = window.sessionStorage.getItem(inventoryStoreName);
+    if (inventoryString) {
+      this.inventoryStore.inventory = JSON.parse(inventoryString);
+    }
   };
 
   onUpPressed = () => {

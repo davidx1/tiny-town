@@ -14,6 +14,12 @@ const Grid = observer(({ isDevMode, data, onCellClick }: GridProps) => {
   const store = useContext(StoreContext); // See the Timer definition above.
   const position = store?.moveStore.position;
 
+  const bubbleStyle = position && {
+    opacity: store.converseStore.isShowConverseIcon ? 1 : 0,
+    top: `${position[0] * 3 - 4.5}rem`,
+    left: `${position[1] * 3}rem`,
+  };
+
   const style = position && {
     transitionProperty: "left, top",
     transitionDuration: "0.2s",
@@ -23,9 +29,14 @@ const Grid = observer(({ isDevMode, data, onCellClick }: GridProps) => {
   };
 
   return (
-    <div className="absolute ease-linear" style={style}>
-      <GridData data={data} onCellClick={onCellClick} isDevMode={isDevMode} />
-    </div>
+    !store.moveStore.isLoading && (
+      <div className="absolute ease-linear" style={style}>
+        <GridData data={data} onCellClick={onCellClick} isDevMode={isDevMode} />
+        <div className="absolute z-40" style={bubbleStyle}>
+          <h1 className="text-3xl">💬</h1>
+        </div>
+      </div>
+    )
   );
 });
 

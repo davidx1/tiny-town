@@ -1,3 +1,4 @@
+import { triggerType } from "@/hooks/useTriggers";
 import { Cell, CoordinateType, DirectionType } from "@/type.d";
 import { makeAutoObservable } from "mobx";
 
@@ -23,40 +24,43 @@ export class MoveStore {
     makeAutoObservable(this, {}, { autoBind: true });
   }
 
+  get isLoading() {
+    return !this.mapData || !this.position || !this.direction;
+  }
+
   get isMoving() {
     return !!this.keysDown.length;
   }
 
+  move = () => {
+    const newDirection = this.keysDown[this.keysDown.length - 1];
+    if (newDirection && this.position && this.mapData) {
+      const delta: CoordinateType = directionDeltaMap[newDirection];
+      const newPos: CoordinateType = [
+        this.position[0] + delta[0],
+        this.position[1] + delta[1],
+      ];
+
+      this.direction = newDirection;
+
+      this.position =
+        this.mapData[newPos[0]]?.[newPos[1]]?.occupierId === null
+          ? newPos
+          : this.position;
+    }
+  };
+
   updatePosition = () => {
-    const move = () => {
-      const newDirection = this.keysDown[this.keysDown.length - 1];
-      if (newDirection && this.position && this.mapData) {
-        const delta: CoordinateType = directionDeltaMap[newDirection];
-        const newPos: CoordinateType = [
-          this.position[0] + delta[0],
-          this.position[1] + delta[1],
-        ];
-
-        this.direction = newDirection;
-
-        this.position =
-          this.mapData[newPos[0]]?.[newPos[1]]?.occupierId === null
-            ? newPos
-            : this.position;
-      }
-    };
-
-    console.log(this.movingRef);
     if (!this.movingRef) {
-      move();
+      this.move();
       this.movingRef = setInterval(() => {
         if (!this.keysDown.length && this.movingRef) {
           clearInterval(this.movingRef);
           this.movingRef = null;
         } else {
-          move();
+          this.move();
         }
-      }, 150);
+      }, 200);
     }
   };
 

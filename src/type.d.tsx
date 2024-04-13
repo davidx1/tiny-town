@@ -15,7 +15,7 @@ export type Cell = {
   occupierId: string | null;
   triggerId: string | null;
   groundType: "grass" | "path";
-  comp: { name: string; anchor: CoordinateType } | null;
+  comp: { name: string; anchor: CoordinateType; options?: any } | null;
 };
 
 export interface FeatureType {

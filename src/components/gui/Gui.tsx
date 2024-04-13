@@ -1,9 +1,15 @@
 import { InventoryContext } from "@/hooks/useInventoryData";
 import { useContext } from "react";
 import { GestureIcon } from "../gestureIcon/GestureIcon";
+import { observer } from "mobx-react-lite";
+import { StoreContext } from "@/stores/rootStore";
 
-export const Gui = () => {
-  const { inventory } = useContext(InventoryContext);
+export const Gui = observer(() => {
+  const store = useContext(StoreContext);
+
+  const {
+    inventoryStore: { inventory },
+  } = store;
 
   const paperCount = inventory["gesture-paper"];
   const scissorCount = inventory["gesture-scissors"];
@@ -24,4 +30,4 @@ export const Gui = () => {
       </div>
     </div>
   );
-};
+});

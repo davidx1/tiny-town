@@ -6,11 +6,16 @@ import { StoreContext } from "@/stores/rootStore";
 export const Player = observer(() => {
   // Grab the timer from the context.
   const store = useContext(StoreContext); // See the Timer definition above.
+
   return (
-    <Character
-      characterBgClass="bg-player-sprite"
-      direction={store?.moveStore.direction}
-      isMoving={store?.moveStore.isMoving}
-    ></Character>
+    !store.moveStore.isLoading && (
+      <div className="size-12 flex items-center justify-center absolute z-30">
+        <Character
+          characterBgClass="bg-player-sprite"
+          direction={store?.moveStore.direction}
+          isMoving={store?.moveStore.isMoving}
+        ></Character>
+      </div>
+    )
   );
 });

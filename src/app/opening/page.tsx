@@ -3,11 +3,6 @@ import { PageView } from "@/components/pageView/PageView";
 import { openingInitialPositionRecord } from "./openingInitialPositionRecord";
 import { openingTriggerRecord } from "./openingTriggerRecord";
 import {
-  TextareaContext,
-  useTextarea,
-} from "@/components/textarea/useTextareaContext";
-import { openingConvoRecord } from "./openingConvoRecord";
-import {
   InventoryContext,
   useInventoryData,
 } from "../../hooks/useInventoryData";
@@ -16,7 +11,6 @@ import { useContext, useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 
 function PageInner() {
-  const textareaValue = useTextarea(openingConvoRecord);
   const { plot, reachedPlotPoint, isLoading } = useContext(PlotContext);
   const [showControl, setShowControl] = useState<boolean>(false);
 
@@ -33,7 +27,7 @@ function PageInner() {
   }, [isLoading]);
 
   return (
-    <TextareaContext.Provider value={textareaValue}>
+    <>
       <PageView
         mapDataKey="opening"
         initialPositionRecords={openingInitialPositionRecord}
@@ -53,7 +47,7 @@ function PageInner() {
           </p>
         </div>
       )}
-    </TextareaContext.Provider>
+    </>
   );
 }
 

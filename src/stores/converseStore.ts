@@ -1,13 +1,18 @@
-import { makeAutoObservable } from "mobx";
+import { observable, action, makeAutoObservable } from "mobx";
 
 export class ConverseStore {
   count = 1;
+  isShowConverseIcon = false;
   rootStore: any;
 
   constructor(rootStore: any) {
+    makeAutoObservable(this);
     this.rootStore = rootStore;
-    makeAutoObservable(this, {}, { autoBind: true });
   }
+
+  setConverseIcon = (state: boolean) => {
+    this.isShowConverseIcon = state;
+  };
 
   onUpPressed = () => {};
 

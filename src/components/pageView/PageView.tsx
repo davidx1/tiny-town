@@ -9,8 +9,13 @@ import { Gui } from "../gui/Gui";
 import { useInput } from "@/hooks/useInput";
 import { Player } from "../character/Player";
 import { StoreContext, store } from "@/stores/rootStore";
+import { useTriggers } from "@/hooks/useTriggers";
 
-export const PageView = ({ mapDataKey, initialPositionRecords }: any) => {
+export const PageView = ({
+  mapDataKey,
+  initialPositionRecords,
+  triggerRecord,
+}: any) => {
   const { mapData } = useMapData(mapDataKey);
 
   const { initialPosition, initialDirection } = useInitialPosition(
@@ -48,14 +53,14 @@ export const PageView = ({ mapDataKey, initialPositionRecords }: any) => {
     initialize({ mapData, initialPosition, initialDirection });
   }, [mapData, initialDirection, initialPosition, initialize]);
 
+  useTriggers(triggerRecord);
+
   return (
     <StoreContext.Provider value={store}>
       <div className="relative overflow-hidden w-full min-h-screen max-h-screen bg-slate-700">
         <div className="relative" style={{ top: "49vh", left: "49vw" }}>
           {/* This is the player */}
-          <div className="size-12 flex items-center justify-center absolute z-30">
-            <Player />
-          </div>
+          <Player />
           <Grid data={mapData}></Grid>
         </div>
         <TextArea />
