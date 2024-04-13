@@ -22,18 +22,25 @@ export class RootStore {
     makeAutoObservable(this, {}, { autoBind: true });
   }
 
+  setMode = (mode: "moveStore" | "converseStore") => {
+    this.mode = mode;
+  };
+
   initialize = ({
     mapData,
     initialPosition,
     initialDirection,
+    triggerRecord,
   }: {
     mapData: Cell[][];
     initialPosition: CoordinateType;
     initialDirection: DirectionType;
+    triggerRecord: Record<string, triggerType>;
   }) => {
     this.moveStore.mapData = mapData;
     this.moveStore.direction = initialDirection;
     this.moveStore.position = initialPosition;
+    this.moveStore.triggerRecord = triggerRecord;
     const inventoryString = window.sessionStorage.getItem(inventoryStoreName);
     if (inventoryString) {
       this.inventoryStore.inventory = JSON.parse(inventoryString);

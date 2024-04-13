@@ -17,6 +17,7 @@ export class MoveStore {
   direction?: DirectionType;
   keysDown: DirectionType[];
   movingRef: NodeJS.Timeout | null = null;
+  triggerRecord: Record<string, triggerType> | null = null;
 
   constructor(rootStore: any) {
     this.rootStore = rootStore;
@@ -88,6 +89,26 @@ export class MoveStore {
   onRightPressed = () => this.onDirectionPressed("right");
   onRightReleased = () => this.onDirectionReleased("right");
 
-  onSelectPressed = () => {};
+  onSelectPressed = () => {
+    const { mapData, position, triggerRecord } = this;
+    if (mapData && position && triggerRecord) {
+      const triggerId = mapData[position[0]][position[1]].triggerId;
+      const triggers = triggerId ? triggerRecord[triggerId] : [];
+      for (const trigger of triggers) {
+        if (
+          trigger.type === "conversation" &&
+          (!trigger.plotCondition ||
+            trigger.plotCondition.every(
+              (condition) =>
+                !!this.rootStore.plot[condition.key] === condition.status,
+            ))
+        ) {
+          this.rootStore.setMode("converseStore");
+          this.direction = "up";
+          return;
+        }
+      }
+    }
+  };
   onSelectReleased = () => {};
 }

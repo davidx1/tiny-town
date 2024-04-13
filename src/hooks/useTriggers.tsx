@@ -16,12 +16,12 @@ type conversationTriggerType = {
 };
 export type triggerType = (redirectTriggerType | conversationTriggerType)[];
 
-export const useTriggers = (triggerRecord: Record<string, triggerType>) => {
+export const useTriggers = () => {
   const { plot } = useContext(PlotContext);
 
   useEffect(() => {
     const disposer = autorun(() => {
-      const { mapData, position } = store.moveStore;
+      const { mapData, position, triggerRecord } = store.moveStore;
       if (mapData && position) {
         store.converseStore.setConverseIcon(false);
         const triggerId = mapData[position[0]][position[1]].triggerId;

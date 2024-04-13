@@ -50,16 +50,15 @@ export const PageView = ({
   });
 
   useEffect(() => {
-    initialize({ mapData, initialPosition, initialDirection });
-  }, [mapData, initialDirection, initialPosition, initialize]);
+    initialize({ mapData, initialPosition, initialDirection, triggerRecord });
+  }, [mapData, initialDirection, initialPosition, initialize, triggerRecord]);
 
-  useTriggers(triggerRecord);
+  useTriggers();
 
   return (
     <StoreContext.Provider value={store}>
       <div className="relative overflow-hidden w-full min-h-screen max-h-screen bg-slate-700">
         <div className="relative" style={{ top: "49vh", left: "49vw" }}>
-          {/* This is the player */}
           <Player />
           <Grid data={mapData}></Grid>
         </div>
