@@ -1,6 +1,6 @@
-import { TextRecord } from "../../type.d";
+import { ConversationRecord } from "../../type.d";
 
-export const townConvoRecord: TextRecord = {
+export const townConvoRecord: ConversationRecord = {
   doctor: {
     init: {
       label: "Welcome, adventurer! How can I help you today?",

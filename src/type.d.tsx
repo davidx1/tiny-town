@@ -36,7 +36,7 @@ export type PlotKey =
   | "collected-scissors"
   | "fought-first-battle";
 export type PlotType = Record<PlotKey, boolean>;
-export type TextRecord = Record<string, Conversation>;
+export type ConversationRecord = Record<string, Conversation>;
 export type Conversation = Record<string, Segment>;
 export type Segment = SegmentPassive | SegmentWSelection;
 

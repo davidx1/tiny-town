@@ -14,7 +14,7 @@ type conversationTriggerType = {
   key: string;
   plotCondition?: { key: PlotKey; status: boolean }[];
 };
-export type triggerType = (redirectTriggerType | conversationTriggerType)[];
+export type triggerType = redirectTriggerType | conversationTriggerType;
 
 export const useTriggers = () => {
   const { plot } = useContext(PlotContext);

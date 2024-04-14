@@ -1,6 +1,6 @@
 import { triggerType } from "../../hooks/useTriggers";
 
-export const townTriggerRecord: Record<string, triggerType | triggerType[]> = {
+export const townTriggerRecord: Record<string, triggerType[]> = {
   wgmnklq: [{ type: "redirect", route: `/opening?prev=town` }],
   kjjdb61: [
     {

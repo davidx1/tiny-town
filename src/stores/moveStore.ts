@@ -17,7 +17,7 @@ export class MoveStore {
   direction?: DirectionType;
   keysDown: DirectionType[];
   movingRef: NodeJS.Timeout | null = null;
-  triggerRecord: Record<string, triggerType> | null = null;
+  triggerRecord: Record<string, triggerType[]> | null = null;
 
   constructor(rootStore: any) {
     this.rootStore = rootStore;
@@ -103,9 +103,10 @@ export class MoveStore {
                 !!this.rootStore.plot[condition.key] === condition.status,
             ))
         ) {
-          this.rootStore.setMode("converseStore");
+          this.rootStore.converseStore.startConversation(trigger.key);
           this.direction = "up";
-          return;
+          this.keysDown = [];
+          break;
         }
       }
     }

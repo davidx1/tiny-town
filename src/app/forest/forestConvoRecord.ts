@@ -1,6 +1,6 @@
-import { TextRecord } from "../../type.d";
+import { ConversationRecord } from "../../type.d";
 
-export const forestConvoRecord: TextRecord = {
+export const forestConvoRecord: ConversationRecord = {
   test: {
     init: {
       label: "PLACEHOLDER",
