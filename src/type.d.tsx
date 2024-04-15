@@ -1,5 +1,4 @@
 export type DirectionType = "left" | "right" | "up" | "down";
-
 export function isDirectionType(variable: any): variable is DirectionType {
   return ["left", "right", "up", "down"].includes(variable);
 }
@@ -105,3 +104,14 @@ export type BattleStrategiesKey =
   | "random"
   | "random-advantage"
   | "amplified-probability";
+
+export type DirectionInputs = "KeyA" | "KeyW" | "KeyS" | "KeyD";
+export function isDirectionInputs(input: string): input is DirectionInputs {
+  return ["KeyA", "KeyW", "KeyS", "KeyD"].includes(input);
+}
+export type SelectionInputs = "Space";
+export function isSelectionInputs(input: string): input is DirectionInputs {
+  return ["Space"].includes(input);
+}
+
+export type AllInputs = DirectionInputs | SelectionInputs;

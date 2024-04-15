@@ -15,6 +15,8 @@ import { StoreContext, store } from "@/stores/rootStore";
 import { triggerType, useTriggers } from "@/hooks/useTriggers";
 import { isMobile } from "react-device-detect";
 import { Conversation, CoordinateType } from "@/type.d";
+import { MobileUnsupported } from "./MobileUnsupported";
+import { ControlsHint } from "./ControlsHint";
 
 interface PageViewProps {
   mapDataKey: mapKeys;
@@ -30,37 +32,11 @@ export const PageView = ({
   conversationRecord,
 }: PageViewProps) => {
   const { mapData } = useMapData(mapDataKey);
-
   const { initialPosition, initialDirection } = useInitialPosition(
     initialPositionRecords,
   );
-
-  const {
-    onUpPressed,
-    onUpReleased,
-    onDownPressed,
-    onDownReleased,
-    onLeftPressed,
-    onLeftReleased,
-    onRightPressed,
-    onRightReleased,
-    onSelectPressed,
-    onSelectReleased,
-    initialize,
-  } = store;
-
-  useInput({
-    onUpPressed,
-    onUpReleased,
-    onDownPressed,
-    onDownReleased,
-    onLeftPressed,
-    onLeftReleased,
-    onRightPressed,
-    onRightReleased,
-    onSelectPressed,
-    onSelectReleased,
-  });
+  const { onKeyPressed, onKeyReleased, initialize } = store;
+  useInput({ onKeyPressed, onKeyReleased });
 
   useEffect(() => {
     initialize({
@@ -82,19 +58,6 @@ export const PageView = ({
   useTriggers();
 
   // const { plot, reachedPlotPoint, isLoading } = useContext(PlotContext);
-  // const [showControl, setShowControl] = useState<boolean>(false);
-
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     setShowControl(!plot["viewed-controls"]);
-  //     if (!plot["viewed-controls"]) {
-  //       setTimeout(() => {
-  //         setShowControl(false);
-  //         reachedPlotPoint("viewed-controls");
-  //       }, 5000);
-  //     }
-  //   }
-  // }, [isLoading]);
 
   return (
     <StoreContext.Provider value={store}>
@@ -106,20 +69,8 @@ export const PageView = ({
         <TextArea />
         <Gui />
       </div>
-      {isMobile && (
-        <div className="bg-gray-800/80 absolute w-2/3 z-40 top-1/3 left-1/6 px-8 py-8 flex flex-col items-center text-center">
-          <h1 className="text-white text-xl mb-4">Device Unsupported</h1>
-          <p className="text-gray-200">
-            Mobile devices are not supported yet. Please try again on a
-            computer.
-          </p>
-        </div>
-      )}
-      {/* {showControl && !isMobile && (
-        <div className="bg-gray-800/80 absolute w-1/2 aspect-3/2 z-40 top-1/4 left-1/4 p-8">
-          <div className="h-full bg-control-instruction bg-cover"></div>
-        </div>
-      )}*/}
+      {isMobile && <MobileUnsupported />}
+      {!isMobile && <ControlsHint />}
     </StoreContext.Provider>
   );
 };

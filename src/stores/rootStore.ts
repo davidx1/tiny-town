@@ -3,8 +3,9 @@ import { MoveStore } from "./moveStore";
 import { ConverseStore } from "./converseStore";
 import { InventoryStore, inventoryStoreName } from "./inventoryStore";
 
-import { createContext } from "react";
+import { KeyboardEventHandler, createContext } from "react";
 import {
+  AllInputs,
   Cell,
   Conversation,
   CoordinateType,
@@ -62,47 +63,18 @@ export class RootStore {
 
     if (plotString) {
       this.plotStore.plot = JSON.parse(plotString);
+    } else {
+      this.plotStore.plot = {} as PlotType;
     }
   };
 
-  onUpPressed = () => {
-    this[this.mode].onUpPressed();
+  onKeyPressed: KeyboardEventHandler = (evt) => {
+    console.log("key pressed");
+    this[this.mode].onKeyPressed(evt.code);
   };
 
-  onUpReleased = () => {
-    this[this.mode].onUpReleased();
-  };
-
-  onDownPressed = () => {
-    this[this.mode].onDownPressed();
-  };
-
-  onDownReleased = () => {
-    this[this.mode].onDownReleased();
-  };
-
-  onLeftPressed = () => {
-    this[this.mode].onLeftPressed();
-  };
-
-  onLeftReleased = () => {
-    this[this.mode].onLeftReleased();
-  };
-
-  onRightPressed = () => {
-    this[this.mode].onRightPressed();
-  };
-
-  onRightReleased = () => {
-    this[this.mode].onRightReleased();
-  };
-
-  onSelectPressed = () => {
-    this[this.mode].onSelectPressed();
-  };
-
-  onSelectReleased = () => {
-    this[this.mode].onSelectReleased();
+  onKeyReleased: KeyboardEventHandler = (evt) => {
+    this[this.mode].onKeyReleased(evt.code);
   };
 }
 

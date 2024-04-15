@@ -37,7 +37,6 @@ export class ConverseStore {
     const segment = this.conversationRecord[conversationKey]["init"];
     this.label = segment.label;
     if ("options" in segment) {
-      console.log(this.rootStore.plotStore);
       this.hoveringOptionIndex = 0;
       this.options = segment.options.filter((option) =>
         validOptionsFilter(option, this.rootStore.plotStore.plot),
@@ -48,23 +47,6 @@ export class ConverseStore {
     }
   };
 
-  onUpPressed = () => {};
-
-  onUpReleased = () => {};
-
-  onDownPressed = () => {};
-
-  onDownReleased = () => {};
-
-  onLeftPressed = () => {};
-
-  onLeftReleased = () => {};
-
-  onRightPressed = () => {};
-
-  onRightReleased = () => {};
-
-  onSelectPressed = () => {};
-
-  onSelectReleased = () => {};
+  onKeyPressed = () => {};
+  onKeyReleased = () => {};
 }

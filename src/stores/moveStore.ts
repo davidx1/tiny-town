@@ -1,5 +1,13 @@
 import { triggerType } from "@/hooks/useTriggers";
-import { Cell, CoordinateType, DirectionType } from "@/type.d";
+import {
+  Cell,
+  CoordinateType,
+  DirectionType,
+  DirectionInputs,
+  isDirectionInputs,
+  isSelectionInputs,
+  AllInputs,
+} from "@/type.d";
 import { makeAutoObservable } from "mobx";
 
 const directionDeltaMap: Record<DirectionType, [number, number]> = {
@@ -9,19 +17,26 @@ const directionDeltaMap: Record<DirectionType, [number, number]> = {
   right: [0, 1],
 };
 
+const directionInputDirectionMap: Record<DirectionInputs, DirectionType> = {
+  KeyA: "left",
+  KeyW: "up",
+  KeyS: "down",
+  KeyD: "right",
+};
+
 export class MoveStore {
   count = 1;
   rootStore: any;
   mapData?: Cell[][];
   position?: CoordinateType;
   direction?: DirectionType;
-  keysDown: DirectionType[];
+  directionKeysDown: DirectionInputs[];
   movingRef: NodeJS.Timeout | null = null;
   triggerRecord: Record<string, triggerType[]> | null = null;
 
   constructor(rootStore: any) {
     this.rootStore = rootStore;
-    this.keysDown = [];
+    this.directionKeysDown = [];
     makeAutoObservable(this, {}, { autoBind: true });
   }
 
@@ -30,20 +45,34 @@ export class MoveStore {
   }
 
   get isMoving() {
-    return !!this.keysDown.length;
+    return !!this.directionKeysDown.length;
   }
 
+  onKeyPressed = (key: string) => {
+    if (isDirectionInputs(key)) {
+      this.onDirectionPressed(key);
+    } else if (isSelectionInputs(key)) {
+      this.onSelectPressed();
+    }
+  };
+
+  onKeyReleased = (key: string) => {
+    if (isDirectionInputs(key)) {
+      this.onDirectionReleased(key);
+    }
+  };
+
   move = () => {
-    const newDirection = this.keysDown[this.keysDown.length - 1];
+    const newDirectionInput =
+      this.directionKeysDown[this.directionKeysDown.length - 1];
+    const newDirection = directionInputDirectionMap[newDirectionInput];
     if (newDirection && this.position && this.mapData) {
       const delta: CoordinateType = directionDeltaMap[newDirection];
       const newPos: CoordinateType = [
         this.position[0] + delta[0],
         this.position[1] + delta[1],
       ];
-
       this.direction = newDirection;
-
       this.position =
         this.mapData[newPos[0]]?.[newPos[1]]?.occupierId === null
           ? newPos
@@ -55,7 +84,7 @@ export class MoveStore {
     if (!this.movingRef) {
       this.move();
       this.movingRef = setInterval(() => {
-        if (!this.keysDown.length && this.movingRef) {
+        if (!this.directionKeysDown.length && this.movingRef) {
           clearInterval(this.movingRef);
           this.movingRef = null;
         } else {
@@ -65,29 +94,20 @@ export class MoveStore {
     }
   };
 
-  onDirectionPressed = (newDirection: DirectionType) => {
-    if (!this.keysDown.includes(newDirection)) {
-      this.keysDown.push(newDirection);
+  onDirectionPressed = (newDirection: DirectionInputs) => {
+    if (!this.directionKeysDown.includes(newDirection)) {
+      this.directionKeysDown.push(newDirection);
       this.updatePosition();
     }
   };
 
-  onDirectionReleased = (releasedDirection: DirectionType) => {
-    if (this.keysDown.includes(releasedDirection)) {
-      this.keysDown = this.keysDown.filter(
+  onDirectionReleased = (releasedDirection: DirectionInputs) => {
+    if (this.directionKeysDown.includes(releasedDirection)) {
+      this.directionKeysDown = this.directionKeysDown.filter(
         (keys) => keys !== releasedDirection,
       );
     }
   };
-
-  onUpPressed = () => this.onDirectionPressed("up");
-  onUpReleased = () => this.onDirectionReleased("up");
-  onDownPressed = () => this.onDirectionPressed("down");
-  onDownReleased = () => this.onDirectionReleased("down");
-  onLeftPressed = () => this.onDirectionPressed("left");
-  onLeftReleased = () => this.onDirectionReleased("left");
-  onRightPressed = () => this.onDirectionPressed("right");
-  onRightReleased = () => this.onDirectionReleased("right");
 
   onSelectPressed = () => {
     const { mapData, position, triggerRecord } = this;
@@ -105,7 +125,7 @@ export class MoveStore {
         ) {
           this.rootStore.converseStore.startConversation(trigger.key);
           this.direction = "up";
-          this.keysDown = [];
+          this.directionKeysDown = [];
           break;
         }
       }

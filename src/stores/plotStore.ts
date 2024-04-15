@@ -4,7 +4,7 @@ import { makeAutoObservable } from "mobx";
 export const plotStoreName = `tiny-town-plot-store`;
 
 export class PlotStore {
-  plot: PlotType = {} as PlotType;
+  plot?: PlotType | null;
   rootStore: any;
 
   constructor(rootStore: any) {
@@ -12,7 +12,12 @@ export class PlotStore {
     this.rootStore = rootStore;
   }
 
+  get isLoading() {
+    return !this.plot;
+  }
+
   reachedPlotPoint = (newPlotPointReached: PlotKey) => {
+    console.log(this.plot);
     const newPlot = {
       ...this.plot,
       [newPlotPointReached]: true,
