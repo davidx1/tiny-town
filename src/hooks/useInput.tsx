@@ -1,4 +1,3 @@
-import { AllInputs } from "@/type.d";
 import { KeyboardEventHandler, useEffect } from "react";
 
 interface UseInputProps {
