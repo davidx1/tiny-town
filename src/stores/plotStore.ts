@@ -17,11 +17,11 @@ export class PlotStore {
   }
 
   reachedPlotPoint = (newPlotPointReached: PlotKey) => {
-    console.log(this.plot);
     const newPlot = {
       ...this.plot,
       [newPlotPointReached]: true,
     };
+    this.plot = newPlot;
     const newPlotString = JSON.stringify(newPlot);
     window.sessionStorage.setItem(plotStoreName, newPlotString);
   };

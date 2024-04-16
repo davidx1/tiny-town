@@ -1,5 +1,5 @@
 import { InventoryType, ItemKey } from "@/type.d";
-import { observable, action, makeAutoObservable } from "mobx";
+import { makeAutoObservable } from "mobx";
 
 export const inventoryStoreName = "tiny-town-inventory-store";
 

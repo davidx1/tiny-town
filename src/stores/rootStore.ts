@@ -1,11 +1,10 @@
-import { autorun, makeAutoObservable } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { MoveStore } from "./moveStore";
 import { ConverseStore } from "./converseStore";
 import { InventoryStore, inventoryStoreName } from "./inventoryStore";
 
 import { KeyboardEventHandler, createContext } from "react";
 import {
-  AllInputs,
   Cell,
   Conversation,
   CoordinateType,

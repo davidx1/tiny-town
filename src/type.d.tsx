@@ -52,9 +52,19 @@ export interface SegmentPassive extends SegmentBase {
   next: string | null;
 }
 
+export function isSegmentPassive(segment: Segment): segment is SegmentPassive {
+  return "next" in segment;
+}
+
 export interface SegmentWSelection extends SegmentBase {
   label: string;
   options: ConversationOption[];
+}
+
+export function isSegmentWSelection(
+  segment: Segment,
+): segment is SegmentWSelection {
+  return "options" in segment;
 }
 
 export type ConversationOption = {
