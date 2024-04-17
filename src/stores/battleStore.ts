@@ -12,6 +12,7 @@ import {
 } from "@/type.d";
 import { makeAutoObservable, makeObservable } from "mobx";
 import { RootStore } from "./rootStore";
+import { env } from "process";
 
 interface BattleMetaData {
   battleId?: BattleIds;
@@ -209,7 +210,7 @@ export class BattleStore {
             : "_d";
           if (key === "Space") {
             window.location.replace(
-              `${this.meta.returnUrl}?prev=${this.meta.battleId}${isVictory}`,
+              `${env.BasePath}/${this.meta.returnUrl}?prev=${this.meta.battleId}${isVictory}`,
             );
           }
           break;

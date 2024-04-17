@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
-import { GoogleAnalytics } from "@next/third-parties/google";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +22,6 @@ export default function RootLayout({
           {children}
         </main>
       </body>
-      <GoogleAnalytics gaId="G-K2KK8GLYYS" />
     </html>
   );
 }
