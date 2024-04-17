@@ -1,4 +1,4 @@
-import { maxHp } from "@/app/battle/useBattleGameState";
+import { maxHp } from "@/app/battle/constants/fixedValues";
 import { GestureKey } from "@/type.d";
 
 interface GestureIconProp {

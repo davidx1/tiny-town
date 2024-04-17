@@ -1,4 +1,3 @@
-import { InventoryContext } from "@/hooks/useInventoryData";
 import { useContext } from "react";
 import { GestureIcon } from "../gestureIcon/GestureIcon";
 import { observer } from "mobx-react-lite";

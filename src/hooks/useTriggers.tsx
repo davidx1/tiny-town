@@ -1,27 +1,15 @@
-import { useContext, useEffect } from "react";
-import { PlotKey } from "../type.d";
-import { PlotContext } from "./usePlotData";
+import { useEffect } from "react";
 import { autorun } from "mobx";
 import { store } from "@/stores/rootStore";
 
-type redirectTriggerType = {
-  type: "redirect";
-  route: string;
-  plotCondition?: { key: PlotKey; status: boolean }[];
-};
-type conversationTriggerType = {
-  type: "conversation";
-  key: string;
-  plotCondition?: { key: PlotKey; status: boolean }[];
-};
-export type triggerType = redirectTriggerType | conversationTriggerType;
-
 export const useTriggers = () => {
-  const { plot } = useContext(PlotContext);
-
   useEffect(() => {
     const disposer = autorun(() => {
-      const { mapData, position, triggerRecord } = store.moveStore;
+      const {
+        moveStore: { mapData, position, triggerRecord },
+        plotStore: { plot },
+      } = store;
+
       if (mapData && position) {
         store.converseStore.setConverseIcon(false);
         const triggerId = mapData[position[0]][position[1]].triggerId;
@@ -36,6 +24,8 @@ export const useTriggers = () => {
             ) {
               switch (trigger.type) {
                 case "redirect":
+                  store.mode = null;
+                  store.moveStore.directionKeysDown = [];
                   window.location.replace(trigger.route);
                   return;
                 case "conversation":

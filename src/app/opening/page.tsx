@@ -1,4 +1,3 @@
-"use client";
 import { PageView } from "@/components/pageView/PageView";
 import { openingInitialPositionRecord } from "./openingInitialPositionRecord";
 import { openingTriggerRecord } from "./openingTriggerRecord";
@@ -10,7 +9,7 @@ export default function Page() {
       mapDataKey="opening"
       initialPositionRecords={openingInitialPositionRecord}
       triggerRecord={openingTriggerRecord}
-      convoRecord={openingConvoRecord}
+      conversationRecord={openingConvoRecord}
     />
   );
 }

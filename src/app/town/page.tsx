@@ -1,4 +1,3 @@
-"use client";
 import { PageView } from "@/components/pageView/PageView";
 import { townInitialPositionRecord } from "./townInitialPositionRecord";
 import { townTriggerRecord } from "./townTriggerRecords";

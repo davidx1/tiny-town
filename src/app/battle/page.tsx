@@ -1,113 +1,95 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { KeyboardEventHandler, useEffect, useRef, useState } from "react";
-import { BattleIds, BattleStates, BattleStrategiesKey } from "../../type.d";
-import {
-  InventoryContext,
-  useInventoryData,
-} from "../../hooks/useInventoryData";
-import { PlotContext, usePlotData } from "@/hooks/usePlotData";
+import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
+import { useContext, useEffect, useState } from "react";
+import { BattleStates, isBattleId, isBattleStrategiesKey } from "../../type.d";
 import { StatePrep } from "./statePrep";
 import { StateSelect } from "./stateSelect";
 import { StateRevealNChange } from "./stateRevealNChange";
 import { StateResult } from "./stateResult";
-import { useBattleGameState } from "./useBattleGameState";
+import { StoreContext, store } from "@/stores/rootStore";
+import { useInput } from "@/hooks/useInput";
+import { observer } from "mobx-react-lite";
 
-function PageInner() {
+export default function Page() {
+  return <PageView />;
+}
+
+const PageView = () => {
   const searchParams = useSearchParams();
   const returnUrl = searchParams.get("prev");
   const battleId = searchParams.get("id");
-  const strategy = searchParams.get("strat");
+  const battleStrategyKey = searchParams.get("strat");
 
-  //TODO: add type guard to ensure the battle Id is a valid battle Id
-  if (!battleId || !returnUrl || !strategy) {
-    throw new Error("Missing critical information for battle");
+  if (
+    !isBattleId(battleId) ||
+    !returnUrl ||
+    !isBattleStrategiesKey(battleStrategyKey)
+  ) {
+    throw new Error("Invalid battle parameters");
   }
 
-  const { gameState, onSelect, onLeft, onRight, onUp, onDown } =
-    useBattleGameState(
-      battleId as BattleIds,
-      strategy as BattleStrategiesKey,
-      returnUrl,
-    );
+  const {
+    onKeyPressed,
+    onKeyReleased,
+    initialize,
+    battleStore: { startBattle },
+  } = store;
+  useInput({ onKeyPressed, onKeyReleased });
 
+  useEffect(() => {
+    initialize({});
+    startBattle({ battleId, battleStrategyKey, returnUrl });
+  }, []);
+
+  return (
+    <StoreContext.Provider value={store}>
+      <BattlePageView />
+    </StoreContext.Provider>
+  );
+};
+
+const BattlePageView = observer(() => {
+  const store = useContext(StoreContext);
+  const { playerBattleGestures, state } = store.battleStore;
   const [musicSource, setMusicSource] = useState(
     `${process.env.myBasePath}/battle-music.mp3`,
   );
 
-  const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e) => {
-    switch (e.code) {
-      case "KeyA":
-      case "ArrowLeft":
-        onLeft();
-        return;
-      case "KeyS":
-      case "ArrowDown":
-        onDown();
-        return;
-      case "KeyD":
-      case "ArrowRight":
-        onRight();
-        return;
-      case "KeyW":
-      case "ArrowUp":
-        onUp();
-        return;
-      case "Enter":
-      case "Space":
-        onSelect();
-        return;
-      default:
-        return;
-    }
-  };
-
-  const playDivRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (playDivRef.current) {
-      playDivRef.current.focus();
-    }
-  }, []);
-
   useEffect(() => {
     if (
-      gameState.state === BattleStates.RESULT &&
+      state === BattleStates.RESULT &&
       musicSource === `${process.env.myBasePath}/battle-music.mp3`
     ) {
-      if (gameState.playerBattleGestures.every((gesture) => gesture.hp === 0)) {
+      if (playerBattleGestures.every((gesture) => gesture.hp === 0)) {
         setMusicSource(`${process.env.myBasePath}/defeat.mp3`);
       } else {
         setMusicSource(`${process.env.myBasePath}/victory.mp3`);
       }
     }
-  }, [gameState.state]);
+  }, [musicSource, playerBattleGestures, state]);
 
   return (
     <>
-      <div
-        className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700"
-        onKeyDown={onKeyDown}
-        tabIndex={-1}
-        ref={playDivRef}
-      >
+      <div className="flex w-full min-h-screen max-h-screen justify-center items-center bg-slate-700">
         <div className="w-full aspect-3/2 bg-gray-300">
           {[
             BattleStates.PREP_ADD,
             BattleStates.PREP_REMOVE,
             BattleStates.PREP_READY,
-          ].includes(gameState.state) ? (
-            <StatePrep gameState={gameState} />
-          ) : BattleStates.SELECT_GESTURE === gameState.state ? (
-            <StateSelect gameState={gameState} />
+          ].includes(state) ? (
+            <>
+              <StatePrep />
+            </>
+          ) : BattleStates.SELECT_GESTURE === state ? (
+            <StateSelect />
           ) : [
               BattleStates.GESTURE_REVEAL,
               BattleStates.HEALTH_CHANGE,
-            ].includes(gameState.state) ? (
-            <StateRevealNChange gameState={gameState} />
-          ) : BattleStates.RESULT === gameState.state ? (
-            <StateResult gameState={gameState} />
+            ].includes(state) ? (
+            <StateRevealNChange />
+          ) : BattleStates.RESULT === state ? (
+            <StateResult />
           ) : (
             <></>
           )}
@@ -115,7 +97,7 @@ function PageInner() {
       </div>
       <audio
         autoPlay={true}
-        loop={gameState.state !== BattleStates.RESULT}
+        loop={state !== BattleStates.RESULT}
         controls
         style={{ marginTop: "-100px" }}
         src={musicSource}
@@ -124,17 +106,4 @@ function PageInner() {
       </audio>
     </>
   );
-}
-
-export default function Page() {
-  const plotValue = usePlotData();
-  const inventoryValue = useInventoryData();
-
-  return (
-    <PlotContext.Provider value={plotValue}>
-      <InventoryContext.Provider value={inventoryValue}>
-        {!plotValue.isLoading && !inventoryValue.isLoading && <PageInner />}
-      </InventoryContext.Provider>
-    </PlotContext.Provider>
-  );
-}
+});

@@ -2,12 +2,13 @@ import {
   ConversationOption,
   ConversationRecord,
   PlotType,
-  isDirectionInputs,
+  isDirectionInput,
   isSegmentPassive,
   isSegmentWSelection,
-  isSelectionInputs,
+  isSelectionInput,
 } from "@/type.d";
 import { makeAutoObservable } from "mobx";
+import { RootStore } from "./rootStore";
 
 const validOptionsFilter = (option: ConversationOption, plot: PlotType) => {
   return (
@@ -21,13 +22,13 @@ const validOptionsFilter = (option: ConversationOption, plot: PlotType) => {
 export class ConverseStore {
   count = 1;
   isShowConverseIcon = false;
-  rootStore: any;
+  rootStore: RootStore;
   conversationKey: string | null = null;
   segmentKey: string | null = null;
   hoveringOptionIndex: number | null = null;
   conversationRecord?: ConversationRecord = null;
 
-  constructor(rootStore: any) {
+  constructor(rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore = rootStore;
   }
@@ -70,7 +71,7 @@ export class ConverseStore {
     const { hoveringOptionIndex, currentSegment } = this;
 
     // Handle navigation of options, if options exist
-    if (isSegmentWSelection(currentSegment) && isDirectionInputs(key)) {
+    if (isSegmentWSelection(currentSegment) && isDirectionInput(key)) {
       const optionsCount = currentSegment.options?.length || 0;
       switch (key) {
         case "KeyW":
@@ -88,7 +89,7 @@ export class ConverseStore {
       }
     }
     // Handle selection and going onto the next segment
-    else if (isSelectionInputs(key)) {
+    else if (isSelectionInput(key)) {
       this.segmentKey = isSegmentPassive(currentSegment)
         ? currentSegment.next
         : currentSegment.options[hoveringOptionIndex].next;

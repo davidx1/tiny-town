@@ -1,13 +1,14 @@
 import { InventoryType, ItemKey } from "@/type.d";
 import { makeAutoObservable } from "mobx";
+import { RootStore } from "./rootStore";
 
 export const inventoryStoreName = "tiny-town-inventory-store";
 
 export class InventoryStore {
   inventory: InventoryType;
-  rootStore: any;
+  rootStore: RootStore;
 
-  constructor(rootStore: any) {
+  constructor(rootStore: RootStore) {
     makeAutoObservable(this);
     this.rootStore = rootStore;
     this.inventory = {

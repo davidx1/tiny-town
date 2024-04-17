@@ -1,14 +1,14 @@
-import { triggerType } from "@/hooks/useTriggers";
 import {
   Cell,
   CoordinateType,
   DirectionType,
-  DirectionInputs,
-  isDirectionInputs,
-  isSelectionInputs,
-  AllInputs,
+  DirectionInput,
+  isDirectionInput,
+  isSelectionInput,
+  triggerType,
 } from "@/type.d";
 import { makeAutoObservable } from "mobx";
+import { RootStore } from "./rootStore";
 
 const directionDeltaMap: Record<DirectionType, [number, number]> = {
   left: [0, -1],
@@ -17,7 +17,7 @@ const directionDeltaMap: Record<DirectionType, [number, number]> = {
   right: [0, 1],
 };
 
-const directionInputDirectionMap: Record<DirectionInputs, DirectionType> = {
+const directionInputDirectionMap: Record<DirectionInput, DirectionType> = {
   KeyA: "left",
   KeyW: "up",
   KeyS: "down",
@@ -30,11 +30,11 @@ export class MoveStore {
   mapData?: Cell[][];
   position?: CoordinateType;
   direction?: DirectionType;
-  directionKeysDown: DirectionInputs[];
+  directionKeysDown: DirectionInput[];
   movingRef: NodeJS.Timeout | null = null;
   triggerRecord: Record<string, triggerType[]> | null = null;
 
-  constructor(rootStore: any) {
+  constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
     this.directionKeysDown = [];
     makeAutoObservable(this, {}, { autoBind: true });
@@ -49,15 +49,15 @@ export class MoveStore {
   }
 
   onKeyPressed = (key: string) => {
-    if (isDirectionInputs(key)) {
+    if (isDirectionInput(key)) {
       this.onDirectionPressed(key);
-    } else if (isSelectionInputs(key)) {
+    } else if (isSelectionInput(key)) {
       this.onSelectPressed();
     }
   };
 
   onKeyReleased = (key: string) => {
-    if (isDirectionInputs(key)) {
+    if (isDirectionInput(key)) {
       this.onDirectionReleased(key);
     }
   };
@@ -120,7 +120,8 @@ export class MoveStore {
           (!trigger.plotCondition ||
             trigger.plotCondition.every(
               (condition) =>
-                !!this.rootStore.plot[condition.key] === condition.status,
+                !!this.rootStore.plotStore.plot[condition.key] ===
+                condition.status,
             ))
         ) {
           this.rootStore.converseStore.startConversation(trigger.key);

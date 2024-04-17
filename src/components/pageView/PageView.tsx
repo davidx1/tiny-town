@@ -1,9 +1,5 @@
 "use client";
 
-import {
-  InitialPositionRecord,
-  useInitialPosition,
-} from "@/hooks/useInitialPosition";
 import { mapKeys, useMapData } from "@/hooks/useMapData";
 import Grid from "@/components/grid/Grid";
 import { TextArea } from "@/components/textarea/TextArea";
@@ -12,11 +8,12 @@ import { Gui } from "../gui/Gui";
 import { useInput } from "@/hooks/useInput";
 import { Player } from "../character/Player";
 import { StoreContext, store } from "@/stores/rootStore";
-import { triggerType, useTriggers } from "@/hooks/useTriggers";
 import { isMobile } from "react-device-detect";
-import { Conversation, CoordinateType } from "@/type.d";
+import { Conversation, triggerType, InitialPositionRecord } from "@/type.d";
 import { MobileUnsupported } from "./MobileUnsupported";
 import { ControlsHint } from "./ControlsHint";
+import { useSearchParams } from "next/navigation";
+import { useTriggers } from "@/hooks/useTriggers";
 
 interface PageViewProps {
   mapDataKey: mapKeys;
@@ -32,9 +29,11 @@ export const PageView = ({
   conversationRecord,
 }: PageViewProps) => {
   const { mapData } = useMapData(mapDataKey);
-  const { initialPosition, initialDirection } = useInitialPosition(
-    initialPositionRecords,
-  );
+
+  const prev = useSearchParams().get("prev");
+  const { initialPosition, initialDirection } =
+    initialPositionRecords?.[prev] || initialPositionRecords.default;
+
   const { onKeyPressed, onKeyReleased, initialize } = store;
   useInput({ onKeyPressed, onKeyReleased });
 

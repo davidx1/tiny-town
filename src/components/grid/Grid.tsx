@@ -32,7 +32,10 @@ const Grid = observer(({ isDevMode, data, onCellClick }: GridProps) => {
     !store.moveStore.isLoading && (
       <div className="absolute ease-linear" style={style}>
         <GridData data={data} onCellClick={onCellClick} isDevMode={isDevMode} />
-        <div className="absolute z-40" style={bubbleStyle}>
+        <div
+          className="absolute z-40 w-12 h-12 flex align-center justify-center"
+          style={bubbleStyle}
+        >
           <h1 className="text-3xl">💬</h1>
         </div>
       </div>

@@ -109,19 +109,52 @@ export interface BattleGameState {
 
 export type BattleIds = "spiky-hair0" | "blond-hair0" | "silver-hair0";
 
+export function isBattleId(id: string): id is BattleIds {
+  return ["spiky-hair0", "blond-hair0", "silver-hair0"].includes(id);
+}
+
 export type BattleStrategiesKey =
   | "first-available"
   | "random"
   | "random-advantage"
   | "amplified-probability";
-
-export type DirectionInputs = "KeyA" | "KeyW" | "KeyS" | "KeyD";
-export function isDirectionInputs(input: string): input is DirectionInputs {
+export function isBattleStrategiesKey(
+  input: string,
+): input is BattleStrategiesKey {
+  return [
+    "first-available",
+    "random",
+    "random-advantage",
+    "amplified-probability",
+  ].includes(input);
+}
+export type DirectionInput = "KeyA" | "KeyW" | "KeyS" | "KeyD";
+export function isDirectionInput(input: string): input is DirectionInput {
   return ["KeyA", "KeyW", "KeyS", "KeyD"].includes(input);
 }
-export type SelectionInputs = "Space";
-export function isSelectionInputs(input: string): input is DirectionInputs {
+export type SelectionInput = "Space";
+export function isSelectionInput(input: string): input is DirectionInput {
   return ["Space"].includes(input);
 }
 
-export type AllInputs = DirectionInputs | SelectionInputs;
+export type ValidInput = DirectionInput | SelectionInput;
+
+export function isValidInput(input: string): input is ValidInput {
+  return isDirectionInput(input) || isSelectionInput(input);
+}
+
+type redirectTriggerType = {
+  type: "redirect";
+  route: string;
+  plotCondition?: { key: PlotKey; status: boolean }[];
+};
+type conversationTriggerType = {
+  type: "conversation";
+  key: string;
+  plotCondition?: { key: PlotKey; status: boolean }[];
+};
+export type triggerType = redirectTriggerType | conversationTriggerType;
+
+export type InitialPositionRecord = Record<string, InitialCoDirType> & {
+  default: InitialCoDirType;
+};

@@ -1,6 +1,4 @@
-import { TextRecord } from "../../type.d";
-
-export const openingConvoRecord: TextRecord = {
+export const openingConvoRecord = {
   test: {
     init: {
       label: "PLACEHOLDER",

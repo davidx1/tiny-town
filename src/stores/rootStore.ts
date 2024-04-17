@@ -10,16 +10,18 @@ import {
   CoordinateType,
   DirectionType,
   PlotType,
+  triggerType,
 } from "@/type.d";
-import { triggerType } from "@/hooks/useTriggers";
 import { PlotStore, plotStoreName } from "./plotStore";
+import { BattleStore } from "./battleStore";
 
 export class RootStore {
   moveStore: MoveStore;
   converseStore: ConverseStore;
   inventoryStore: InventoryStore;
   plotStore: PlotStore;
-  mode: "moveStore" | "converseStore";
+  battleStore: BattleStore;
+  mode: "moveStore" | "converseStore" | "battleStore";
   plot?: PlotType;
 
   constructor() {
@@ -27,6 +29,7 @@ export class RootStore {
     this.converseStore = new ConverseStore(this);
     this.inventoryStore = new InventoryStore(this);
     this.plotStore = new PlotStore(this);
+    this.battleStore = new BattleStore(this);
     this.mode = "moveStore";
     makeAutoObservable(this, {}, { autoBind: true });
   }
@@ -42,11 +45,11 @@ export class RootStore {
     triggerRecord,
     conversationRecord,
   }: {
-    mapData: Cell[][];
-    initialPosition: CoordinateType;
-    initialDirection: DirectionType;
-    triggerRecord: Record<string, triggerType[]>;
-    conversationRecord: Record<string, Conversation>;
+    mapData?: Cell[][];
+    initialPosition?: CoordinateType;
+    initialDirection?: DirectionType;
+    triggerRecord?: Record<string, triggerType[]>;
+    conversationRecord?: Record<string, Conversation>;
   }) => {
     this.moveStore.mapData = mapData;
     this.moveStore.direction = initialDirection;
@@ -68,7 +71,6 @@ export class RootStore {
   };
 
   onKeyPressed: KeyboardEventHandler = (evt) => {
-    console.log("key pressed");
     this[this.mode].onKeyPressed(evt.code);
   };
 

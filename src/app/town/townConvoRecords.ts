@@ -190,14 +190,10 @@ export const townConvoRecord: ConversationRecord = {
     },
     gesture2: {
       label:
-        "You know I dreamt of being a Rock Paper Scissors battler too when I was young",
+        "You know I dreamt of being a Rock Paper Scissors battler too when I was younger. But I just couldn't get the hang of it.",
       next: "gesture3",
     },
     gesture3: {
-      label: "But I just couldn't get the hang of it.",
-      next: "gesture4",
-    },
-    gesture4: {
       label:
         "Here are some paper gestures. Hope they serve you better than they've served me!",
       next: null,

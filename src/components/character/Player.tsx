@@ -5,7 +5,7 @@ import { StoreContext } from "@/stores/rootStore";
 
 export const Player = observer(() => {
   // Grab the timer from the context.
-  const store = useContext(StoreContext); // See the Timer definition above.
+  const store = useContext(StoreContext);
 
   return (
     !store.moveStore.isLoading && (
