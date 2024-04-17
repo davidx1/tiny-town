@@ -94,14 +94,14 @@ export class MoveStore {
     }
   };
 
-  onDirectionPressed = (newDirection: DirectionInputs) => {
+  onDirectionPressed = (newDirection: DirectionInput) => {
     if (!this.directionKeysDown.includes(newDirection)) {
       this.directionKeysDown.push(newDirection);
       this.updatePosition();
     }
   };
 
-  onDirectionReleased = (releasedDirection: DirectionInputs) => {
+  onDirectionReleased = (releasedDirection: DirectionInput) => {
     if (this.directionKeysDown.includes(releasedDirection)) {
       this.directionKeysDown = this.directionKeysDown.filter(
         (keys) => keys !== releasedDirection,

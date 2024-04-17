@@ -1,4 +1,4 @@
-import { GestureIcon } from "@/components/gestureIcon/GestureIcon";
+import { GestureIcon } from "@/components/GestureIcon";
 import { StoreContext } from "@/stores/rootStore";
 import { BattleGameState } from "@/type.d";
 import { observer } from "mobx-react-lite";

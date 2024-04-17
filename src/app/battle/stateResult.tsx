@@ -1,4 +1,4 @@
-import { GestureIcon } from "@/components/gestureIcon/GestureIcon";
+import { GestureIcon } from "@/components/GestureIcon";
 import { StoreContext } from "@/stores/rootStore";
 import { observer } from "mobx-react-lite";
 import { useContext } from "react";

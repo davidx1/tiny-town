@@ -1,4 +1,4 @@
-import { triggerType } from "../../hooks/useTriggers";
+import { triggerType } from "@/type.d";
 
 export const forestTriggerRecord: Record<string, triggerType[]> = {
   i2fllay: [{ type: "redirect", route: "/town?prev=forest" }],

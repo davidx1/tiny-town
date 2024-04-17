@@ -1,4 +1,4 @@
-import { PageView } from "@/components/pageView/PageView";
+import { PageView } from "@/components/PageView";
 import { forestInitialPositionRecord } from "./forestInitialPositionRecord";
 import { forestTriggerRecord } from "./forestTriggerRecord";
 

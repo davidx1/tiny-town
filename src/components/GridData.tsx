@@ -1,19 +1,19 @@
 import { Cell, CoordinateType } from "@/type.d";
 import { memo } from "react";
-import { house1Info, House1 } from "../Placeables/House1";
-import { house2Info, House2 } from "../Placeables/House2";
-import { house3Info, House3 } from "../Placeables/House3";
-import { house4Info, House4 } from "../Placeables/House4";
-import { house5Info, House5 } from "../Placeables/House5";
-import { tree1Info, Tree1 } from "../Placeables/Tree1";
-import Character from "../character/Character";
+import { house1Info, House1 } from "./Placeables/House1";
+import { house2Info, House2 } from "./Placeables/House2";
+import { house3Info, House3 } from "./Placeables/House3";
+import { house4Info, House4 } from "./Placeables/House4";
+import { house5Info, House5 } from "./Placeables/House5";
+import { tree1Info, Tree1 } from "./Placeables/Tree1";
+import Character from "./Character";
 import {
   characterBlondHair,
   characterSilverHair,
   characterSpikyHair,
   characterWhiteShirt,
   characterYellowHat,
-} from "../Placeables/Characters";
+} from "./Placeables/Characters";
 
 export interface GridDataProps {
   data: Cell[][];

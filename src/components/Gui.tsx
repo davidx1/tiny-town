@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GestureIcon } from "../gestureIcon/GestureIcon";
+import { GestureIcon } from "./GestureIcon";
 import { observer } from "mobx-react-lite";
 import { StoreContext } from "@/stores/rootStore";
 

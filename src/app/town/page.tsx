@@ -1,4 +1,4 @@
-import { PageView } from "@/components/pageView/PageView";
+import { PageView } from "@/components/PageView";
 import { townInitialPositionRecord } from "./townInitialPositionRecord";
 import { townTriggerRecord } from "./townTriggerRecords";
 import { townConvoRecord } from "./townConvoRecords";

@@ -1,6 +1,6 @@
 "use client";
 
-import Grid from "@/components/grid/Grid";
+import Grid from "@/components/Grid";
 import JSONPretty from "react-json-pretty";
 import { useRef } from "react";
 import { House1Img, house1Info } from "@/components/Placeables/House1";
@@ -11,14 +11,14 @@ import { House5Img, house5Info } from "@/components/Placeables/House5";
 import { tree1Info, Tree1, Tree1Img } from "@/components/Placeables/Tree1";
 import { useEditorStates } from "./useEditorStates";
 import { Cell } from "@/type.d";
-import Character from "../character/Character";
+import Character from "./Character";
 import {
   characterBlondHair,
   characterSilverHair,
   characterSpikyHair,
   characterWhiteShirt,
   characterYellowHat,
-} from "../Placeables/Characters";
+} from "./Placeables/Characters";
 
 interface EditorProps {
   initialMapData?: Cell[][];

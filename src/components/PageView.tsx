@@ -1,12 +1,12 @@
 "use client";
 
 import { mapKeys, useMapData } from "@/hooks/useMapData";
-import Grid from "@/components/grid/Grid";
-import { TextArea } from "@/components/textarea/TextArea";
+import Grid from "@/components/Grid";
+import { TextArea } from "@/components/TextArea";
 import { useEffect } from "react";
-import { Gui } from "../gui/Gui";
+import { Gui } from "./Gui";
 import { useInput } from "@/hooks/useInput";
-import { Player } from "../character/Player";
+import { Player } from "./Player";
 import { StoreContext, store } from "@/stores/rootStore";
 import { isMobile } from "react-device-detect";
 import { Conversation, triggerType, InitialPositionRecord } from "@/type.d";
