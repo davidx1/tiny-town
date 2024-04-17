@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { autorun } from "mobx";
 import { store } from "@/stores/rootStore";
-import { env } from "process";
 
 export const useTriggers = () => {
   useEffect(() => {
@@ -27,7 +26,9 @@ export const useTriggers = () => {
                 case "redirect":
                   store.mode = null;
                   store.moveStore.directionKeysDown = [];
-                  window.location.replace(`${env.BasePath}/${trigger.route}`);
+                  window.location.replace(
+                    `${process.env.myBasePath}/${trigger.route}`,
+                  );
                   return;
                 case "conversation":
                   store.converseStore.setConverseIcon(true);

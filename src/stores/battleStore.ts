@@ -10,9 +10,8 @@ import {
   GestureKey,
   isValidInput,
 } from "@/type.d";
-import { makeAutoObservable, makeObservable } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { RootStore } from "./rootStore";
-import { env } from "process";
 
 interface BattleMetaData {
   battleId?: BattleIds;
@@ -210,7 +209,7 @@ export class BattleStore {
             : "_d";
           if (key === "Space") {
             window.location.replace(
-              `${env.BasePath}/${this.meta.returnUrl}?prev=${this.meta.battleId}${isVictory}`,
+              `${process.env.myBasePath}/${this.meta.returnUrl}?prev=${this.meta.battleId}${isVictory}`,
             );
           }
           break;
