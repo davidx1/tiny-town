@@ -27,7 +27,7 @@ export const useTriggers = () => {
                   store.mode = null;
                   store.moveStore.directionKeysDown = [];
                   window.location.replace(
-                    `${process.env.myBasePath}/${trigger.route}`,
+                    `${process.env.myBasePath}${trigger.route}`,
                   );
                   return;
                 case "conversation":
